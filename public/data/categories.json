@@ -33,5 +33,12 @@
     "slug": "soft-skills",
     "description": "沟通、文档、项目协作与职业发展。",
     "icon": "🤝"
+  },
+  {
+    "id": "cat-hardware",
+    "name": "硬件与数字系统",
+    "slug": "hardware",
+    "description": "数字逻辑、FPGA、嵌入式、电路设计、硬件课程设计相关学习模块。",
+    "icon": "🔌"
   }
 ]

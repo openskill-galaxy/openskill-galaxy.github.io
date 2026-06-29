@@ -21,6 +21,7 @@ export interface Module {
   status: "stable" | "beta" | "draft";
   updatedAt: string; // ISO date
   repoUrl?: string;
+  url?: string; // 模块站外链（如 https://openskill-galaxy.github.io/module-digital-logic/）
   topics: string[];
 }
 
