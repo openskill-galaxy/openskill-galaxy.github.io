@@ -1,0 +1,42 @@
+[
+  {
+    "id": "upd-2026-06-25-llm",
+    "date": "2026-06-25",
+    "type": "release",
+    "title": "新增模块：大模型应用开发",
+    "description": "《大模型应用开发》模块进入 Beta，涵盖 Prompt、RAG、Agent 与评估实践。",
+    "url": "https://openskill-galaxy.github.io/modules/llm-application"
+  },
+  {
+    "id": "upd-2026-06-18-cicd",
+    "date": "2026-06-18",
+    "type": "release",
+    "title": "《CI/CD 基础》模块更新至稳定版",
+    "description": "补充 GitHub Actions 矩阵与缓存实战案例，状态升级为 stable。",
+    "url": "https://openskill-galaxy.github.io/modules/ci-cd-fundamentals"
+  },
+  {
+    "id": "upd-2026-06-12-dist",
+    "date": "2026-06-12",
+    "type": "news",
+    "title": "《分布式系统基础》开放公测",
+    "description": "CAP、一致性协议与容错降级章节开放社区反馈。",
+    "url": "https://openskill-galaxy.github.io/modules/distributed-systems"
+  },
+  {
+    "id": "upd-2026-06-01-portal",
+    "date": "2026-06-01",
+    "type": "event",
+    "title": "OpenSkill Galaxy 总入口站上线",
+    "description": "聚合所有技能模块、学习路径与动态的总入口站正式发布。",
+    "url": "https://openskill-galaxy.github.io/"
+  },
+  {
+    "id": "upd-2026-05-20-node",
+    "date": "2026-05-20",
+    "type": "release",
+    "title": "《Node.js REST API 设计》模块发布",
+    "description": "从路由、中间件到错误处理与文档，完整构建一个 RESTful 服务。",
+    "url": "https://openskill-galaxy.github.io/modules/nodejs-rest-api"
+  }
+]

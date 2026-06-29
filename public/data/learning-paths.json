@@ -1,0 +1,42 @@
+[
+  {
+    "id": "path-fullstack",
+    "slug": "fullstack-developer",
+    "title": "全栈工程师成长路径",
+    "summary": "从前端到后端再到部署，构建一个完整 Web 应用所需的技能组合。",
+    "level": "intermediate",
+    "modules": ["mod-react-fund", "mod-ts-essentials", "mod-node-api", "mod-db-design", "mod-cicd"],
+    "estimatedHours": 64,
+    "tags": ["全栈", "Web", "实战"]
+  },
+  {
+    "id": "path-devops",
+    "slug": "devops-engineer",
+    "title": "DevOps 工程师路径",
+    "summary": "从 CI/CD 到容器再到可观测性，系统化掌握 DevOps 核心能力。",
+    "level": "intermediate",
+    "modules": ["mod-cicd", "mod-docker", "mod-observability"],
+    "estimatedHours": 30,
+    "tags": ["DevOps", "自动化", "运维"]
+  },
+  {
+    "id": "path-ai-engineer",
+    "slug": "ai-application-engineer",
+    "title": "AI 应用工程师路径",
+    "summary": "从机器学习基础到大模型应用落地，进入 AI 工程实践。",
+    "level": "advanced",
+    "modules": ["mod-ml-fund", "mod-llm-app", "mod-cicd"],
+    "estimatedHours": 44,
+    "tags": ["AI", "LLM", "工程化"]
+  },
+  {
+    "id": "path-frontend-master",
+    "slug": "frontend-master",
+    "title": "前端进阶路径",
+    "summary": "从 React 基础到性能优化，向高级前端工程师迈进。",
+    "level": "advanced",
+    "modules": ["mod-react-fund", "mod-ts-essentials", "mod-perf-web"],
+    "estimatedHours": 36,
+    "tags": ["前端", "性能", "进阶"]
+  }
+]

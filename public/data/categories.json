@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cat-frontend",
+    "name": "前端开发",
+    "slug": "frontend",
+    "description": "现代 Web 前端技能：框架、工程化、性能、可访问性。",
+    "icon": "🌐"
+  },
+  {
+    "id": "cat-backend",
+    "name": "后端开发",
+    "slug": "backend",
+    "description": "服务端架构、API 设计、数据库与分布式系统。",
+    "icon": "🛠️"
+  },
+  {
+    "id": "cat-devops",
+    "name": "DevOps",
+    "slug": "devops",
+    "description": "CI/CD、容器、基础设施即代码、可观测性。",
+    "icon": "🚀"
+  },
+  {
+    "id": "cat-ai-ml",
+    "name": "AI 与机器学习",
+    "slug": "ai-ml",
+    "description": "数据科学、机器学习、大模型应用与实践。",
+    "icon": "🤖"
+  },
+  {
+    "id": "cat-soft",
+    "name": "软技能与协作",
+    "slug": "soft-skills",
+    "description": "沟通、文档、项目协作与职业发展。",
+    "icon": "🤝"
+  }
+]
