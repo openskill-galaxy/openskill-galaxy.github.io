@@ -180,5 +180,21 @@
     "status": "stable",
     "updatedAt": "2026-05-05",
     "topics": ["读者分析", "信息架构", "Markdown 规范", "图示与示例", "维护策略"]
+  },
+  {
+    "id": "mod-digital-logic",
+    "slug": "module-digital-logic",
+    "title": "数字逻辑电路",
+    "summary": "面向学习《数字电子技术基础》、数字逻辑电路、组合逻辑电路、时序逻辑电路、FPGA 入门、Quartus、BDF 原理图设计与课程设计的学生。",
+    "category": "cat-backend",
+    "level": "intermediate",
+    "tags": ["数字逻辑", "数字电路", "FPGA", "Quartus", "Verilog", "课程设计"],
+    "estimatedHours": 120,
+    "authors": ["OpenSkill Community"],
+    "status": "stable",
+    "updatedAt": "2026-06-29",
+    "url": "https://openskill-galaxy.github.io/module-digital-logic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-digital-logic",
+    "topics": ["数制与编码", "逻辑代数", "组合逻辑", "时序逻辑", "FPGA", "Quartus", "Verilog", "电梯课程设计"]
   }
 ]
