@@ -6,12 +6,25 @@
     "summary": "理解 React 的组件、状态与生命周期，搭建第一个可交互的单页应用。",
     "category": "cat-frontend",
     "level": "beginner",
-    "tags": ["React", "JSX", "Hooks", "SPA"],
+    "tags": [
+      "React",
+      "JSX",
+      "Hooks",
+      "SPA"
+    ],
     "estimatedHours": 12,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-06-01",
-    "topics": ["JSX 与组件", "Props 与 State", "Hooks 基础", "事件处理", "条件渲染与列表"]
+    "topics": [
+      "JSX 与组件",
+      "Props 与 State",
+      "Hooks 基础",
+      "事件处理",
+      "条件渲染与列表"
+    ]
   },
   {
     "id": "mod-ts-essentials",
@@ -20,12 +33,24 @@
     "summary": "从 JavaScript 平滑过渡到 TypeScript，掌握类型系统与工程化实践。",
     "category": "cat-frontend",
     "level": "intermediate",
-    "tags": ["TypeScript", "类型系统", "工程化"],
+    "tags": [
+      "TypeScript",
+      "类型系统",
+      "工程化"
+    ],
     "estimatedHours": 10,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-06-05",
-    "topics": ["基础类型", "接口与类型别名", "泛型", "类型收窄", "tsconfig 配置"]
+    "topics": [
+      "基础类型",
+      "接口与类型别名",
+      "泛型",
+      "类型收窄",
+      "tsconfig 配置"
+    ]
   },
   {
     "id": "mod-perf-web",
@@ -34,12 +59,24 @@
     "summary": "从渲染管线到资源加载，系统提升 Web 应用的性能与用户体验。",
     "category": "cat-frontend",
     "level": "advanced",
-    "tags": ["性能", "Lighthouse", "Core Web Vitals"],
+    "tags": [
+      "性能",
+      "Lighthouse",
+      "Core Web Vitals"
+    ],
     "estimatedHours": 14,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "beta",
     "updatedAt": "2026-06-10",
-    "topics": ["渲染管线", "资源加载策略", "Core Web Vitals", "缓存与 CDN", "测量与监控"]
+    "topics": [
+      "渲染管线",
+      "资源加载策略",
+      "Core Web Vitals",
+      "缓存与 CDN",
+      "测量与监控"
+    ]
   },
   {
     "id": "mod-node-api",
@@ -48,12 +85,25 @@
     "summary": "使用 Node.js 构建规范、可测试、易维护的 RESTful API 服务。",
     "category": "cat-backend",
     "level": "intermediate",
-    "tags": ["Node.js", "REST", "API", "Express"],
+    "tags": [
+      "Node.js",
+      "REST",
+      "API",
+      "Express"
+    ],
     "estimatedHours": 16,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-05-20",
-    "topics": ["HTTP 与 REST", "路由与中间件", "错误处理", "校验", "API 文档"]
+    "topics": [
+      "HTTP 与 REST",
+      "路由与中间件",
+      "错误处理",
+      "校验",
+      "API 文档"
+    ]
   },
   {
     "id": "mod-db-design",
@@ -62,12 +112,25 @@
     "summary": "从范式到索引，掌握可扩展的关系型数据库建模与查询优化。",
     "category": "cat-backend",
     "level": "intermediate",
-    "tags": ["SQL", "数据库", "建模", "索引"],
+    "tags": [
+      "SQL",
+      "数据库",
+      "建模",
+      "索引"
+    ],
     "estimatedHours": 18,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-05-15",
-    "topics": ["ER 建模", "范式", "索引", "事务与隔离", "查询优化"]
+    "topics": [
+      "ER 建模",
+      "范式",
+      "索引",
+      "事务与隔离",
+      "查询优化"
+    ]
   },
   {
     "id": "mod-distributed",
@@ -76,12 +139,25 @@
     "summary": "理解一致性、可用性与分区容错，构建可靠的分布式后端服务。",
     "category": "cat-backend",
     "level": "advanced",
-    "tags": ["分布式", "CAP", "一致性", "微服务"],
+    "tags": [
+      "分布式",
+      "CAP",
+      "一致性",
+      "微服务"
+    ],
     "estimatedHours": 22,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "beta",
     "updatedAt": "2026-06-12",
-    "topics": ["CAP 与 BASE", "一致性协议", "服务发现", "负载均衡", "容错与降级"]
+    "topics": [
+      "CAP 与 BASE",
+      "一致性协议",
+      "服务发现",
+      "负载均衡",
+      "容错与降级"
+    ]
   },
   {
     "id": "mod-cicd",
@@ -90,12 +166,24 @@
     "summary": "用 GitHub Actions / GitLab CI 搭建自动化构建、测试与发布流水线。",
     "category": "cat-devops",
     "level": "beginner",
-    "tags": ["CI/CD", "GitHub Actions", "自动化"],
+    "tags": [
+      "CI/CD",
+      "GitHub Actions",
+      "自动化"
+    ],
     "estimatedHours": 8,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-06-18",
-    "topics": ["流水线概念", "GitHub Actions", "缓存与矩阵", "制品管理", "部署策略"]
+    "topics": [
+      "流水线概念",
+      "GitHub Actions",
+      "缓存与矩阵",
+      "制品管理",
+      "部署策略"
+    ]
   },
   {
     "id": "mod-docker",
@@ -104,12 +192,24 @@
     "summary": "容器化应用：镜像、容器、Compose 与多阶段构建的最佳实践。",
     "category": "cat-devops",
     "level": "intermediate",
-    "tags": ["Docker", "容器", "Compose"],
+    "tags": [
+      "Docker",
+      "容器",
+      "Compose"
+    ],
     "estimatedHours": 10,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-05-28",
-    "topics": ["镜像与容器", "Dockerfile", "多阶段构建", "Compose", "镜像优化"]
+    "topics": [
+      "镜像与容器",
+      "Dockerfile",
+      "多阶段构建",
+      "Compose",
+      "镜像优化"
+    ]
   },
   {
     "id": "mod-observability",
@@ -118,12 +218,25 @@
     "summary": "日志、指标、链路追踪三位一体，让系统状态清晰可见。",
     "category": "cat-devops",
     "level": "advanced",
-    "tags": ["可观测性", "Metrics", "Tracing", "Logging"],
+    "tags": [
+      "可观测性",
+      "Metrics",
+      "Tracing",
+      "Logging"
+    ],
     "estimatedHours": 12,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "draft",
     "updatedAt": "2026-06-22",
-    "topics": ["三大支柱", "指标采集", "分布式追踪", "结构化日志", "告警"]
+    "topics": [
+      "三大支柱",
+      "指标采集",
+      "分布式追踪",
+      "结构化日志",
+      "告警"
+    ]
   },
   {
     "id": "mod-ml-fund",
@@ -132,12 +245,24 @@
     "summary": "从监督学习到模型评估，建立机器学习的直觉与实践能力。",
     "category": "cat-ai-ml",
     "level": "beginner",
-    "tags": ["机器学习", "Python", "scikit-learn"],
+    "tags": [
+      "机器学习",
+      "Python",
+      "scikit-learn"
+    ],
     "estimatedHours": 20,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-05-10",
-    "topics": ["监督与无监督", "特征工程", "模型评估", "过拟合与正则", "实战项目"]
+    "topics": [
+      "监督与无监督",
+      "特征工程",
+      "模型评估",
+      "过拟合与正则",
+      "实战项目"
+    ]
   },
   {
     "id": "mod-llm-app",
@@ -146,12 +271,25 @@
     "summary": "Prompt、RAG、Agent：构建落地的大语言模型应用。",
     "category": "cat-ai-ml",
     "level": "intermediate",
-    "tags": ["LLM", "RAG", "Agent", "Prompt"],
+    "tags": [
+      "LLM",
+      "RAG",
+      "Agent",
+      "Prompt"
+    ],
     "estimatedHours": 16,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "beta",
     "updatedAt": "2026-06-25",
-    "topics": ["Prompt 工程", "RAG 检索增强", "Function Calling", "Agent 编排", "评估与成本"]
+    "topics": [
+      "Prompt 工程",
+      "RAG 检索增强",
+      "Function Calling",
+      "Agent 编排",
+      "评估与成本"
+    ]
   },
   {
     "id": "mod-comm",
@@ -160,12 +298,24 @@
     "summary": "结构化表达、倾听与反馈，让协作事半功倍。",
     "category": "cat-soft",
     "level": "beginner",
-    "tags": ["沟通", "协作", "软技能"],
+    "tags": [
+      "沟通",
+      "协作",
+      "软技能"
+    ],
     "estimatedHours": 6,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-04-30",
-    "topics": ["结构化表达", "积极倾听", "反馈模型", "跨文化沟通", "冲突管理"]
+    "topics": [
+      "结构化表达",
+      "积极倾听",
+      "反馈模型",
+      "跨文化沟通",
+      "冲突管理"
+    ]
   },
   {
     "id": "mod-doc",
@@ -174,28 +324,60 @@
     "summary": "写出清晰、可维护、面向读者的技术文档与 README。",
     "category": "cat-soft",
     "level": "intermediate",
-    "tags": ["文档", "写作", "README"],
+    "tags": [
+      "文档",
+      "写作",
+      "README"
+    ],
     "estimatedHours": 8,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-05-05",
-    "topics": ["读者分析", "信息架构", "Markdown 规范", "图示与示例", "维护策略"]
+    "topics": [
+      "读者分析",
+      "信息架构",
+      "Markdown 规范",
+      "图示与示例",
+      "维护策略"
+    ]
   },
   {
     "id": "mod-python-basic",
     "slug": "module-python-basic",
     "title": "Python 基础",
-    "summary": "从环境搭建到项目实战，系统学习 Python 编程语言的核心语法、数据结构、面向对象编程与标准库应用。170+ 课时，700+ 知识点，2500 道题目。",
+    "summary": "从环境搭建到项目实战，系统学习 Python 编程语言的核心语法、数据结构、面向对象编程与标准库应用。170 课时，720 知识点，2500 道题目（8 种题型），200 案例，90 套试卷，30 学习路线。",
     "category": "cat-programming",
     "level": "beginner",
-    "tags": ["Python", "编程基础", "数据结构", "OOP", "标准库"],
+    "tags": [
+      "Python",
+      "编程基础",
+      "数据结构",
+      "OOP",
+      "标准库"
+    ],
     "estimatedHours": 80,
-    "authors": ["OpenSkill Community"],
-    "status": "beta",
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
     "updatedAt": "2026-06-30",
     "url": "https://openskill-galaxy.github.io/module-python-basic/",
     "repoUrl": "https://github.com/openskill-galaxy/module-python-basic",
-    "topics": ["环境搭建", "基础语法", "数据类型", "控制流", "函数与模块", "文件与异常", "OOP", "标准库", "数据处理", "调试与规范", "项目实战"]
+    "topics": [
+      "环境搭建",
+      "基础语法",
+      "数据类型",
+      "控制流",
+      "函数与模块",
+      "文件与异常",
+      "OOP",
+      "标准库",
+      "数据处理",
+      "调试与规范",
+      "项目实战"
+    ]
   },
   {
     "id": "mod-digital-logic",
@@ -204,13 +386,31 @@
     "summary": "面向学习《数字电子技术基础》、数字逻辑电路、组合逻辑电路、时序逻辑电路、FPGA 入门、Quartus、BDF 原理图设计与课程设计的学生。",
     "category": "cat-hardware",
     "level": "intermediate",
-    "tags": ["数字逻辑", "数字电路", "FPGA", "Quartus", "Verilog", "课程设计"],
+    "tags": [
+      "数字逻辑",
+      "数字电路",
+      "FPGA",
+      "Quartus",
+      "Verilog",
+      "课程设计"
+    ],
     "estimatedHours": 120,
-    "authors": ["OpenSkill Community"],
+    "authors": [
+      "OpenSkill Community"
+    ],
     "status": "stable",
     "updatedAt": "2026-06-29",
     "url": "https://openskill-galaxy.github.io/module-digital-logic/",
     "repoUrl": "https://github.com/openskill-galaxy/module-digital-logic",
-    "topics": ["数制与编码", "逻辑代数", "组合逻辑", "时序逻辑", "FPGA", "Quartus", "Verilog", "电梯课程设计"]
+    "topics": [
+      "数制与编码",
+      "逻辑代数",
+      "组合逻辑",
+      "时序逻辑",
+      "FPGA",
+      "Quartus",
+      "Verilog",
+      "电梯课程设计"
+    ]
   }
 ]
