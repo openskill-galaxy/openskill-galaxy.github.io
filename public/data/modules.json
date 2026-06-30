@@ -182,6 +182,22 @@
     "topics": ["读者分析", "信息架构", "Markdown 规范", "图示与示例", "维护策略"]
   },
   {
+    "id": "mod-python-basic",
+    "slug": "module-python-basic",
+    "title": "Python 基础",
+    "summary": "从环境搭建到项目实战，系统学习 Python 编程语言的核心语法、数据结构、面向对象编程与标准库应用。170+ 课时，700+ 知识点，2500 道题目。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": ["Python", "编程基础", "数据结构", "OOP", "标准库"],
+    "estimatedHours": 80,
+    "authors": ["OpenSkill Community"],
+    "status": "beta",
+    "updatedAt": "2026-06-30",
+    "url": "https://openskill-galaxy.github.io/module-python-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-python-basic",
+    "topics": ["环境搭建", "基础语法", "数据类型", "控制流", "函数与模块", "文件与异常", "OOP", "标准库", "数据处理", "调试与规范", "项目实战"]
+  },
+  {
     "id": "mod-digital-logic",
     "slug": "module-digital-logic",
     "title": "数字逻辑电路",

@@ -40,5 +40,12 @@
     "slug": "hardware",
     "description": "数字逻辑、FPGA、嵌入式、电路设计、硬件课程设计相关学习模块。",
     "icon": "🔌"
+  },
+  {
+    "id": "cat-programming",
+    "name": "编程语言",
+    "slug": "programming",
+    "description": "Python、Java、Go、Rust 等主流编程语言从入门到精通。",
+    "icon": "🐍"
   }
 ]
