@@ -412,5 +412,41 @@
       "Verilog",
       "电梯课程设计"
     ]
+  },
+  {
+    "id": "mod-ai-product-manager",
+    "slug": "module-ai-product-manager",
+    "title": "AI 产品经理训练",
+    "summary": "面向 AI 产品、Agent 产品、RAG 知识库、Prompt 工程、AI SaaS 和产品经理面试的系统训练模块。14 门课程，192 章节，820 知识点，3000 道题（7 种题型），280 案例，90 套试卷，31 学习路线。",
+    "category": "cat-ai-ml",
+    "level": "intermediate",
+    "tags": [
+      "AI 产品",
+      "产品经理",
+      "Prompt 工程",
+      "Agent",
+      "RAG",
+      "AI SaaS",
+      "作品集",
+      "面试"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-01",
+    "url": "https://openskill-galaxy.github.io/module-ai-product-manager/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-ai-product-manager",
+    "topics": [
+      "AI 产品设计",
+      "Prompt 工程",
+      "RAG",
+      "Agent",
+      "PRD",
+      "AI 评测",
+      "商业化",
+      "作品集"
+    ]
   }
 ]
