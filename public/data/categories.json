@@ -47,5 +47,12 @@
     "slug": "programming",
     "description": "Python、Java、Go、Rust 等主流编程语言从入门到精通。",
     "icon": "🐍"
+  },
+  {
+    "id": "cat-language-exam",
+    "name": "语言与考试",
+    "slug": "language-exam",
+    "description": "英语学习、语言能力、考试备考、词汇阅读与写作训练相关模块。",
+    "icon": ""
   }
 ]
