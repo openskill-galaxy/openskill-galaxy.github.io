@@ -484,5 +484,43 @@
       "听力文本",
       "模拟考试"
     ]
+  },
+  {
+    "id": "mod-algorithm-interview",
+    "slug": "module-algorithm-interview",
+    "title": "数据结构与算法刷题",
+    "summary": "面向校招、实习、技术面试和编程考试的算法学习、题库练习、模拟面试与刷题路线模块。14 门课程，185 章节，820 知识点，3500 道题（8 种题型含代码题），240 案例，105 套试卷，30 学习路线。所有题目均为原创模拟练习。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "数据结构",
+      "算法",
+      "刷题",
+      "校招",
+      "面试",
+      "Python",
+      "动态规划",
+      "图搜索"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-01",
+    "url": "https://openskill-galaxy.github.io/module-algorithm-interview/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-algorithm-interview",
+    "topics": [
+      "复杂度",
+      "数组",
+      "链表",
+      "栈队列",
+      "树",
+      "图",
+      "贪心",
+      "回溯",
+      "动态规划",
+      "面试表达"
+    ]
   }
 ]
