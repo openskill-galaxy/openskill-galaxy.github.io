@@ -554,5 +554,41 @@
       "Git 与 GitHub Pages",
       "前端项目实战"
     ]
+  },
+  {
+    "id": "mod-react-basic",
+    "slug": "module-react-basic",
+    "title": "React 入门与项目实战",
+    "summary": "面向前端学习者的 React、JSX、组件化、Hooks、Router、状态管理、静态数据加载、GitHub Pages 部署与项目实战模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "React",
+      "前端开发",
+      "JSX",
+      "组件化",
+      "Hooks",
+      "React Router",
+      "Vite",
+      "GitHub Pages"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-01",
+    "url": "https://openskill-galaxy.github.io/module-react-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-react-basic",
+    "topics": [
+      "JSX",
+      "组件",
+      "props",
+      "state",
+      "Hooks",
+      "Router",
+      "Zustand",
+      "项目实战"
+    ]
   }
 ]
