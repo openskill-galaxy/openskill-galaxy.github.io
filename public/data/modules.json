@@ -590,5 +590,42 @@
       "Zustand",
       "项目实战"
     ]
+  },
+  {
+    "id": "mod-data-analyst",
+    "slug": "module-data-analyst",
+    "title": "数据分析师训练",
+    "summary": "面向数据分析岗位的 Excel、SQL、Python、pandas、数据清洗、可视化、指标体系、业务分析、项目作品集与面试训练模块。",
+    "category": "cat-data",
+    "level": "intermediate",
+    "tags": [
+      "数据分析",
+      "SQL",
+      "Python",
+      "pandas",
+      "Excel",
+      "可视化",
+      "业务分析",
+      "面试"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-01",
+    "url": "https://openskill-galaxy.github.io/module-data-analyst/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-data-analyst",
+    "topics": [
+      "Excel",
+      "SQL",
+      "Python",
+      "pandas",
+      "数据清洗",
+      "可视化",
+      "指标体系",
+      "A/B 测试",
+      "作品集"
+    ]
   }
 ]

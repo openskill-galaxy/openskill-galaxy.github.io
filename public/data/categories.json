@@ -54,5 +54,12 @@
     "slug": "language-exam",
     "description": "英语学习、语言能力、考试备考、词汇阅读与写作训练相关模块。",
     "icon": ""
+  },
+  {
+    "id": "cat-data",
+    "name": "数据与分析",
+    "slug": "data",
+    "description": "数据分析、商业分析、SQL、Python 数据处理、可视化、指标体系与数据岗位训练。",
+    "icon": "📊"
   }
 ]
