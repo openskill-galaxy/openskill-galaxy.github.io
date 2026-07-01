@@ -522,5 +522,37 @@
       "动态规划",
       "面试表达"
     ]
+  },
+  {
+    "id": "mod-frontend-dev",
+    "slug": "module-frontend-dev",
+    "title": "前端开发入门",
+    "summary": "从零基础到小项目实战的前端静态学习、刷题与考试模块。覆盖 HTML 语义化、CSS 布局与动画、JavaScript 核心语法、DOM 操作、ES6+、前后端交互、Vue/React 入门、前端工程化与小项目实战。",
+    "category": "cat-frontend",
+    "level": "beginner",
+    "tags": [
+      "前端开发",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "响应式设计"
+    ],
+    "estimatedHours": 120,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-01",
+    "topics": [
+      "HTML 基础与语义化",
+      "CSS 布局与盒模型",
+      "JavaScript 基础语法",
+      "DOM 操作与事件处理",
+      "ES6+ 常用语法",
+      "表单校验与交互组件",
+      "前端工程化入门",
+      "Git 与 GitHub Pages",
+      "前端项目实战"
+    ]
   }
 ]
