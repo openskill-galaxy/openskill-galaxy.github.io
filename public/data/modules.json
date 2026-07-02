@@ -960,5 +960,42 @@
       "JDBC",
       "Maven"
     ]
+  },
+  {
+    "id": "mod-spring-boot",
+    "slug": "module-spring-boot",
+    "title": "Spring Boot 后端项目实战",
+    "summary": "面向 Java 后端开发入门者的 Spring Boot、REST API、Controller、Service、MyBatis、事务、参数校验、异常处理、登录鉴权、JWT、接口文档、测试、部署与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Spring Boot",
+      "Java后端",
+      "REST API",
+      "MyBatis",
+      "JWT",
+      "事务",
+      "接口文档",
+      "项目实战"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-spring-boot/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-spring-boot",
+    "topics": [
+      "Spring Boot",
+      "REST API",
+      "Controller",
+      "Service",
+      "MyBatis",
+      "事务",
+      "登录认证",
+      "JWT",
+      "项目部署"
+    ]
   }
 ]
