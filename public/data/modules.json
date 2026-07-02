@@ -1214,5 +1214,113 @@
       "接口请求",
       "项目部署"
     ]
+  },
+  {
+    "id": "mod-docker-devops",
+    "slug": "module-docker-devops",
+    "title": "Docker 与 DevOps 工程实践",
+    "summary": "面向开发运维和全栈学习者的Docker镜像容器DockerfileCompose网络CICD和DevOps工程实践训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Docker",
+      "DevOps",
+      "容器",
+      "Dockerfile",
+      "Docker Compose",
+      "CI/CD",
+      "GitHub Actions",
+      "部署"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-docker-devops/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-docker-devops",
+    "topics": [
+      "Docker",
+      "镜像",
+      "容器",
+      "Dockerfile",
+      "Compose",
+      "CI/CD",
+      "部署",
+      "排错"
+    ]
+  },
+  {
+    "id": "mod-cloud-computing-basic",
+    "slug": "module-cloud-computing-basic",
+    "title": "云计算与云服务基础",
+    "summary": "面向开发运维和云计算入门者的云服务器VPC安全组对象存储云数据库CDN负载均衡IAM监控Serverless与云上部署训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "云计算",
+      "云服务器",
+      "VPC",
+      "对象存储",
+      "云数据库",
+      "CDN",
+      "Serverless",
+      "云部署"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-cloud-computing-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-cloud-computing-basic",
+    "topics": [
+      "云服务器",
+      "VPC",
+      "对象存储",
+      "云数据库",
+      "CDN",
+      "负载均衡",
+      "IAM",
+      "Serverless"
+    ]
+  },
+  {
+    "id": "mod-cybersecurity-basic",
+    "slug": "module-cybersecurity-basic",
+    "title": "网络安全与安全基础",
+    "summary": "面向开发者和安全入门者的防御性网络安全身份认证权限控制密码学Web安全SQL注入防御XSS防御CSRF防御安全编码日志审计与安全加固训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "网络安全",
+      "Web安全",
+      "安全编码",
+      "身份认证",
+      "权限控制",
+      "SQL注入防御",
+      "XSS防御",
+      "安全加固"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-cybersecurity-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-cybersecurity-basic",
+    "topics": [
+      "安全基础",
+      "认证授权",
+      "密码学",
+      "Web安全",
+      "安全编码",
+      "日志审计",
+      "漏洞防御",
+      "应急响应"
+    ]
   }
 ]
