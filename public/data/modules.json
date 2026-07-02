@@ -849,5 +849,42 @@
       "文件系统",
       "I/O"
     ]
+  },
+  {
+    "id": "mod-computer-network",
+    "slug": "module-computer-network",
+    "title": "计算机网络学习与题库训练",
+    "summary": "面向计算机专业、408 考研、后端开发和网络工程学习者的网络体系结构、物理层、数据链路层、网络层、传输层、应用层、TCP/IP、HTTP、DNS、子网划分与综合组网训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "计算机网络",
+      "408",
+      "TCP/IP",
+      "HTTP",
+      "DNS",
+      "子网划分",
+      "TCP",
+      "路由"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-computer-network/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-computer-network",
+    "topics": [
+      "网络分层",
+      "以太网",
+      "IP",
+      "子网划分",
+      "路由",
+      "TCP",
+      "UDP",
+      "HTTP",
+      "DNS"
+    ]
   }
 ]
