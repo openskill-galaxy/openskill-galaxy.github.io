@@ -774,5 +774,42 @@
       "文件操作",
       "课程设计"
     ]
+  },
+  {
+    "id": "mod-computer-organization",
+    "slug": "module-computer-organization",
+    "title": "计算机组成原理",
+    "summary": "面向计算机专业、408 考研基础、底层编程和嵌入式入门的计算机系统结构、数据表示、运算器、存储系统、指令系统、CPU、控制器、总线与 I/O 训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "计算机组成原理",
+      "408",
+      "CPU",
+      "存储系统",
+      "Cache",
+      "指令系统",
+      "数据通路",
+      "I/O"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-computer-organization/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-computer-organization",
+    "topics": [
+      "数据表示",
+      "运算器",
+      "存储器",
+      "Cache",
+      "指令系统",
+      "CPU",
+      "控制器",
+      "总线",
+      "I/O"
+    ]
   }
 ]
