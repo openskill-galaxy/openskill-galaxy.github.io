@@ -997,5 +997,113 @@
       "JWT",
       "项目部署"
     ]
+  },
+  {
+    "id": "mod-linux-shell",
+    "slug": "module-linux-shell",
+    "title": "Linux 与 Shell 基础",
+    "summary": "面向开发运维和Ubuntu使用者的Linux命令文件系统权限进程网络命令Shell脚本日志排错与自动化训练模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "Linux",
+      "Ubuntu",
+      "Shell",
+      "Bash",
+      "命令行",
+      "权限",
+      "进程",
+      "自动化脚本"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-linux-shell/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-linux-shell",
+    "topics": [
+      "Linux命令",
+      "文件系统",
+      "权限",
+      "进程管理",
+      "Shell脚本",
+      "网络命令",
+      "日志排查",
+      "自动化"
+    ]
+  },
+  {
+    "id": "mod-git-github",
+    "slug": "module-git-github",
+    "title": "Git 与 GitHub 工程协作",
+    "summary": "面向编程学习者和团队协作者的Git版本控制分支管理冲突解决远程仓库GitHubPull RequestActionsPages与开源协作训练模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "Git",
+      "GitHub",
+      "版本控制",
+      "分支",
+      "Pull Request",
+      "Actions",
+      "GitHub Pages",
+      "开源协作"
+    ],
+    "estimatedHours": 120,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-git-github/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-git-github",
+    "topics": [
+      "版本控制",
+      "Git命令",
+      "分支管理",
+      "冲突解决",
+      "远程仓库",
+      "PR",
+      "Actions",
+      "Pages"
+    ]
+  },
+  {
+    "id": "mod-software-testing",
+    "slug": "module-software-testing",
+    "title": "软件测试与质量保障",
+    "summary": "面向软件工程学生开发者测试入门者的测试基础测试用例设计黑盒白盒接口测试自动化测试缺陷管理性能测试与质量保障训练模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "软件测试",
+      "测试用例",
+      "接口测试",
+      "自动化测试",
+      "Bug管理",
+      "性能测试",
+      "质量保障",
+      "测试报告"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-software-testing/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-software-testing",
+    "topics": [
+      "测试基础",
+      "测试用例",
+      "黑盒测试",
+      "白盒测试",
+      "接口测试",
+      "自动化测试",
+      "缺陷管理",
+      "性能测试"
+    ]
   }
 ]
