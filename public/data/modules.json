@@ -886,5 +886,42 @@
       "HTTP",
       "DNS"
     ]
+  },
+  {
+    "id": "mod-database-sql",
+    "slug": "module-database-sql",
+    "title": "数据库系统与 SQL",
+    "summary": "面向计算机专业、数据分析、后端开发和数据库课程学习者的关系模型、SQL 查询、表设计、JOIN、索引、事务、范式、ER 图与数据库项目训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "数据库",
+      "SQL",
+      "关系模型",
+      "JOIN",
+      "索引",
+      "事务",
+      "范式",
+      "ER图"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-database-sql/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-database-sql",
+    "topics": [
+      "数据库系统",
+      "SQL",
+      "表设计",
+      "多表连接",
+      "索引",
+      "事务",
+      "范式",
+      "ER图",
+      "项目实战"
+    ]
   }
 ]
