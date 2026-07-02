@@ -1430,5 +1430,114 @@
       "工具调用",
       "AI评测"
     ]
+  },
+  {
+    "id": "mod-data-engineering-etl",
+    "slug": "module-data-engineering-etl",
+    "title": "数据工程与ETL管道",
+    "summary": "面向数据分析进阶、数据工程入门和AI数据准备学习者的数据采集、清洗、ETL/ELT、批处理、增量同步、数据质量、任务调度、数据管道、数据治理与项目实战。",
+    "category": "cat-data",
+    "level": "intermediate",
+    "tags": [
+      "数据工程",
+      "ETL",
+      "ELT",
+      "数据清洗",
+      "数据质量",
+      "Airflow",
+      "数据管道",
+      "数据治理"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-data-engineering-etl/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-data-engineering-etl",
+    "topics": [
+      "数据采集",
+      "数据清洗",
+      "ETL",
+      "增量同步",
+      "任务调度",
+      "数据质量",
+      "数据管道",
+      "数据治理"
+    ]
+  },
+  {
+    "id": "mod-data-warehouse-bi",
+    "slug": "module-data-warehouse-bi",
+    "title": "数据仓库与BI分析",
+    "summary": "面向数据分析师、BI报表开发和数据仓库入门学习者的数据仓库分层、维度建模、事实表、维度表、指标体系、SQL分析、数据看板、口径管理与项目实战。",
+    "category": "cat-data",
+    "level": "intermediate",
+    "tags": [
+      "数据仓库",
+      "BI",
+      "维度建模",
+      "事实表",
+      "维度表",
+      "指标体系",
+      "数据看板",
+      "SQL分析"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-data-warehouse-bi/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-data-warehouse-bi",
+    "topics": [
+      "数据仓库分层",
+      "维度建模",
+      "事实表",
+      "维度表",
+      "指标体系",
+      "BI看板",
+      "口径管理",
+      "项目实战"
+    ]
+  },
+  {
+    "id": "mod-big-data-spark",
+    "slug": "module-big-data-spark",
+    "title": "大数据与Spark基础",
+    "summary": "面向数据工程、大数据入门和AI数据平台学习者的Hadoop、HDFS、MapReduce、Hive、Spark、RDD、DataFrame、Spark SQL、批处理、性能优化与项目实战。",
+    "category": "cat-data",
+    "level": "intermediate",
+    "tags": [
+      "大数据",
+      "Spark",
+      "Hadoop",
+      "HDFS",
+      "Hive",
+      "Spark SQL",
+      "PySpark",
+      "数据平台"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-big-data-spark/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-big-data-spark",
+    "topics": [
+      "Hadoop",
+      "HDFS",
+      "MapReduce",
+      "Hive",
+      "Spark",
+      "RDD",
+      "DataFrame",
+      "Spark SQL",
+      "性能优化"
+    ]
   }
 ]
