@@ -811,5 +811,43 @@
       "总线",
       "I/O"
     ]
+  },
+  {
+    "id": "mod-operating-system",
+    "slug": "module-operating-system",
+    "title": "操作系统学习与题库训练",
+    "summary": "面向计算机专业、408 考研、后端开发和系统编程学习者的进程、线程、调度、同步互斥、死锁、内存管理、虚拟内存、文件系统、I/O 与 Linux 基础训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "操作系统",
+      "408",
+      "进程",
+      "线程",
+      "调度",
+      "死锁",
+      "虚拟内存",
+      "文件系统",
+      "Linux"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-operating-system/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-operating-system",
+    "topics": [
+      "进程",
+      "线程",
+      "调度算法",
+      "同步互斥",
+      "死锁",
+      "分页",
+      "虚拟内存",
+      "文件系统",
+      "I/O"
+    ]
   }
 ]
