@@ -700,5 +700,42 @@
       "对角化",
       "二次型"
     ]
+  },
+  {
+    "id": "mod-probability-statistics",
+    "slug": "module-probability-statistics",
+    "title": "概率论与数理统计学习训练",
+    "summary": "面向大学概率论与数理统计、期末复习、考研基础、数据分析与机器学习入门的概率、随机变量、分布、参数估计、假设检验与统计建模训练模块。",
+    "category": "cat-math",
+    "level": "intermediate",
+    "tags": [
+      "概率论",
+      "数理统计",
+      "随机变量",
+      "正态分布",
+      "参数估计",
+      "假设检验",
+      "回归分析",
+      "题库训练"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-probability-statistics/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-probability-statistics",
+    "topics": [
+      "随机事件",
+      "条件概率",
+      "随机变量",
+      "分布",
+      "数学期望",
+      "方差",
+      "中心极限定理",
+      "参数估计",
+      "假设检验"
+    ]
   }
 ]
