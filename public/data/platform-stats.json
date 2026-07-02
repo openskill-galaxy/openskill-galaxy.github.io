@@ -1,0 +1,261 @@
+{
+  "platformName": "OpenSkill Galaxy",
+  "updatedAt": "2026-07-02",
+  "moduleCount": 12,
+  "categoryCount": 10,
+  "totals": {
+    "courses": 172,
+    "lessons": 2262,
+    "knowledgePoints": 9833,
+    "questions": 41308,
+    "exams": 1165,
+    "cases": 3000,
+    "routes": 392,
+    "tags": 11769,
+    "glossary": 5245,
+    "faqs": 2522,
+    "searchIndexEntries": 61280
+  },
+  "modules": [
+    {
+      "id": "mod-digital-logic",
+      "slug": "module-digital-logic",
+      "title": "数字逻辑电路",
+      "url": "https://openskill-galaxy.github.io/module-digital-logic/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-digital-logic",
+      "counts": {
+        "courses": 20,
+        "lessons": 237,
+        "knowledgePoints": 809,
+        "questions": 5000,
+        "exams": 120,
+        "cases": 250,
+        "routes": 25,
+        "tags": 564,
+        "glossary": 358,
+        "faqs": 220,
+        "searchIndexEntries": 6894
+      }
+    },
+    {
+      "id": "mod-python-basic",
+      "slug": "module-python-basic",
+      "title": "Python 基础",
+      "url": "https://openskill-galaxy.github.io/module-python-basic/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-python-basic",
+      "counts": {
+        "courses": 12,
+        "lessons": 170,
+        "knowledgePoints": 720,
+        "questions": 2500,
+        "exams": 90,
+        "cases": 200,
+        "routes": 30,
+        "tags": 1344,
+        "glossary": 340,
+        "faqs": 200,
+        "searchIndexEntries": 4142
+      }
+    },
+    {
+      "id": "mod-algorithm-interview",
+      "slug": "module-algorithm-interview",
+      "title": "算法面试",
+      "url": "https://openskill-galaxy.github.io/module-algorithm-interview/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-algorithm-interview",
+      "counts": {
+        "courses": 14,
+        "lessons": 185,
+        "knowledgePoints": 820,
+        "questions": 3500,
+        "exams": 105,
+        "cases": 240,
+        "routes": 30,
+        "tags": 1150,
+        "glossary": 360,
+        "faqs": 200,
+        "searchIndexEntries": 5319
+      }
+    },
+    {
+      "id": "mod-ai-product-manager",
+      "slug": "module-ai-product-manager",
+      "title": "AI 产品经理",
+      "url": "https://openskill-galaxy.github.io/module-ai-product-manager/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-ai-product-manager",
+      "counts": {
+        "courses": 14,
+        "lessons": 192,
+        "knowledgePoints": 820,
+        "questions": 3000,
+        "exams": 90,
+        "cases": 280,
+        "routes": 31,
+        "tags": 1513,
+        "glossary": 360,
+        "faqs": 220,
+        "searchIndexEntries": 4886
+      }
+    },
+    {
+      "id": "mod-english-cet4",
+      "slug": "module-english-cet4",
+      "title": "英语四级",
+      "url": "https://openskill-galaxy.github.io/module-english-cet4/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-english-cet4",
+      "counts": {
+        "courses": 14,
+        "lessons": 185,
+        "knowledgePoints": 820,
+        "questions": 3500,
+        "exams": 105,
+        "cases": 240,
+        "routes": 31,
+        "tags": 2101,
+        "glossary": 1240,
+        "faqs": 220,
+        "searchIndexEntries": 6219
+      }
+    },
+    {
+      "id": "mod-frontend-dev",
+      "slug": "module-frontend-dev",
+      "title": "前端开发",
+      "url": "https://openskill-galaxy.github.io/module-frontend-dev/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-frontend-dev",
+      "counts": {
+        "courses": 14,
+        "lessons": 182,
+        "knowledgePoints": 861,
+        "questions": 3000,
+        "exams": 85,
+        "cases": 245,
+        "routes": 35,
+        "tags": 471,
+        "glossary": 352,
+        "faqs": 205,
+        "searchIndexEntries": 4600
+      }
+    },
+    {
+      "id": "mod-react-basic",
+      "slug": "module-react-basic",
+      "title": "React 基础",
+      "url": "https://openskill-galaxy.github.io/module-react-basic/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-react-basic",
+      "counts": {
+        "courses": 14,
+        "lessons": 184,
+        "knowledgePoints": 814,
+        "questions": 3000,
+        "exams": 85,
+        "cases": 245,
+        "routes": 35,
+        "tags": 372,
+        "glossary": 443,
+        "faqs": 204,
+        "searchIndexEntries": 4645
+      }
+    },
+    {
+      "id": "mod-data-analyst",
+      "slug": "module-data-analyst",
+      "title": "数据分析师",
+      "url": "https://openskill-galaxy.github.io/module-data-analyst/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-data-analyst",
+      "counts": {
+        "courses": 14,
+        "lessons": 190,
+        "knowledgePoints": 809,
+        "questions": 3008,
+        "exams": 85,
+        "cases": 260,
+        "routes": 35,
+        "tags": 1973,
+        "glossary": 362,
+        "faqs": 213,
+        "searchIndexEntries": 4582
+      }
+    },
+    {
+      "id": "mod-higher-math",
+      "slug": "module-higher-math",
+      "title": "高等数学",
+      "url": "https://openskill-galaxy.github.io/module-higher-math/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-higher-math",
+      "counts": {
+        "courses": 14,
+        "lessons": 191,
+        "knowledgePoints": 807,
+        "questions": 3700,
+        "exams": 100,
+        "cases": 260,
+        "routes": 35,
+        "tags": 532,
+        "glossary": 350,
+        "faqs": 210,
+        "searchIndexEntries": 4750
+      }
+    },
+    {
+      "id": "mod-linear-algebra",
+      "slug": "module-linear-algebra",
+      "title": "线性代数",
+      "url": "https://openskill-galaxy.github.io/module-linear-algebra/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-linear-algebra",
+      "counts": {
+        "courses": 14,
+        "lessons": 185,
+        "knowledgePoints": 800,
+        "questions": 3700,
+        "exams": 100,
+        "cases": 260,
+        "routes": 35,
+        "tags": 588,
+        "glossary": 360,
+        "faqs": 210,
+        "searchIndexEntries": 5065
+      }
+    },
+    {
+      "id": "mod-probability-statistics",
+      "slug": "module-probability-statistics",
+      "title": "概率论与数理统计",
+      "url": "https://openskill-galaxy.github.io/module-probability-statistics/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-probability-statistics",
+      "counts": {
+        "courses": 14,
+        "lessons": 181,
+        "knowledgePoints": 945,
+        "questions": 3700,
+        "exams": 100,
+        "cases": 260,
+        "routes": 35,
+        "tags": 713,
+        "glossary": 360,
+        "faqs": 210,
+        "searchIndexEntries": 5036
+      }
+    },
+    {
+      "id": "mod-c-programming",
+      "slug": "module-c-programming",
+      "title": "C 语言程序设计",
+      "url": "https://openskill-galaxy.github.io/module-c-programming/",
+      "repoUrl": "https://github.com/openskill-galaxy/module-c-programming",
+      "counts": {
+        "courses": 14,
+        "lessons": 180,
+        "knowledgePoints": 808,
+        "questions": 3700,
+        "exams": 100,
+        "cases": 260,
+        "routes": 35,
+        "tags": 448,
+        "glossary": 360,
+        "faqs": 210,
+        "searchIndexEntries": 5142
+      }
+    }
+  ]
+}
