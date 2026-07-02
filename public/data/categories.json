@@ -61,5 +61,12 @@
     "slug": "data",
     "description": "数据分析、商业分析、SQL、Python 数据处理、可视化、指标体系与数据岗位训练。",
     "icon": "📊"
+  },
+  {
+    "id": "cat-math",
+    "name": "数学与基础课",
+    "slug": "math",
+    "description": "大学数学、基础课程、计算训练、公式理解与考试复习相关模块。",
+    "icon": "∑"
   }
 ]

@@ -627,5 +627,42 @@
       "A/B 测试",
       "作品集"
     ]
+  },
+  {
+    "id": "mod-higher-math",
+    "slug": "module-higher-math",
+    "title": "高等数学学习与题库训练",
+    "summary": "面向大学高等数学、期末复习、专升本与考研基础的函数、极限、导数、积分、多元函数、微分方程、级数与综合计算训练模块。",
+    "category": "cat-math",
+    "level": "intermediate",
+    "tags": [
+      "高等数学",
+      "极限",
+      "导数",
+      "积分",
+      "多元函数",
+      "微分方程",
+      "级数",
+      "题库训练"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-higher-math/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-higher-math",
+    "topics": [
+      "函数",
+      "极限",
+      "连续",
+      "导数",
+      "中值定理",
+      "不定积分",
+      "定积分",
+      "多元函数",
+      "级数"
+    ]
   }
 ]
