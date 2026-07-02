@@ -1539,5 +1539,113 @@
       "Spark SQL",
       "性能优化"
     ]
+  },
+  {
+    "id": "mod-discrete-math",
+    "slug": "module-discrete-math",
+    "title": "离散数学基础",
+    "summary": "面向计算机专业、算法学习和408基础补弱的集合、关系、函数、命题逻辑、谓词逻辑、证明方法、组合计数、图论、树、递推关系与布尔代数训练模块。",
+    "category": "cat-math",
+    "level": "intermediate",
+    "tags": [
+      "离散数学",
+      "集合",
+      "关系",
+      "命题逻辑",
+      "谓词逻辑",
+      "图论",
+      "组合计数",
+      "证明"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-discrete-math/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-discrete-math",
+    "topics": [
+      "集合",
+      "关系",
+      "函数",
+      "逻辑",
+      "证明",
+      "组合计数",
+      "图论",
+      "树"
+    ]
+  },
+  {
+    "id": "mod-software-engineering",
+    "slug": "module-software-engineering",
+    "title": "软件工程与项目管理",
+    "summary": "面向软件工程学生、开发者和团队协作者的软件生命周期、需求分析、用例建模、UML、架构设计、敏捷开发、项目管理、质量保障、文档写作与项目交付训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "软件工程",
+      "需求分析",
+      "UML",
+      "项目管理",
+      "敏捷开发",
+      "架构设计",
+      "软件质量",
+      "课程设计"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-software-engineering/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-software-engineering",
+    "topics": [
+      "软件生命周期",
+      "需求分析",
+      "UML",
+      "架构设计",
+      "敏捷开发",
+      "项目管理",
+      "质量保障",
+      "文档"
+    ]
+  },
+  {
+    "id": "mod-compiler-principles",
+    "slug": "module-compiler-principles",
+    "title": "编译原理基础",
+    "summary": "面向计算机专业学生和语言工具学习者的编译器结构、词法分析、正规表达式、有限自动机、语法分析、LL/LR、语义分析、符号表、中间代码与课程设计训练模块。",
+    "category": "cat-cs-core",
+    "level": "advanced",
+    "tags": [
+      "编译原理",
+      "词法分析",
+      "语法分析",
+      "自动机",
+      "LL分析",
+      "LR分析",
+      "中间代码",
+      "符号表"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-compiler-principles/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-compiler-principles",
+    "topics": [
+      "编译过程",
+      "词法分析",
+      "自动机",
+      "上下文无关文法",
+      "LL分析",
+      "LR分析",
+      "语义分析",
+      "中间代码"
+    ]
   }
 ]
