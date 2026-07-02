@@ -664,5 +664,41 @@
       "多元函数",
       "级数"
     ]
+  },
+  {
+    "id": "mod-linear-algebra",
+    "slug": "module-linear-algebra",
+    "title": "线性代数学习与题库训练",
+    "summary": "面向大学线性代数、期末复习、专升本与考研基础的行列式、矩阵、向量组、线性方程组、特征值、对角化与二次型训练模块。",
+    "category": "cat-math",
+    "level": "intermediate",
+    "tags": [
+      "线性代数",
+      "行列式",
+      "矩阵",
+      "向量组",
+      "线性方程组",
+      "特征值",
+      "二次型",
+      "题库训练"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-linear-algebra/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-linear-algebra",
+    "topics": [
+      "行列式",
+      "矩阵",
+      "矩阵的秩",
+      "线性方程组",
+      "向量组",
+      "特征值",
+      "对角化",
+      "二次型"
+    ]
   }
 ]
