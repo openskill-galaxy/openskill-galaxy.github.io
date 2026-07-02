@@ -923,5 +923,42 @@
       "ER图",
       "项目实战"
     ]
+  },
+  {
+    "id": "mod-java-basic",
+    "slug": "module-java-basic",
+    "title": "Java 程序设计与后端基础",
+    "summary": "面向 Java 初学者、计算机专业学生和后端开发入门者的 Java 语法、面向对象、异常、集合、泛型、IO、多线程、JDBC、Maven 与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "Java",
+      "后端开发",
+      "面向对象",
+      "集合",
+      "多线程",
+      "JDBC",
+      "Maven",
+      "项目实战"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-java-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-java-basic",
+    "topics": [
+      "Java基础",
+      "面向对象",
+      "异常",
+      "集合框架",
+      "泛型",
+      "IO",
+      "多线程",
+      "JDBC",
+      "Maven"
+    ]
   }
 ]
