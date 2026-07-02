@@ -1647,5 +1647,114 @@
       "语义分析",
       "中间代码"
     ]
+  },
+  {
+    "id": "mod-android-kotlin",
+    "slug": "module-android-kotlin",
+    "title": "Android与Kotlin移动开发",
+    "summary": "面向移动开发入门者的Kotlin、Android Studio、Activity、布局、RecyclerView、Fragment、权限、本地存储、网络请求、Jetpack、MVVM、Compose与App项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Android",
+      "Kotlin",
+      "移动开发",
+      "Jetpack",
+      "MVVM",
+      "Compose",
+      "RecyclerView",
+      "App开发"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-android-kotlin/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-android-kotlin",
+    "topics": [
+      "Kotlin",
+      "Activity",
+      "布局",
+      "RecyclerView",
+      "Fragment",
+      "网络请求",
+      "Room",
+      "MVVM",
+      "Compose"
+    ]
+  },
+  {
+    "id": "mod-flutter-basic",
+    "slug": "module-flutter-basic",
+    "title": "Flutter跨端应用开发",
+    "summary": "面向跨端应用开发学习者的Dart、Flutter Widget、布局、状态管理、路由、表单、网络请求、本地存储、动画、主题适配、性能优化与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "跨端开发",
+      "移动开发",
+      "Widget",
+      "状态管理",
+      "路由",
+      "项目实战"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-flutter-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-flutter-basic",
+    "topics": [
+      "Dart",
+      "Widget",
+      "布局",
+      "状态管理",
+      "路由",
+      "网络请求",
+      "本地存储",
+      "动画"
+    ]
+  },
+  {
+    "id": "mod-ui-ux-design",
+    "slug": "module-ui-ux-design",
+    "title": "UI/UX设计与产品原型",
+    "summary": "面向产品经理、前端开发者和设计入门者的用户体验、用户研究、信息架构、交互设计、线框图、高保真UI、Figma、设计系统、可用性测试与作品集训练模块。",
+    "category": "cat-product-design",
+    "level": "beginner",
+    "tags": [
+      "UI设计",
+      "UX设计",
+      "产品原型",
+      "Figma",
+      "交互设计",
+      "设计系统",
+      "用户研究",
+      "作品集"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-ui-ux-design/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-ui-ux-design",
+    "topics": [
+      "用户研究",
+      "信息架构",
+      "交互设计",
+      "线框图",
+      "高保真",
+      "Figma",
+      "设计系统",
+      "可用性测试"
+    ]
   }
 ]

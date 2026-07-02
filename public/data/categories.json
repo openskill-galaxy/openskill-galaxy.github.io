@@ -75,5 +75,12 @@
     "slug": "cs-core",
     "description": "计算机组成、操作系统、计算机网络、数据结构、编译原理等计算机专业核心课程。",
     "icon": "🖥️"
+  },
+  {
+    "id": "cat-product-design",
+    "name": "产品与设计",
+    "slug": "product-design",
+    "description": "产品经理、用户体验、交互设计、UI设计、原型设计、设计系统与作品集训练。",
+    "icon": "🎨"
   }
 ]
