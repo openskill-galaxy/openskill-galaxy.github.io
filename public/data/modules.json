@@ -1105,5 +1105,114 @@
       "缺陷管理",
       "性能测试"
     ]
+  },
+  {
+    "id": "mod-typescript-basic",
+    "slug": "module-typescript-basic",
+    "title": "TypeScript 基础与工程实践",
+    "summary": "面向前端ReactNode和工程化学习者的TypeScript类型系统接口联合类型泛型工具类型类型收窄tsconfigReact与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "TypeScript",
+      "前端工程化",
+      "类型系统",
+      "泛型",
+      "React",
+      "Node",
+      "tsconfig",
+      "代码质量"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-typescript-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-typescript-basic",
+    "topics": [
+      "类型系统",
+      "接口",
+      "联合类型",
+      "泛型",
+      "工具类型",
+      "类型守卫",
+      "tsconfig",
+      "React TypeScript"
+    ]
+  },
+  {
+    "id": "mod-node-express",
+    "slug": "module-node-express",
+    "title": "Node.js 与 Express 后端开发",
+    "summary": "面向JavaScriptTypeScript和全栈开发入门者的Node.js运行时npm异步编程HTTPExpressREST API中间件JWT数据库连接与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Node.js",
+      "Express",
+      "后端开发",
+      "REST API",
+      "JWT",
+      "npm",
+      "异步编程",
+      "全栈开发"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-node-express/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-node-express",
+    "topics": [
+      "Node.js",
+      "npm",
+      "异步编程",
+      "HTTP",
+      "Express",
+      "中间件",
+      "JWT",
+      "数据库",
+      "项目部署"
+    ]
+  },
+  {
+    "id": "mod-vue-basic",
+    "slug": "module-vue-basic",
+    "title": "Vue 3 前端开发",
+    "summary": "面向Vue前端开发者的Vue3 Vite模板语法响应式组件通信Composition API VueRouter Pinia接口请求项目实战与部署训练模块。",
+    "category": "cat-programming",
+    "level": "beginner",
+    "tags": [
+      "Vue",
+      "Vue3",
+      "前端开发",
+      "Composition API",
+      "Vue Router",
+      "Pinia",
+      "Vite",
+      "项目实战"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-vue-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-vue-basic",
+    "topics": [
+      "Vue3",
+      "Vite",
+      "响应式",
+      "组件",
+      "路由",
+      "Pinia",
+      "接口请求",
+      "项目部署"
+    ]
   }
 ]
