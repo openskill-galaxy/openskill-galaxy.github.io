@@ -1322,5 +1322,113 @@
       "漏洞防御",
       "应急响应"
     ]
+  },
+  {
+    "id": "mod-machine-learning-basic",
+    "slug": "module-machine-learning-basic",
+    "title": "机器学习基础",
+    "summary": "面向Python和AI入门者的机器学习特征工程模型评估线性回归逻辑回归决策树随机森林SVM聚类降维调参项目实战。",
+    "category": "cat-ai-ml",
+    "level": "intermediate",
+    "tags": [
+      "机器学习",
+      "Python",
+      "scikit-learn",
+      "特征工程",
+      "模型评估",
+      "分类",
+      "回归",
+      "聚类"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-machine-learning-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-machine-learning-basic",
+    "topics": [
+      "监督学习",
+      "特征工程",
+      "模型评估",
+      "回归",
+      "分类",
+      "聚类",
+      "降维",
+      "调参"
+    ]
+  },
+  {
+    "id": "mod-deep-learning-basic",
+    "slug": "module-deep-learning-basic",
+    "title": "深度学习基础",
+    "summary": "面向AI入门者的神经网络反向传播激活函数优化器PyTorchCNNRNNTransformer训练调参与项目实战。",
+    "category": "cat-ai-ml",
+    "level": "intermediate",
+    "tags": [
+      "深度学习",
+      "神经网络",
+      "PyTorch",
+      "CNN",
+      "RNN",
+      "Transformer",
+      "反向传播",
+      "模型训练"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-deep-learning-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-deep-learning-basic",
+    "topics": [
+      "神经网络",
+      "反向传播",
+      "PyTorch",
+      "CNN",
+      "RNN",
+      "Attention",
+      "Transformer",
+      "训练调参"
+    ]
+  },
+  {
+    "id": "mod-llm-application",
+    "slug": "module-llm-application",
+    "title": "大模型应用开发",
+    "summary": "面向AI产品经理和开发者的LLM基础Prompt工程RAGEmbeddingAgent向量数据库工具调用评测安全成本与AI应用实战。",
+    "category": "cat-ai-ml",
+    "level": "intermediate",
+    "tags": [
+      "大模型",
+      "LLM",
+      "Prompt工程",
+      "RAG",
+      "Embedding",
+      "Agent",
+      "AI应用",
+      "向量数据库"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-02",
+    "url": "https://openskill-galaxy.github.io/module-llm-application/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-llm-application",
+    "topics": [
+      "LLM",
+      "Prompt",
+      "RAG",
+      "Embedding",
+      "向量数据库",
+      "Agent",
+      "工具调用",
+      "AI评测"
+    ]
   }
 ]
