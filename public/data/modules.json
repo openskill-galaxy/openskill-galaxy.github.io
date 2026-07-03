@@ -1865,5 +1865,113 @@
       "集群",
       "性能优化"
     ]
+  },
+  {
+    "id": "mod-system-design-basic",
+    "slug": "module-system-design-basic",
+    "title": "系统设计与架构基础",
+    "summary": "面向后端、全栈、架构入门和系统设计面试学习者的高并发、高可用、缓存、数据库扩展、消息队列、限流熔断、幂等一致性、可观测性与系统设计案例训练模块。",
+    "category": "cat-cs-core",
+    "level": "advanced",
+    "tags": [
+      "系统设计",
+      "架构设计",
+      "高并发",
+      "高可用",
+      "缓存",
+      "分库分表",
+      "限流熔断",
+      "面试"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-system-design-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-system-design-basic",
+    "topics": [
+      "高并发",
+      "负载均衡",
+      "缓存",
+      "分库分表",
+      "消息队列",
+      "限流",
+      "一致性",
+      "可观测性"
+    ]
+  },
+  {
+    "id": "mod-microservices-architecture",
+    "slug": "module-microservices-architecture",
+    "title": "微服务架构与Spring Cloud",
+    "summary": "面向Java后端和架构入门学习者的微服务拆分、服务注册发现、配置中心、OpenFeign、Gateway、Sentinel、链路追踪、分布式事务、统一鉴权与部署实战训练模块。",
+    "category": "cat-programming",
+    "level": "advanced",
+    "tags": [
+      "微服务",
+      "Spring Cloud",
+      "Nacos",
+      "Gateway",
+      "OpenFeign",
+      "Sentinel",
+      "分布式事务",
+      "后端架构"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-microservices-architecture/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-microservices-architecture",
+    "topics": [
+      "服务拆分",
+      "注册发现",
+      "配置中心",
+      "服务调用",
+      "网关",
+      "熔断限流",
+      "链路追踪",
+      "分布式事务"
+    ]
+  },
+  {
+    "id": "mod-message-queue-kafka",
+    "slug": "module-message-queue-kafka",
+    "title": "消息队列、Kafka与异步系统",
+    "summary": "面向后端、微服务、数据工程和高并发系统学习者的消息队列、异步解耦、削峰填谷、Kafka、RabbitMQ、Topic、Partition、消费组、可靠投递、幂等消费与项目实战训练模块。",
+    "category": "cat-cs-core",
+    "level": "advanced",
+    "tags": [
+      "消息队列",
+      "Kafka",
+      "RabbitMQ",
+      "异步系统",
+      "削峰填谷",
+      "消费组",
+      "幂等",
+      "分布式架构"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-message-queue-kafka/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-message-queue-kafka",
+    "topics": [
+      "消息队列",
+      "Kafka",
+      "RabbitMQ",
+      "生产者消费者",
+      "可靠投递",
+      "幂等消费",
+      "死信队列",
+      "最终一致性"
+    ]
   }
 ]
