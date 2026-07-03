@@ -1,0 +1,31 @@
+{
+  "currentVersion": "1.0.0",
+  "moduleCount": 60,
+  "completedMilestones": [
+    "60模块全部创建",
+    "60模块validate通过",
+    "60模块build通过",
+    "60模块加入portal",
+    "学习路线数据生成",
+    "能力地图数据生成",
+    "模块依赖数据生成",
+    "职业路径数据生成"
+  ],
+  "nextMilestones": [
+    "首页体验升级",
+    "搜索体验完善",
+    "路线图可视化",
+    "移动端适配",
+    "模块推荐系统"
+  ],
+  "frozenExpansion": true,
+  "recommendedNextActions": [
+    "全平台二次审查",
+    "首页UI精修",
+    "移动端适配",
+    "搜索完善",
+    "路线图可视化",
+    "文档完善",
+    "v1.0正式发布"
+  ]
+}

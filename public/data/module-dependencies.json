@@ -1,0 +1,204 @@
+[
+  {
+    "module": "module-react-basic",
+    "dependsOn": [
+      "module-frontend-dev",
+      "module-typescript-basic"
+    ]
+  },
+  {
+    "module": "module-vue-basic",
+    "dependsOn": [
+      "module-frontend-dev",
+      "module-typescript-basic"
+    ]
+  },
+  {
+    "module": "module-spring-boot",
+    "dependsOn": [
+      "module-java-basic",
+      "module-database-sql"
+    ]
+  },
+  {
+    "module": "module-node-express",
+    "dependsOn": [
+      "module-java-basic",
+      "module-database-sql",
+      "module-git-github"
+    ]
+  },
+  {
+    "module": "module-machine-learning-basic",
+    "dependsOn": [
+      "module-python-basic",
+      "module-linear-algebra",
+      "module-probability-statistics"
+    ]
+  },
+  {
+    "module": "module-deep-learning-basic",
+    "dependsOn": [
+      "module-machine-learning-basic",
+      "module-linear-algebra",
+      "module-probability-statistics"
+    ]
+  },
+  {
+    "module": "module-llm-application",
+    "dependsOn": [
+      "module-machine-learning-basic",
+      "module-deep-learning-basic",
+      "module-ai-product-manager"
+    ]
+  },
+  {
+    "module": "module-kubernetes-basic",
+    "dependsOn": [
+      "module-docker-devops",
+      "module-linux-shell",
+      "module-cloud-computing-basic"
+    ]
+  },
+  {
+    "module": "module-microservices-architecture",
+    "dependsOn": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql"
+    ]
+  },
+  {
+    "module": "module-message-queue-kafka",
+    "dependsOn": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql",
+      "module-system-design-basic"
+    ]
+  },
+  {
+    "module": "module-system-design-basic",
+    "dependsOn": [
+      "module-operating-system",
+      "module-computer-network",
+      "module-database-sql",
+      "module-redis-cache"
+    ]
+  },
+  {
+    "module": "module-distributed-systems",
+    "dependsOn": [
+      "module-operating-system",
+      "module-computer-network",
+      "module-database-sql",
+      "module-system-design-basic"
+    ]
+  },
+  {
+    "module": "module-compiler-principles",
+    "dependsOn": [
+      "module-c-programming",
+      "module-computer-organization",
+      "module-discrete-math"
+    ]
+  },
+  {
+    "module": "module-observability-sre",
+    "dependsOn": [
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-linux-shell"
+    ]
+  },
+  {
+    "module": "module-data-warehouse-bi",
+    "dependsOn": [
+      "module-database-sql",
+      "module-data-engineering-etl"
+    ]
+  },
+  {
+    "module": "module-big-data-spark",
+    "dependsOn": [
+      "module-data-engineering-etl",
+      "module-database-sql",
+      "module-linux-shell"
+    ]
+  },
+  {
+    "module": "module-cybersecurity-basic",
+    "dependsOn": [
+      "module-computer-network",
+      "module-operating-system",
+      "module-linux-shell"
+    ]
+  },
+  {
+    "module": "module-android-kotlin",
+    "dependsOn": [
+      "module-java-basic"
+    ]
+  },
+  {
+    "module": "module-flutter-basic",
+    "dependsOn": [
+      "module-frontend-dev",
+      "module-android-kotlin"
+    ]
+  },
+  {
+    "module": "module-cpp-modern",
+    "dependsOn": [
+      "module-c-programming"
+    ]
+  },
+  {
+    "module": "module-rust-basic",
+    "dependsOn": [
+      "module-c-programming",
+      "module-linux-shell"
+    ]
+  },
+  {
+    "module": "module-embedded-iot",
+    "dependsOn": [
+      "module-c-programming",
+      "module-computer-organization",
+      "module-digital-logic"
+    ]
+  },
+  {
+    "module": "module-capstone-projects",
+    "dependsOn": [
+      "module-frontend-dev",
+      "module-react-basic",
+      "module-java-basic",
+      "module-go-backend",
+      "module-database-sql",
+      "module-docker-devops",
+      "module-git-github"
+    ]
+  },
+  {
+    "module": "module-roadmap-navigator",
+    "dependsOn": [],
+    "note": "全局导航模块，无前置依赖"
+  },
+  {
+    "module": "module-ai-learning-assistant",
+    "dependsOn": [
+      "module-learning-methods",
+      "module-information-literacy"
+    ],
+    "note": "全局学习辅助模块"
+  },
+  {
+    "module": "module-cs-career-interview",
+    "dependsOn": [
+      "module-algorithm-interview",
+      "module-software-engineering",
+      "module-system-design-basic"
+    ]
+  }
+]

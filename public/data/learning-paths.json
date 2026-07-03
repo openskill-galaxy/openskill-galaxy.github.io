@@ -1,42 +1,534 @@
 [
   {
-    "id": "path-fullstack",
-    "slug": "fullstack-developer",
-    "title": "全栈工程师成长路径",
-    "summary": "从前端到后端再到部署，构建一个完整 Web 应用所需的技能组合。",
+    "id": "zero-to-programmer",
+    "title": "零基础编程入门",
+    "summary": "从零开始学习编程，掌握Python/C语言基础，建立编程思维。",
+    "targetAudience": "零基础学习者",
+    "estimatedMonths": 3,
+    "level": "beginner",
+    "modules": [
+      "module-python-basic",
+      "module-c-programming",
+      "module-git-github",
+      "module-linux-shell",
+      "module-algorithm-interview"
+    ],
+    "stages": [
+      {
+        "name": "编程基础",
+        "months": 1,
+        "modules": [
+          "module-python-basic"
+        ]
+      },
+      {
+        "name": "系统思维",
+        "months": 1,
+        "modules": [
+          "module-c-programming",
+          "module-git-github"
+        ]
+      },
+      {
+        "name": "算法入门",
+        "months": 1,
+        "modules": [
+          "module-algorithm-interview",
+          "module-linux-shell"
+        ]
+      }
+    ],
+    "outcomes": [
+      "掌握Python编程",
+      "掌握C语言基础",
+      "理解基本算法"
+    ],
+    "capstoneProjects": [
+      "用Python完成一个命令行工具"
+    ]
+  },
+  {
+    "id": "frontend-developer",
+    "title": "前端开发工程师",
+    "summary": "学习前端全链路开发技能。",
+    "targetAudience": "前端入门学习者",
+    "estimatedMonths": 6,
     "level": "intermediate",
-    "modules": ["mod-react-fund", "mod-ts-essentials", "mod-node-api", "mod-db-design", "mod-cicd"],
-    "estimatedHours": 64,
-    "tags": ["全栈", "Web", "实战"]
+    "modules": [
+      "module-frontend-dev",
+      "module-typescript-basic",
+      "module-react-basic",
+      "module-vue-basic",
+      "module-nginx-webserver"
+    ],
+    "stages": [
+      {
+        "name": "基础",
+        "months": 2,
+        "modules": [
+          "module-frontend-dev"
+        ]
+      },
+      {
+        "name": "框架",
+        "months": 3,
+        "modules": [
+          "module-typescript-basic",
+          "module-react-basic",
+          "module-vue-basic"
+        ]
+      },
+      {
+        "name": "部署",
+        "months": 1,
+        "modules": [
+          "module-nginx-webserver"
+        ]
+      }
+    ],
+    "outcomes": [
+      "能独立开发Web应用",
+      "掌握React和Vue",
+      "能部署前端项目"
+    ],
+    "capstoneProjects": [
+      "开发一个完整单页应用"
+    ]
   },
   {
-    "id": "path-devops",
-    "slug": "devops-engineer",
-    "title": "DevOps 工程师路径",
-    "summary": "从 CI/CD 到容器再到可观测性，系统化掌握 DevOps 核心能力。",
+    "id": "java-backend",
+    "title": "Java后端开发工程师",
+    "summary": "从Java基础到Spring Boot微服务。",
+    "targetAudience": "Java后端学习者",
+    "estimatedMonths": 8,
+    "level": "advanced",
+    "modules": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql",
+      "module-redis-cache",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-microservices-architecture"
+    ],
+    "stages": [
+      {
+        "name": "Java基础",
+        "months": 2,
+        "modules": [
+          "module-java-basic",
+          "module-database-sql"
+        ]
+      },
+      {
+        "name": "Spring",
+        "months": 3,
+        "modules": [
+          "module-spring-boot",
+          "module-redis-cache"
+        ]
+      },
+      {
+        "name": "微服务",
+        "months": 3,
+        "modules": [
+          "module-docker-devops",
+          "module-kubernetes-basic",
+          "module-microservices-architecture"
+        ]
+      }
+    ],
+    "outcomes": [
+      "掌握Java和Spring Boot",
+      "能设计RESTful API",
+      "理解微服务架构"
+    ],
+    "capstoneProjects": [
+      "开发一个微服务系统"
+    ]
+  },
+  {
+    "id": "go-backend",
+    "title": "Go后端与云原生",
+    "summary": "学习Go语言和云原生技术。",
+    "targetAudience": "Go语言学习者",
+    "estimatedMonths": 6,
+    "level": "advanced",
+    "modules": [
+      "module-go-backend",
+      "module-database-sql",
+      "module-redis-cache",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-observability-sre"
+    ],
+    "stages": [
+      {
+        "name": "Go基础",
+        "months": 2,
+        "modules": [
+          "module-go-backend",
+          "module-database-sql"
+        ]
+      },
+      {
+        "name": "云原生",
+        "months": 3,
+        "modules": [
+          "module-docker-devops",
+          "module-kubernetes-basic",
+          "module-redis-cache"
+        ]
+      },
+      {
+        "name": "可观测性",
+        "months": 1,
+        "modules": [
+          "module-observability-sre"
+        ]
+      }
+    ],
+    "outcomes": [
+      "掌握Go语言",
+      "能开发REST API",
+      "能部署K8s集群"
+    ],
+    "capstoneProjects": [
+      "开发并部署云原生应用"
+    ]
+  },
+  {
+    "id": "python-data",
+    "title": "Python数据分析师",
+    "summary": "学习Python数据分析全流程。",
+    "targetAudience": "数据分析入门学习者",
+    "estimatedMonths": 5,
     "level": "intermediate",
-    "modules": ["mod-cicd", "mod-docker", "mod-observability"],
-    "estimatedHours": 30,
-    "tags": ["DevOps", "自动化", "运维"]
+    "modules": [
+      "module-python-basic",
+      "module-data-analyst",
+      "module-higher-math",
+      "module-probability-statistics",
+      "module-database-sql",
+      "module-data-engineering-etl"
+    ],
+    "stages": [
+      {
+        "name": "基础",
+        "months": 2,
+        "modules": [
+          "module-python-basic",
+          "module-data-analyst",
+          "module-database-sql"
+        ]
+      },
+      {
+        "name": "数学",
+        "months": 2,
+        "modules": [
+          "module-higher-math",
+          "module-probability-statistics"
+        ]
+      },
+      {
+        "name": "工程",
+        "months": 1,
+        "modules": [
+          "module-data-engineering-etl"
+        ]
+      }
+    ],
+    "outcomes": [
+      "掌握Python数据分析",
+      "能写SQL",
+      "能做统计分析和可视化"
+    ],
+    "capstoneProjects": [
+      "完成端到端数据分析项目"
+    ]
   },
   {
-    "id": "path-ai-engineer",
-    "slug": "ai-application-engineer",
-    "title": "AI 应用工程师路径",
-    "summary": "从机器学习基础到大模型应用落地，进入 AI 工程实践。",
+    "id": "ai-llm",
+    "title": "AI与大模型应用",
+    "summary": "从机器学习到大模型应用开发。",
+    "targetAudience": "AI入门学习者",
+    "estimatedMonths": 8,
     "level": "advanced",
-    "modules": ["mod-ml-fund", "mod-llm-app", "mod-cicd"],
-    "estimatedHours": 44,
-    "tags": ["AI", "LLM", "工程化"]
+    "modules": [
+      "module-python-basic",
+      "module-linear-algebra",
+      "module-probability-statistics",
+      "module-machine-learning-basic",
+      "module-deep-learning-basic",
+      "module-llm-application",
+      "module-ai-product-manager"
+    ],
+    "stages": [
+      {
+        "name": "数学",
+        "months": 2,
+        "modules": [
+          "module-linear-algebra",
+          "module-probability-statistics",
+          "module-python-basic"
+        ]
+      },
+      {
+        "name": "ML/DL",
+        "months": 3,
+        "modules": [
+          "module-machine-learning-basic",
+          "module-deep-learning-basic"
+        ]
+      },
+      {
+        "name": "LLM",
+        "months": 3,
+        "modules": [
+          "module-llm-application",
+          "module-ai-product-manager"
+        ]
+      }
+    ],
+    "outcomes": [
+      "理解ML/DL基础",
+      "能训练简单模型",
+      "能开发RAG应用"
+    ],
+    "capstoneProjects": [
+      "开发RAG知识库问答系统"
+    ]
   },
   {
-    "id": "path-frontend-master",
-    "slug": "frontend-master",
-    "title": "前端进阶路径",
-    "summary": "从 React 基础到性能优化，向高级前端工程师迈进。",
+    "id": "cs-core",
+    "title": "计算机专业基础",
+    "summary": "系统学习计算机核心课程。",
+    "targetAudience": "计算机专业学生",
+    "estimatedMonths": 10,
     "level": "advanced",
-    "modules": ["mod-react-fund", "mod-ts-essentials", "mod-perf-web"],
-    "estimatedHours": 36,
-    "tags": ["前端", "性能", "进阶"]
+    "modules": [
+      "module-c-programming",
+      "module-computer-organization",
+      "module-operating-system",
+      "module-computer-network",
+      "module-database-sql",
+      "module-discrete-math",
+      "module-compiler-principles",
+      "module-software-engineering",
+      "module-system-design-basic"
+    ],
+    "stages": [
+      {
+        "name": "编程与数学",
+        "months": 3,
+        "modules": [
+          "module-c-programming",
+          "module-discrete-math",
+          "module-computer-organization"
+        ]
+      },
+      {
+        "name": "核心系统",
+        "months": 4,
+        "modules": [
+          "module-operating-system",
+          "module-computer-network",
+          "module-database-sql"
+        ]
+      },
+      {
+        "name": "工程与设计",
+        "months": 3,
+        "modules": [
+          "module-compiler-principles",
+          "module-software-engineering",
+          "module-system-design-basic"
+        ]
+      }
+    ],
+    "outcomes": [
+      "深入理解计算机系统",
+      "掌握OS/网络/数据库",
+      "能进行系统设计"
+    ],
+    "capstoneProjects": [
+      "设计一个迷你OS或编译器"
+    ]
+  },
+  {
+    "id": "devops-cn",
+    "title": "DevOps与云原生",
+    "summary": "学习CI/CD、K8s、监控告警。",
+    "targetAudience": "DevOps学习者",
+    "estimatedMonths": 6,
+    "level": "advanced",
+    "modules": [
+      "module-linux-shell",
+      "module-git-github",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-nginx-webserver",
+      "module-cloud-computing-basic",
+      "module-observability-sre"
+    ],
+    "stages": [
+      {
+        "name": "基础",
+        "months": 2,
+        "modules": [
+          "module-linux-shell",
+          "module-git-github",
+          "module-docker-devops"
+        ]
+      },
+      {
+        "name": "编排",
+        "months": 2,
+        "modules": [
+          "module-kubernetes-basic",
+          "module-nginx-webserver",
+          "module-cloud-computing-basic"
+        ]
+      },
+      {
+        "name": "运维",
+        "months": 2,
+        "modules": [
+          "module-observability-sre"
+        ]
+      }
+    ],
+    "outcomes": [
+      "掌握Docker和K8s",
+      "能搭建CI/CD",
+      "能配置监控告警"
+    ],
+    "capstoneProjects": [
+      "搭建完整DevOps流水线"
+    ]
+  },
+  {
+    "id": "career-prep",
+    "title": "求职作品集",
+    "summary": "全方位准备计算机求职。",
+    "targetAudience": "计算机求职者",
+    "estimatedMonths": 4,
+    "level": "intermediate",
+    "modules": [
+      "module-cs-career-interview",
+      "module-open-source-portfolio",
+      "module-technical-writing-docs",
+      "module-algorithm-interview",
+      "module-system-design-basic",
+      "module-capstone-projects"
+    ],
+    "stages": [
+      {
+        "name": "面试",
+        "months": 2,
+        "modules": [
+          "module-cs-career-interview",
+          "module-algorithm-interview"
+        ]
+      },
+      {
+        "name": "作品",
+        "months": 2,
+        "modules": [
+          "module-open-source-portfolio",
+          "module-technical-writing-docs",
+          "module-system-design-basic",
+          "module-capstone-projects"
+        ]
+      }
+    ],
+    "outcomes": [
+      "能写出技术简历",
+      "能应对技术面试",
+      "有GitHub作品集"
+    ],
+    "capstoneProjects": [
+      "完成求职作品集"
+    ]
+  },
+  {
+    "id": "fullstack-60",
+    "title": "60模块全栈成长",
+    "summary": "OpenSkill Galaxy 60模块综合学习路线。",
+    "targetAudience": "希望全面成长的开发者",
+    "estimatedMonths": 24,
+    "level": "advanced",
+    "modules": [
+      "module-python-basic",
+      "module-c-programming",
+      "module-frontend-dev",
+      "module-react-basic",
+      "module-java-basic",
+      "module-go-backend",
+      "module-database-sql",
+      "module-operating-system",
+      "module-computer-network",
+      "module-machine-learning-basic",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-system-design-basic",
+      "module-capstone-projects",
+      "module-roadmap-navigator"
+    ],
+    "stages": [
+      {
+        "name": "入门",
+        "months": 3,
+        "modules": [
+          "module-python-basic",
+          "module-c-programming",
+          "module-frontend-dev"
+        ]
+      },
+      {
+        "name": "专业",
+        "months": 6,
+        "modules": [
+          "module-java-basic",
+          "module-go-backend",
+          "module-database-sql",
+          "module-react-basic"
+        ]
+      },
+      {
+        "name": "进阶",
+        "months": 6,
+        "modules": [
+          "module-operating-system",
+          "module-computer-network",
+          "module-machine-learning-basic",
+          "module-docker-devops"
+        ]
+      },
+      {
+        "name": "高阶",
+        "months": 6,
+        "modules": [
+          "module-kubernetes-basic",
+          "module-system-design-basic",
+          "module-capstone-projects"
+        ]
+      },
+      {
+        "name": "持续",
+        "months": 3,
+        "modules": [
+          "module-roadmap-navigator"
+        ]
+      }
+    ],
+    "outcomes": [
+      "具备全栈开发能力",
+      "理解系统设计",
+      "能完成综合项目"
+    ],
+    "capstoneProjects": [
+      "完成综合毕业设计"
+    ]
   }
 ]

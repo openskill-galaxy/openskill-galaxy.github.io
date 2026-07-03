@@ -1,0 +1,336 @@
+[
+  {
+    "id": "programming",
+    "name": "编程能力",
+    "description": "编程语言基础、算法、数据结构",
+    "beginnerModules": [
+      "module-python-basic",
+      "module-c-programming",
+      "module-git-github"
+    ],
+    "intermediateModules": [
+      "module-algorithm-interview",
+      "module-java-basic",
+      "module-go-backend"
+    ],
+    "advancedModules": [
+      "module-cpp-modern",
+      "module-rust-basic",
+      "module-compiler-principles"
+    ],
+    "relatedCareers": [
+      "软件开发工程师",
+      "算法工程师"
+    ],
+    "projectSuggestions": [
+      "实现一个数据结构库",
+      "完成算法刷题100道"
+    ]
+  },
+  {
+    "id": "cs-core",
+    "name": "计算机专业基础",
+    "description": "操作系统、网络、数据库、组成原理",
+    "beginnerModules": [
+      "module-computer-organization",
+      "module-digital-logic"
+    ],
+    "intermediateModules": [
+      "module-operating-system",
+      "module-computer-network",
+      "module-database-sql"
+    ],
+    "advancedModules": [
+      "module-compiler-principles",
+      "module-system-design-basic",
+      "module-discrete-math"
+    ],
+    "relatedCareers": [
+      "系统工程师",
+      "后端工程师"
+    ],
+    "projectSuggestions": [
+      "设计一个迷你OS",
+      "完成数据库课程设计"
+    ]
+  },
+  {
+    "id": "frontend",
+    "name": "前端开发",
+    "description": "HTML/CSS/JS/React/Vue/TypeScript",
+    "beginnerModules": [
+      "module-frontend-dev"
+    ],
+    "intermediateModules": [
+      "module-typescript-basic",
+      "module-react-basic",
+      "module-vue-basic"
+    ],
+    "advancedModules": [
+      "module-ui-ux-design",
+      "module-flutter-basic"
+    ],
+    "relatedCareers": [
+      "前端工程师",
+      "全栈工程师"
+    ],
+    "projectSuggestions": [
+      "开发个人主页",
+      "完成前端项目作品集"
+    ]
+  },
+  {
+    "id": "backend",
+    "name": "后端开发",
+    "description": "Java/Spring/Go/Node/微服务",
+    "beginnerModules": [
+      "module-java-basic",
+      "module-database-sql"
+    ],
+    "intermediateModules": [
+      "module-spring-boot",
+      "module-go-backend",
+      "module-node-express"
+    ],
+    "advancedModules": [
+      "module-microservices-architecture",
+      "module-message-queue-kafka",
+      "module-distributed-systems"
+    ],
+    "relatedCareers": [
+      "后端工程师",
+      "Java工程师",
+      "Go工程师"
+    ],
+    "projectSuggestions": [
+      "开发微服务系统",
+      "实现RESTful API"
+    ]
+  },
+  {
+    "id": "data",
+    "name": "数据分析与工程",
+    "description": "Python数据分析/SQL/ETL/数仓/大数据",
+    "beginnerModules": [
+      "module-python-basic",
+      "module-data-analyst"
+    ],
+    "intermediateModules": [
+      "module-data-engineering-etl",
+      "module-data-warehouse-bi",
+      "module-database-sql"
+    ],
+    "advancedModules": [
+      "module-big-data-spark",
+      "module-machine-learning-basic"
+    ],
+    "relatedCareers": [
+      "数据分析师",
+      "数据工程师",
+      "BI工程师"
+    ],
+    "projectSuggestions": [
+      "完成数据分析报告",
+      "搭建数据管道"
+    ]
+  },
+  {
+    "id": "ai",
+    "name": "人工智能",
+    "description": "机器学习/深度学习/大模型/AI应用",
+    "beginnerModules": [
+      "module-python-basic",
+      "module-linear-algebra",
+      "module-probability-statistics"
+    ],
+    "intermediateModules": [
+      "module-machine-learning-basic",
+      "module-deep-learning-basic"
+    ],
+    "advancedModules": [
+      "module-llm-application",
+      "module-ai-product-manager"
+    ],
+    "relatedCareers": [
+      "AI工程师",
+      "ML工程师",
+      "AI产品经理"
+    ],
+    "projectSuggestions": [
+      "训练分类模型",
+      "开发RAG应用"
+    ]
+  },
+  {
+    "id": "devops",
+    "name": "DevOps与部署",
+    "description": "Docker/K8s/CI/CD/监控",
+    "beginnerModules": [
+      "module-linux-shell",
+      "module-docker-devops"
+    ],
+    "intermediateModules": [
+      "module-kubernetes-basic",
+      "module-cloud-computing-basic",
+      "module-nginx-webserver"
+    ],
+    "advancedModules": [
+      "module-observability-sre"
+    ],
+    "relatedCareers": [
+      "DevOps工程师",
+      "SRE工程师",
+      "运维工程师"
+    ],
+    "projectSuggestions": [
+      "搭建K8s集群",
+      "配置CI/CD流水线"
+    ]
+  },
+  {
+    "id": "security",
+    "name": "网络安全",
+    "description": "网络安全基础、防御策略、加密",
+    "beginnerModules": [
+      "module-computer-network",
+      "module-linux-shell"
+    ],
+    "intermediateModules": [
+      "module-cybersecurity-basic",
+      "module-operating-system"
+    ],
+    "advancedModules": [
+      "module-observability-sre"
+    ],
+    "relatedCareers": [
+      "安全工程师",
+      "安全分析师"
+    ],
+    "projectSuggestions": [
+      "完成安全审计",
+      "配置安全策略"
+    ]
+  },
+  {
+    "id": "mobile",
+    "name": "移动端开发",
+    "description": "Android/Kotlin/Flutter跨端开发",
+    "beginnerModules": [
+      "module-kotlin-basic"
+    ],
+    "intermediateModules": [
+      "module-android-kotlin",
+      "module-flutter-basic"
+    ],
+    "advancedModules": [],
+    "relatedCareers": [
+      "Android工程师",
+      "Flutter工程师",
+      "移动端工程师"
+    ],
+    "projectSuggestions": [
+      "开发Android App",
+      "开发Flutter跨端App"
+    ]
+  },
+  {
+    "id": "embedded",
+    "name": "嵌入式IoT",
+    "description": "嵌入式C/单片机/传感器/IoT",
+    "beginnerModules": [
+      "module-c-programming",
+      "module-digital-logic"
+    ],
+    "intermediateModules": [
+      "module-embedded-iot"
+    ],
+    "advancedModules": [
+      "module-computer-organization"
+    ],
+    "relatedCareers": [
+      "嵌入式工程师",
+      "IoT工程师"
+    ],
+    "projectSuggestions": [
+      "完成IoT环境监测项目"
+    ]
+  },
+  {
+    "id": "product-design",
+    "name": "产品与设计",
+    "description": "UI设计/UX/产品原型/设计系统",
+    "beginnerModules": [
+      "module-ui-ux-design"
+    ],
+    "intermediateModules": [],
+    "advancedModules": [
+      "module-ai-product-manager"
+    ],
+    "relatedCareers": [
+      "UI/UX设计师",
+      "产品经理"
+    ],
+    "projectSuggestions": [
+      "完成产品原型设计"
+    ]
+  },
+  {
+    "id": "career",
+    "name": "职业发展",
+    "description": "求职/开源/技术写作/作品集",
+    "beginnerModules": [
+      "module-cs-career-interview",
+      "module-open-source-portfolio"
+    ],
+    "intermediateModules": [
+      "module-technical-writing-docs"
+    ],
+    "advancedModules": [],
+    "relatedCareers": [
+      "所有IT岗位"
+    ],
+    "projectSuggestions": [
+      "完善GitHub作品集",
+      "写技术博客"
+    ]
+  },
+  {
+    "id": "learning-growth",
+    "name": "学习与成长",
+    "description": "学习方法/效率/信息检索/AI辅助",
+    "beginnerModules": [
+      "module-learning-methods",
+      "module-personal-productivity"
+    ],
+    "intermediateModules": [
+      "module-information-literacy",
+      "module-roadmap-navigator"
+    ],
+    "advancedModules": [
+      "module-ai-learning-assistant"
+    ],
+    "relatedCareers": [
+      "终身学习者"
+    ],
+    "projectSuggestions": [
+      "制定个人学习路线",
+      "搭建AI学习助手"
+    ]
+  },
+  {
+    "id": "project-lab",
+    "name": "综合项目实战",
+    "description": "综合项目/毕业设计/作品集项目",
+    "beginnerModules": [],
+    "intermediateModules": [
+      "module-capstone-projects"
+    ],
+    "advancedModules": [],
+    "relatedCareers": [
+      "所有IT岗位"
+    ],
+    "projectSuggestions": [
+      "完成毕业设计项目"
+    ]
+  }
+]

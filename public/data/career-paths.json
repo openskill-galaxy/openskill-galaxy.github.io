@@ -1,0 +1,287 @@
+[
+  {
+    "id": "frontend-dev",
+    "title": "前端开发工程师",
+    "summary": "负责Web前端界面开发和交互实现",
+    "requiredModules": [
+      "module-frontend-dev",
+      "module-react-basic"
+    ],
+    "recommendedModules": [
+      "module-typescript-basic",
+      "module-vue-basic",
+      "module-ui-ux-design"
+    ],
+    "projectModules": [
+      "module-open-source-portfolio",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-algorithm-interview"
+    ],
+    "portfolioAdvice": "准备3个前端项目，一个个人主页、一个后台管理、一个工具类应用"
+  },
+  {
+    "id": "java-backend",
+    "title": "Java后端工程师",
+    "summary": "负责Java后端服务和API开发",
+    "requiredModules": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql"
+    ],
+    "recommendedModules": [
+      "module-redis-cache",
+      "module-microservices-architecture",
+      "module-message-queue-kafka"
+    ],
+    "projectModules": [
+      "module-docker-devops",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-system-design-basic",
+      "module-algorithm-interview"
+    ],
+    "portfolioAdvice": "准备一个微服务项目，包含API设计、数据库设计、缓存和消息队列"
+  },
+  {
+    "id": "go-backend",
+    "title": "Go后端工程师",
+    "summary": "负责Go语言后端服务和云原生开发",
+    "requiredModules": [
+      "module-go-backend",
+      "module-database-sql"
+    ],
+    "recommendedModules": [
+      "module-redis-cache",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-observability-sre"
+    ],
+    "projectModules": [
+      "module-docker-devops",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-system-design-basic"
+    ],
+    "portfolioAdvice": "准备一个Go后端项目，展示并发编程和RESTful API设计"
+  },
+  {
+    "id": "fullstack",
+    "title": "全栈开发工程师",
+    "summary": "同时具备前端和后端开发能力",
+    "requiredModules": [
+      "module-frontend-dev",
+      "module-react-basic",
+      "module-java-basic",
+      "module-go-backend",
+      "module-database-sql"
+    ],
+    "recommendedModules": [
+      "module-typescript-basic",
+      "module-docker-devops",
+      "module-microservices-architecture"
+    ],
+    "projectModules": [
+      "module-capstone-projects",
+      "module-open-source-portfolio"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-algorithm-interview",
+      "module-system-design-basic"
+    ],
+    "portfolioAdvice": "准备一个完整全栈项目，包含前端、后端和部署"
+  },
+  {
+    "id": "data-analyst",
+    "title": "数据分析师",
+    "summary": "负责数据分析、可视化和报表",
+    "requiredModules": [
+      "module-python-basic",
+      "module-data-analyst",
+      "module-database-sql"
+    ],
+    "recommendedModules": [
+      "module-data-engineering-etl",
+      "module-probability-statistics",
+      "module-higher-math",
+      "module-big-data-spark"
+    ],
+    "projectModules": [
+      "module-data-warehouse-bi",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-algorithm-interview"
+    ],
+    "portfolioAdvice": "准备一份完整的数据分析报告，包含数据清洗、分析和可视化"
+  },
+  {
+    "id": "data-engineer",
+    "title": "数据工程师",
+    "summary": "负责数据管道和数据处理平台",
+    "requiredModules": [
+      "module-database-sql",
+      "module-data-engineering-etl",
+      "module-python-basic"
+    ],
+    "recommendedModules": [
+      "module-data-warehouse-bi",
+      "module-big-data-spark",
+      "module-linux-shell"
+    ],
+    "projectModules": [
+      "module-docker-devops",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-system-design-basic"
+    ],
+    "portfolioAdvice": "准备一个ETL管道项目，展示数据处理能力"
+  },
+  {
+    "id": "ai-developer",
+    "title": "AI应用开发者",
+    "summary": "负责AI模型训练和应用开发",
+    "requiredModules": [
+      "module-python-basic",
+      "module-machine-learning-basic",
+      "module-deep-learning-basic"
+    ],
+    "recommendedModules": [
+      "module-llm-application",
+      "module-linear-algebra",
+      "module-probability-statistics",
+      "module-data-engineering-etl"
+    ],
+    "projectModules": [
+      "module-ai-product-manager",
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-algorithm-interview"
+    ],
+    "portfolioAdvice": "准备一个RAG应用或图像分类项目"
+  },
+  {
+    "id": "ai-pm",
+    "title": "AI产品经理",
+    "summary": "负责AI产品设计和规划",
+    "requiredModules": [
+      "module-ai-product-manager",
+      "module-machine-learning-basic",
+      "module-llm-application"
+    ],
+    "recommendedModules": [
+      "module-ui-ux-design",
+      "module-data-analyst",
+      "module-deep-learning-basic"
+    ],
+    "projectModules": [
+      "module-open-source-portfolio",
+      "module-technical-writing-docs"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview"
+    ],
+    "portfolioAdvice": "准备一份AI产品PRD和原型设计"
+  },
+  {
+    "id": "devops-sre",
+    "title": "DevOps/SRE工程师",
+    "summary": "负责CI/CD、基础设施和系统稳定性",
+    "requiredModules": [
+      "module-linux-shell",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-observability-sre"
+    ],
+    "recommendedModules": [
+      "module-cloud-computing-basic",
+      "module-git-github",
+      "module-nginx-webserver"
+    ],
+    "projectModules": [
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview",
+      "module-system-design-basic"
+    ],
+    "portfolioAdvice": "准备一套完整的CI/CD流水线和监控方案"
+  },
+  {
+    "id": "cybersecurity",
+    "title": "网络安全工程师",
+    "summary": "负责网络安全防护和审计",
+    "requiredModules": [
+      "module-computer-network",
+      "module-cybersecurity-basic",
+      "module-operating-system",
+      "module-linux-shell"
+    ],
+    "recommendedModules": [
+      "module-observability-sre",
+      "module-database-sql"
+    ],
+    "projectModules": [
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview"
+    ],
+    "portfolioAdvice": "准备一份安全审计报告"
+  },
+  {
+    "id": "embedded-iot",
+    "title": "嵌入式/IoT工程师",
+    "summary": "负责嵌入式系统开发和IoT设备",
+    "requiredModules": [
+      "module-c-programming",
+      "module-embedded-iot",
+      "module-computer-organization"
+    ],
+    "recommendedModules": [
+      "module-digital-logic",
+      "module-linux-shell"
+    ],
+    "projectModules": [
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview"
+    ],
+    "portfolioAdvice": "准备一个IoT环境监测项目"
+  },
+  {
+    "id": "software-testing",
+    "title": "软件测试工程师",
+    "summary": "负责软件测试和质量保障",
+    "requiredModules": [
+      "module-software-testing",
+      "module-java-basic",
+      "module-database-sql"
+    ],
+    "recommendedModules": [
+      "module-git-github",
+      "module-docker-devops",
+      "module-frontend-dev"
+    ],
+    "projectModules": [
+      "module-capstone-projects"
+    ],
+    "interviewModules": [
+      "module-cs-career-interview"
+    ],
+    "portfolioAdvice": "准备一份完整的测试方案和测试报告"
+  }
+]

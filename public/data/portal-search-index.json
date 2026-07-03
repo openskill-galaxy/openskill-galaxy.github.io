@@ -1,0 +1,1625 @@
+[
+  {
+    "id": "mod-python-basic",
+    "type": "module",
+    "title": "Python 基础",
+    "summary": "从环境搭建到项目实战，系统学习 Python 编程语言的核心语法、数据结构、面向对象编程与标准库应用。170 课时，720 知识点，2500 道题目（8 种题型），200 案例，90 套试卷，30 学习路线。",
+    "tags": [
+      "Python",
+      "编程基础",
+      "数据结构",
+      "OOP",
+      "标准库"
+    ],
+    "url": "/module/module-python-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-digital-logic",
+    "type": "module",
+    "title": "数字逻辑电路",
+    "summary": "面向学习《数字电子技术基础》、数字逻辑电路、组合逻辑电路、时序逻辑电路、FPGA 入门、Quartus、BDF 原理图设计与课程设计的学生。",
+    "tags": [
+      "数字逻辑",
+      "数字电路",
+      "FPGA",
+      "Quartus",
+      "Verilog",
+      "课程设计"
+    ],
+    "url": "/module/module-digital-logic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-ai-product-manager",
+    "type": "module",
+    "title": "AI 产品经理训练",
+    "summary": "面向 AI 产品、Agent 产品、RAG 知识库、Prompt 工程、AI SaaS 和产品经理面试的系统训练模块。14 门课程，192 章节，820 知识点，3000 道题（7 种题型），280 案例，90 套试卷，31 学习路线。",
+    "tags": [
+      "AI 产品",
+      "产品经理",
+      "Prompt 工程",
+      "Agent",
+      "RAG",
+      "AI SaaS",
+      "作品集",
+      "面试"
+    ],
+    "url": "/module/module-ai-product-manager",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-english-cet4",
+    "type": "module",
+    "title": "英语四级备考",
+    "summary": "面向大学英语四级备考的词汇、阅读、翻译、写作、听力文本训练、模拟考试与错题复盘模块。14 门课程，185 章节，820 知识点，3500 道题（7 种题型含阅读理解），240 案例，105 套试卷，31 学习路线。所有题目均为原创模拟练习。",
+    "tags": [
+      "英语四级",
+      "CET4",
+      "词汇",
+      "阅读",
+      "翻译",
+      "写作",
+      "模拟考试",
+      "备考"
+    ],
+    "url": "/module/module-english-cet4",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-algorithm-interview",
+    "type": "module",
+    "title": "数据结构与算法刷题",
+    "summary": "面向校招、实习、技术面试和编程考试的算法学习、题库练习、模拟面试与刷题路线模块。14 门课程，185 章节，820 知识点，3500 道题（8 种题型含代码题），240 案例，105 套试卷，30 学习路线。所有题目均为原创模拟练习。",
+    "tags": [
+      "数据结构",
+      "算法",
+      "刷题",
+      "校招",
+      "面试",
+      "Python",
+      "动态规划",
+      "图搜索"
+    ],
+    "url": "/module/module-algorithm-interview",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-frontend-dev",
+    "type": "module",
+    "title": "前端开发入门",
+    "summary": "从零基础到小项目实战的前端静态学习、刷题与考试模块。覆盖 HTML 语义化、CSS 布局与动画、JavaScript 核心语法、DOM 操作、ES6+、前后端交互、Vue/React 入门、前端工程化与小项目实战。",
+    "tags": [
+      "前端开发",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "响应式设计"
+    ],
+    "url": "/module/module-frontend-dev",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-react-basic",
+    "type": "module",
+    "title": "React 入门与项目实战",
+    "summary": "面向前端学习者的 React、JSX、组件化、Hooks、Router、状态管理、静态数据加载、GitHub Pages 部署与项目实战模块。",
+    "tags": [
+      "React",
+      "前端开发",
+      "JSX",
+      "组件化",
+      "Hooks",
+      "React Router",
+      "Vite",
+      "GitHub Pages"
+    ],
+    "url": "/module/module-react-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-data-analyst",
+    "type": "module",
+    "title": "数据分析师训练",
+    "summary": "面向数据分析岗位的 Excel、SQL、Python、pandas、数据清洗、可视化、指标体系、业务分析、项目作品集与面试训练模块。",
+    "tags": [
+      "数据分析",
+      "SQL",
+      "Python",
+      "pandas",
+      "Excel",
+      "可视化",
+      "业务分析",
+      "面试"
+    ],
+    "url": "/module/module-data-analyst",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-higher-math",
+    "type": "module",
+    "title": "高等数学学习与题库训练",
+    "summary": "面向大学高等数学、期末复习、专升本与考研基础的函数、极限、导数、积分、多元函数、微分方程、级数与综合计算训练模块。",
+    "tags": [
+      "高等数学",
+      "极限",
+      "导数",
+      "积分",
+      "多元函数",
+      "微分方程",
+      "级数",
+      "题库训练"
+    ],
+    "url": "/module/module-higher-math",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-linear-algebra",
+    "type": "module",
+    "title": "线性代数学习与题库训练",
+    "summary": "面向大学线性代数、期末复习、专升本与考研基础的行列式、矩阵、向量组、线性方程组、特征值、对角化与二次型训练模块。",
+    "tags": [
+      "线性代数",
+      "行列式",
+      "矩阵",
+      "向量组",
+      "线性方程组",
+      "特征值",
+      "二次型",
+      "题库训练"
+    ],
+    "url": "/module/module-linear-algebra",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-probability-statistics",
+    "type": "module",
+    "title": "概率论与数理统计学习训练",
+    "summary": "面向大学概率论与数理统计、期末复习、考研基础、数据分析与机器学习入门的概率、随机变量、分布、参数估计、假设检验与统计建模训练模块。",
+    "tags": [
+      "概率论",
+      "数理统计",
+      "随机变量",
+      "正态分布",
+      "参数估计",
+      "假设检验",
+      "回归分析",
+      "题库训练"
+    ],
+    "url": "/module/module-probability-statistics",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-c-programming",
+    "type": "module",
+    "title": "C 语言程序设计",
+    "summary": "面向大学 C 语言课程、计算机基础、嵌入式入门和程序设计考试的 C 语法、数组、函数、指针、结构体、文件操作、编程题与课程设计训练模块。",
+    "tags": [
+      "C语言",
+      "程序设计",
+      "数组",
+      "函数",
+      "指针",
+      "结构体",
+      "文件操作",
+      "编程题"
+    ],
+    "url": "/module/module-c-programming",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-computer-organization",
+    "type": "module",
+    "title": "计算机组成原理",
+    "summary": "面向计算机专业、408 考研基础、底层编程和嵌入式入门的计算机系统结构、数据表示、运算器、存储系统、指令系统、CPU、控制器、总线与 I/O 训练模块。",
+    "tags": [
+      "计算机组成原理",
+      "408",
+      "CPU",
+      "存储系统",
+      "Cache",
+      "指令系统",
+      "数据通路",
+      "I/O"
+    ],
+    "url": "/module/module-computer-organization",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-operating-system",
+    "type": "module",
+    "title": "操作系统学习与题库训练",
+    "summary": "面向计算机专业、408 考研、后端开发和系统编程学习者的进程、线程、调度、同步互斥、死锁、内存管理、虚拟内存、文件系统、I/O 与 Linux 基础训练模块。",
+    "tags": [
+      "操作系统",
+      "408",
+      "进程",
+      "线程",
+      "调度",
+      "死锁",
+      "虚拟内存",
+      "文件系统",
+      "Linux"
+    ],
+    "url": "/module/module-operating-system",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-computer-network",
+    "type": "module",
+    "title": "计算机网络学习与题库训练",
+    "summary": "面向计算机专业、408 考研、后端开发和网络工程学习者的网络体系结构、物理层、数据链路层、网络层、传输层、应用层、TCP/IP、HTTP、DNS、子网划分与综合组网训练模块。",
+    "tags": [
+      "计算机网络",
+      "408",
+      "TCP/IP",
+      "HTTP",
+      "DNS",
+      "子网划分",
+      "TCP",
+      "路由"
+    ],
+    "url": "/module/module-computer-network",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-database-sql",
+    "type": "module",
+    "title": "数据库系统与 SQL",
+    "summary": "面向计算机专业、数据分析、后端开发和数据库课程学习者的关系模型、SQL 查询、表设计、JOIN、索引、事务、范式、ER 图与数据库项目训练模块。",
+    "tags": [
+      "数据库",
+      "SQL",
+      "关系模型",
+      "JOIN",
+      "索引",
+      "事务",
+      "范式",
+      "ER图"
+    ],
+    "url": "/module/module-database-sql",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-java-basic",
+    "type": "module",
+    "title": "Java 程序设计与后端基础",
+    "summary": "面向 Java 初学者、计算机专业学生和后端开发入门者的 Java 语法、面向对象、异常、集合、泛型、IO、多线程、JDBC、Maven 与项目实战训练模块。",
+    "tags": [
+      "Java",
+      "后端开发",
+      "面向对象",
+      "集合",
+      "多线程",
+      "JDBC",
+      "Maven",
+      "项目实战"
+    ],
+    "url": "/module/module-java-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-spring-boot",
+    "type": "module",
+    "title": "Spring Boot 后端项目实战",
+    "summary": "面向 Java 后端开发入门者的 Spring Boot、REST API、Controller、Service、MyBatis、事务、参数校验、异常处理、登录鉴权、JWT、接口文档、测试、部署与项目实战训练模块。",
+    "tags": [
+      "Spring Boot",
+      "Java后端",
+      "REST API",
+      "MyBatis",
+      "JWT",
+      "事务",
+      "接口文档",
+      "项目实战"
+    ],
+    "url": "/module/module-spring-boot",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-linux-shell",
+    "type": "module",
+    "title": "Linux 与 Shell 基础",
+    "summary": "面向开发运维和Ubuntu使用者的Linux命令文件系统权限进程网络命令Shell脚本日志排错与自动化训练模块。",
+    "tags": [
+      "Linux",
+      "Ubuntu",
+      "Shell",
+      "Bash",
+      "命令行",
+      "权限",
+      "进程",
+      "自动化脚本"
+    ],
+    "url": "/module/module-linux-shell",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-git-github",
+    "type": "module",
+    "title": "Git 与 GitHub 工程协作",
+    "summary": "面向编程学习者和团队协作者的Git版本控制分支管理冲突解决远程仓库GitHubPull RequestActionsPages与开源协作训练模块。",
+    "tags": [
+      "Git",
+      "GitHub",
+      "版本控制",
+      "分支",
+      "Pull Request",
+      "Actions",
+      "GitHub Pages",
+      "开源协作"
+    ],
+    "url": "/module/module-git-github",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-software-testing",
+    "type": "module",
+    "title": "软件测试与质量保障",
+    "summary": "面向软件工程学生开发者测试入门者的测试基础测试用例设计黑盒白盒接口测试自动化测试缺陷管理性能测试与质量保障训练模块。",
+    "tags": [
+      "软件测试",
+      "测试用例",
+      "接口测试",
+      "自动化测试",
+      "Bug管理",
+      "性能测试",
+      "质量保障",
+      "测试报告"
+    ],
+    "url": "/module/module-software-testing",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-typescript-basic",
+    "type": "module",
+    "title": "TypeScript 基础与工程实践",
+    "summary": "面向前端ReactNode和工程化学习者的TypeScript类型系统接口联合类型泛型工具类型类型收窄tsconfigReact与项目实战训练模块。",
+    "tags": [
+      "TypeScript",
+      "前端工程化",
+      "类型系统",
+      "泛型",
+      "React",
+      "Node",
+      "tsconfig",
+      "代码质量"
+    ],
+    "url": "/module/module-typescript-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-node-express",
+    "type": "module",
+    "title": "Node.js 与 Express 后端开发",
+    "summary": "面向JavaScriptTypeScript和全栈开发入门者的Node.js运行时npm异步编程HTTPExpressREST API中间件JWT数据库连接与项目实战训练模块。",
+    "tags": [
+      "Node.js",
+      "Express",
+      "后端开发",
+      "REST API",
+      "JWT",
+      "npm",
+      "异步编程",
+      "全栈开发"
+    ],
+    "url": "/module/module-node-express",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-vue-basic",
+    "type": "module",
+    "title": "Vue 3 前端开发",
+    "summary": "面向Vue前端开发者的Vue3 Vite模板语法响应式组件通信Composition API VueRouter Pinia接口请求项目实战与部署训练模块。",
+    "tags": [
+      "Vue",
+      "Vue3",
+      "前端开发",
+      "Composition API",
+      "Vue Router",
+      "Pinia",
+      "Vite",
+      "项目实战"
+    ],
+    "url": "/module/module-vue-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-docker-devops",
+    "type": "module",
+    "title": "Docker 与 DevOps 工程实践",
+    "summary": "面向开发运维和全栈学习者的Docker镜像容器DockerfileCompose网络CICD和DevOps工程实践训练模块。",
+    "tags": [
+      "Docker",
+      "DevOps",
+      "容器",
+      "Dockerfile",
+      "Docker Compose",
+      "CI/CD",
+      "GitHub Actions",
+      "部署"
+    ],
+    "url": "/module/module-docker-devops",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-cloud-computing-basic",
+    "type": "module",
+    "title": "云计算与云服务基础",
+    "summary": "面向开发运维和云计算入门者的云服务器VPC安全组对象存储云数据库CDN负载均衡IAM监控Serverless与云上部署训练模块。",
+    "tags": [
+      "云计算",
+      "云服务器",
+      "VPC",
+      "对象存储",
+      "云数据库",
+      "CDN",
+      "Serverless",
+      "云部署"
+    ],
+    "url": "/module/module-cloud-computing-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-cybersecurity-basic",
+    "type": "module",
+    "title": "网络安全与安全基础",
+    "summary": "面向开发者和安全入门者的防御性网络安全身份认证权限控制密码学Web安全SQL注入防御XSS防御CSRF防御安全编码日志审计与安全加固训练模块。",
+    "tags": [
+      "网络安全",
+      "Web安全",
+      "安全编码",
+      "身份认证",
+      "权限控制",
+      "SQL注入防御",
+      "XSS防御",
+      "安全加固"
+    ],
+    "url": "/module/module-cybersecurity-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-machine-learning-basic",
+    "type": "module",
+    "title": "机器学习基础",
+    "summary": "面向Python和AI入门者的机器学习特征工程模型评估线性回归逻辑回归决策树随机森林SVM聚类降维调参项目实战。",
+    "tags": [
+      "机器学习",
+      "Python",
+      "scikit-learn",
+      "特征工程",
+      "模型评估",
+      "分类",
+      "回归",
+      "聚类"
+    ],
+    "url": "/module/module-machine-learning-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-deep-learning-basic",
+    "type": "module",
+    "title": "深度学习基础",
+    "summary": "面向AI入门者的神经网络反向传播激活函数优化器PyTorchCNNRNNTransformer训练调参与项目实战。",
+    "tags": [
+      "深度学习",
+      "神经网络",
+      "PyTorch",
+      "CNN",
+      "RNN",
+      "Transformer",
+      "反向传播",
+      "模型训练"
+    ],
+    "url": "/module/module-deep-learning-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-llm-application",
+    "type": "module",
+    "title": "大模型应用开发",
+    "summary": "面向AI产品经理和开发者的LLM基础Prompt工程RAGEmbeddingAgent向量数据库工具调用评测安全成本与AI应用实战。",
+    "tags": [
+      "大模型",
+      "LLM",
+      "Prompt工程",
+      "RAG",
+      "Embedding",
+      "Agent",
+      "AI应用",
+      "向量数据库"
+    ],
+    "url": "/module/module-llm-application",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-data-engineering-etl",
+    "type": "module",
+    "title": "数据工程与ETL管道",
+    "summary": "面向数据分析进阶、数据工程入门和AI数据准备学习者的数据采集、清洗、ETL/ELT、批处理、增量同步、数据质量、任务调度、数据管道、数据治理与项目实战。",
+    "tags": [
+      "数据工程",
+      "ETL",
+      "ELT",
+      "数据清洗",
+      "数据质量",
+      "Airflow",
+      "数据管道",
+      "数据治理"
+    ],
+    "url": "/module/module-data-engineering-etl",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-data-warehouse-bi",
+    "type": "module",
+    "title": "数据仓库与BI分析",
+    "summary": "面向数据分析师、BI报表开发和数据仓库入门学习者的数据仓库分层、维度建模、事实表、维度表、指标体系、SQL分析、数据看板、口径管理与项目实战。",
+    "tags": [
+      "数据仓库",
+      "BI",
+      "维度建模",
+      "事实表",
+      "维度表",
+      "指标体系",
+      "数据看板",
+      "SQL分析"
+    ],
+    "url": "/module/module-data-warehouse-bi",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-big-data-spark",
+    "type": "module",
+    "title": "大数据与Spark基础",
+    "summary": "面向数据工程、大数据入门和AI数据平台学习者的Hadoop、HDFS、MapReduce、Hive、Spark、RDD、DataFrame、Spark SQL、批处理、性能优化与项目实战。",
+    "tags": [
+      "大数据",
+      "Spark",
+      "Hadoop",
+      "HDFS",
+      "Hive",
+      "Spark SQL",
+      "PySpark",
+      "数据平台"
+    ],
+    "url": "/module/module-big-data-spark",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-discrete-math",
+    "type": "module",
+    "title": "离散数学基础",
+    "summary": "面向计算机专业、算法学习和408基础补弱的集合、关系、函数、命题逻辑、谓词逻辑、证明方法、组合计数、图论、树、递推关系与布尔代数训练模块。",
+    "tags": [
+      "离散数学",
+      "集合",
+      "关系",
+      "命题逻辑",
+      "谓词逻辑",
+      "图论",
+      "组合计数",
+      "证明"
+    ],
+    "url": "/module/module-discrete-math",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-software-engineering",
+    "type": "module",
+    "title": "软件工程与项目管理",
+    "summary": "面向软件工程学生、开发者和团队协作者的软件生命周期、需求分析、用例建模、UML、架构设计、敏捷开发、项目管理、质量保障、文档写作与项目交付训练模块。",
+    "tags": [
+      "软件工程",
+      "需求分析",
+      "UML",
+      "项目管理",
+      "敏捷开发",
+      "架构设计",
+      "软件质量",
+      "课程设计"
+    ],
+    "url": "/module/module-software-engineering",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-compiler-principles",
+    "type": "module",
+    "title": "编译原理基础",
+    "summary": "面向计算机专业学生和语言工具学习者的编译器结构、词法分析、正规表达式、有限自动机、语法分析、LL/LR、语义分析、符号表、中间代码与课程设计训练模块。",
+    "tags": [
+      "编译原理",
+      "词法分析",
+      "语法分析",
+      "自动机",
+      "LL分析",
+      "LR分析",
+      "中间代码",
+      "符号表"
+    ],
+    "url": "/module/module-compiler-principles",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-android-kotlin",
+    "type": "module",
+    "title": "Android与Kotlin移动开发",
+    "summary": "面向移动开发入门者的Kotlin、Android Studio、Activity、布局、RecyclerView、Fragment、权限、本地存储、网络请求、Jetpack、MVVM、Compose与App项目实战训练模块。",
+    "tags": [
+      "Android",
+      "Kotlin",
+      "移动开发",
+      "Jetpack",
+      "MVVM",
+      "Compose",
+      "RecyclerView",
+      "App开发"
+    ],
+    "url": "/module/module-android-kotlin",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-flutter-basic",
+    "type": "module",
+    "title": "Flutter跨端应用开发",
+    "summary": "面向跨端应用开发学习者的Dart、Flutter Widget、布局、状态管理、路由、表单、网络请求、本地存储、动画、主题适配、性能优化与项目实战训练模块。",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "跨端开发",
+      "移动开发",
+      "Widget",
+      "状态管理",
+      "路由",
+      "项目实战"
+    ],
+    "url": "/module/module-flutter-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-ui-ux-design",
+    "type": "module",
+    "title": "UI/UX设计与产品原型",
+    "summary": "面向产品经理、前端开发者和设计入门者的用户体验、用户研究、信息架构、交互设计、线框图、高保真UI、Figma、设计系统、可用性测试与作品集训练模块。",
+    "tags": [
+      "UI设计",
+      "UX设计",
+      "产品原型",
+      "Figma",
+      "交互设计",
+      "设计系统",
+      "用户研究",
+      "作品集"
+    ],
+    "url": "/module/module-ui-ux-design",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-kubernetes-basic",
+    "type": "module",
+    "title": "Kubernetes与容器编排基础",
+    "summary": "面向Docker、Linux、云计算和后端部署学习者的Kubernetes、Pod、Deployment、Service、Ingress、ConfigMap、Secret、Volume、Namespace、Helm、日志排错与云原生项目部署训练模块。",
+    "tags": [
+      "Kubernetes",
+      "K8s",
+      "云原生",
+      "容器编排",
+      "Pod",
+      "Deployment",
+      "Service",
+      "Helm"
+    ],
+    "url": "/module/module-kubernetes-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-nginx-webserver",
+    "type": "module",
+    "title": "Nginx与Web服务部署",
+    "summary": "面向前端、后端、运维和全栈开发学习者的Nginx、静态资源部署、反向代理、负载均衡、HTTPS、缓存、跨域、日志、限流、性能优化与故障排查训练模块。",
+    "tags": [
+      "Nginx",
+      "Web部署",
+      "反向代理",
+      "负载均衡",
+      "HTTPS",
+      "跨域",
+      "缓存",
+      "故障排查"
+    ],
+    "url": "/module/module-nginx-webserver",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-redis-cache",
+    "type": "module",
+    "title": "Redis缓存与高性能数据服务",
+    "summary": "面向后端、高并发和数据库学习者的Redis、数据结构、缓存设计、过期策略、持久化、分布式锁、消息队列、主从哨兵、集群、缓存穿透击穿雪崩与项目实战训练模块。",
+    "tags": [
+      "Redis",
+      "缓存",
+      "高并发",
+      "分布式锁",
+      "消息队列",
+      "持久化",
+      "缓存雪崩",
+      "性能优化"
+    ],
+    "url": "/module/module-redis-cache",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-system-design-basic",
+    "type": "module",
+    "title": "系统设计与架构基础",
+    "summary": "面向后端、全栈、架构入门和系统设计面试学习者的高并发、高可用、缓存、数据库扩展、消息队列、限流熔断、幂等一致性、可观测性与系统设计案例训练模块。",
+    "tags": [
+      "系统设计",
+      "架构设计",
+      "高并发",
+      "高可用",
+      "缓存",
+      "分库分表",
+      "限流熔断",
+      "面试"
+    ],
+    "url": "/module/module-system-design-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-microservices-architecture",
+    "type": "module",
+    "title": "微服务架构与Spring Cloud",
+    "summary": "面向Java后端和架构入门学习者的微服务拆分、服务注册发现、配置中心、OpenFeign、Gateway、Sentinel、链路追踪、分布式事务、统一鉴权与部署实战训练模块。",
+    "tags": [
+      "微服务",
+      "Spring Cloud",
+      "Nacos",
+      "Gateway",
+      "OpenFeign",
+      "Sentinel",
+      "分布式事务",
+      "后端架构"
+    ],
+    "url": "/module/module-microservices-architecture",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-message-queue-kafka",
+    "type": "module",
+    "title": "消息队列、Kafka与异步系统",
+    "summary": "面向后端、微服务、数据工程和高并发系统学习者的消息队列、异步解耦、削峰填谷、Kafka、RabbitMQ、Topic、Partition、消费组、可靠投递、幂等消费与项目实战训练模块。",
+    "tags": [
+      "消息队列",
+      "Kafka",
+      "RabbitMQ",
+      "异步系统",
+      "削峰填谷",
+      "消费组",
+      "幂等",
+      "分布式架构"
+    ],
+    "url": "/module/module-message-queue-kafka",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-distributed-systems",
+    "type": "module",
+    "title": "分布式系统基础",
+    "summary": "面向后端、架构和高并发系统学习者的分布式系统、CAP、BASE、一致性模型、复制、分片、Raft、分布式事务、分布式锁、服务发现、容错与工程实践训练模块。",
+    "tags": [
+      "分布式系统",
+      "CAP",
+      "一致性",
+      "Raft",
+      "分布式事务",
+      "分布式锁",
+      "服务发现",
+      "高可用"
+    ],
+    "url": "/module/module-distributed-systems",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-go-backend",
+    "type": "module",
+    "title": "Go语言与后端服务开发",
+    "summary": "面向后端、云原生和分布式系统学习者的Go语法、结构体、接口、错误处理、goroutine、channel、context、HTTP服务、Gin、数据库、Redis、测试与项目实战训练模块。",
+    "tags": [
+      "Go",
+      "Golang",
+      "后端开发",
+      "并发编程",
+      "Gin",
+      "微服务",
+      "云原生",
+      "项目实战"
+    ],
+    "url": "/module/module-go-backend",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-observability-sre",
+    "type": "module",
+    "title": "可观测性SRE与线上稳定性",
+    "summary": "面向后端、DevOps、运维和架构学习者的日志、指标、链路追踪、Prometheus、Grafana、OpenTelemetry、告警、SLO、错误预算、故障排查、事故复盘与稳定性工程训练模块。",
+    "tags": [
+      "SRE",
+      "可观测性",
+      "Prometheus",
+      "Grafana",
+      "链路追踪",
+      "告警",
+      "SLO",
+      "故障排查"
+    ],
+    "url": "/module/module-observability-sre",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-cpp-modern",
+    "type": "module",
+    "title": "C++现代程序设计",
+    "summary": "面向C语言进阶、系统编程和算法工程学习者的现代C++、面向对象、模板、STL、智能指针、RAII、移动语义、多线程、CMake与项目实战训练模块。",
+    "tags": [
+      "C++",
+      "现代C++",
+      "STL",
+      "面向对象",
+      "模板",
+      "智能指针",
+      "多线程",
+      "CMake"
+    ],
+    "url": "/module/module-cpp-modern",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-rust-basic",
+    "type": "module",
+    "title": "Rust系统编程基础",
+    "summary": "面向系统编程、后端、云原生和安全编程学习者的Rust语法、所有权、借用、生命周期、结构体、枚举、错误处理、泛型、Trait、并发、异步与项目实战训练模块。",
+    "tags": [
+      "Rust",
+      "系统编程",
+      "所有权",
+      "借用",
+      "生命周期",
+      "Trait",
+      "并发",
+      "异步"
+    ],
+    "url": "/module/module-rust-basic",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-embedded-iot",
+    "type": "module",
+    "title": "嵌入式C与物联网基础",
+    "summary": "面向电子信息、自动化、计算机和物联网学习者的嵌入式C、MCU、GPIO、定时器、中断、UART、I2C、SPI、ADC、PWM、传感器、RTOS、MQTT与综合项目训练模块。",
+    "tags": [
+      "嵌入式",
+      "物联网",
+      "单片机",
+      "C语言",
+      "STM32",
+      "传感器",
+      "RTOS",
+      "MQTT"
+    ],
+    "url": "/module/module-embedded-iot",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-cs-career-interview",
+    "type": "module",
+    "title": "计算机求职简历与面试",
+    "summary": "面向计算机相关岗位求职者的岗位认知技术简历项目包装八股复习算法面试项目面试HR面试投递策略面试复盘与Offer选择训练。",
+    "tags": [
+      "计算机求职",
+      "技术简历",
+      "面试",
+      "校招",
+      "实习",
+      "项目包装",
+      "算法面试",
+      "HR面试"
+    ],
+    "url": "/module/module-cs-career-interview",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-open-source-portfolio",
+    "type": "module",
+    "title": "开源项目与作品集实战",
+    "summary": "面向求职开源协作和个人品牌建设的GitHub Profile项目选题README Issue PR License Release Pages作品集网站与项目展示训练。",
+    "tags": [
+      "开源",
+      "GitHub",
+      "作品集",
+      "README",
+      "Pull Request",
+      "个人主页",
+      "GitHub Pages",
+      "项目展示"
+    ],
+    "url": "/module/module-open-source-portfolio",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-technical-writing-docs",
+    "type": "module",
+    "title": "技术写作与文档工程",
+    "summary": "面向开发者产品经理开源维护者和团队协作者的Markdown README教程API文档设计文档需求文档故障复盘知识库文档站与技术表达训练。",
+    "tags": [
+      "技术写作",
+      "Markdown",
+      "README",
+      "API文档",
+      "设计文档",
+      "文档站",
+      "知识库",
+      "技术表达"
+    ],
+    "url": "/module/module-technical-writing-docs",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-learning-methods",
+    "type": "module",
+    "title": "高效学习方法与知识管理",
+    "summary": "面向大学生自学编程者和终身学习者的主动回忆间隔重复费曼学习法错题复盘知识卡片项目化学习刻意练习学习路线与个人知识管理训练模块。",
+    "tags": [
+      "学习方法",
+      "知识管理",
+      "主动回忆",
+      "间隔重复",
+      "费曼学习法",
+      "错题复盘",
+      "学习路线",
+      "个人知识库"
+    ],
+    "url": "/module/module-learning-methods",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-personal-productivity",
+    "type": "module",
+    "title": "个人效率时间管理与自我规划",
+    "summary": "面向学生开发者和求职者的时间管理目标拆解GTD OKR优先级判断周计划月计划习惯养成精力管理个人看板与长期自我规划训练模块。",
+    "tags": [
+      "时间管理",
+      "个人效率",
+      "GTD",
+      "OKR",
+      "任务管理",
+      "习惯养成",
+      "复盘",
+      "自我规划"
+    ],
+    "url": "/module/module-personal-productivity",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-information-literacy",
+    "type": "module",
+    "title": "信息检索资料整理与研究能力",
+    "summary": "面向大学生技术学习者和研究型学习者的搜索技巧关键词设计资料筛选事实核查论文阅读信息源评价引用规范资料整理研究问题拆解与调研报告训练模块。",
+    "tags": [
+      "信息检索",
+      "信息素养",
+      "资料整理",
+      "事实核查",
+      "论文阅读",
+      "研究能力",
+      "引用规范",
+      "调研报告"
+    ],
+    "url": "/module/module-information-literacy",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-capstone-projects",
+    "type": "module",
+    "title": "综合项目实战与毕业作品",
+    "summary": "面向综合项目学习者的项目选题需求分析技术选型架构设计前后端实现AI应用测试部署文档写作作品集包装与毕业设计交付训练。",
+    "tags": [
+      "综合项目",
+      "毕业设计",
+      "课程设计",
+      "作品集",
+      "项目实战",
+      "技术选型",
+      "部署上线",
+      "项目答辩"
+    ],
+    "url": "/module/module-capstone-projects",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-roadmap-navigator",
+    "type": "module",
+    "title": "学习路线规划与能力地图",
+    "summary": "面向全平台学习者的学习路线能力地图知识树模块依赖岗位方向阶段目标项目作品能力评估与个性化学习路径设计训练。",
+    "tags": [
+      "学习路线",
+      "能力地图",
+      "技能树",
+      "路线规划",
+      "岗位方向",
+      "模块导航",
+      "学习路径",
+      "能力评估"
+    ],
+    "url": "/module/module-roadmap-navigator",
+    "relatedModules": []
+  },
+  {
+    "id": "mod-ai-learning-assistant",
+    "type": "module",
+    "title": "AI辅助学习与自动化学习工作流",
+    "summary": "面向学生自学者和OpenSkill Galaxy用户的AI辅助学习计划知识解释题目生成错题复盘笔记整理代码学习资料核查工作流模板幻觉识别与合规使用训练。",
+    "tags": [
+      "AI学习",
+      "Prompt",
+      "学习助手",
+      "错题复盘",
+      "知识管理",
+      "自动化学习",
+      "事实核查",
+      "学习工作流"
+    ],
+    "url": "/module/module-ai-learning-assistant",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-frontend",
+    "type": "category",
+    "title": "前端开发",
+    "summary": "现代 Web 前端技能：框架、工程化、性能、可访问性。",
+    "tags": [
+      "前端开发"
+    ],
+    "url": "/category/frontend",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-backend",
+    "type": "category",
+    "title": "后端开发",
+    "summary": "服务端架构、API 设计、数据库与分布式系统。",
+    "tags": [
+      "后端开发"
+    ],
+    "url": "/category/backend",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-devops",
+    "type": "category",
+    "title": "DevOps",
+    "summary": "CI/CD、容器、基础设施即代码、可观测性。",
+    "tags": [
+      "DevOps"
+    ],
+    "url": "/category/devops",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-ai-ml",
+    "type": "category",
+    "title": "AI 与机器学习",
+    "summary": "数据科学、机器学习、大模型应用与实践。",
+    "tags": [
+      "AI 与机器学习"
+    ],
+    "url": "/category/ai-ml",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-soft",
+    "type": "category",
+    "title": "软技能与协作",
+    "summary": "沟通、文档、项目协作与职业发展。",
+    "tags": [
+      "软技能与协作"
+    ],
+    "url": "/category/soft-skills",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-hardware",
+    "type": "category",
+    "title": "硬件与数字系统",
+    "summary": "数字逻辑、FPGA、嵌入式、电路设计、硬件课程设计相关学习模块。",
+    "tags": [
+      "硬件与数字系统"
+    ],
+    "url": "/category/hardware",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-programming",
+    "type": "category",
+    "title": "编程语言",
+    "summary": "Python、Java、Go、Rust 等主流编程语言从入门到精通。",
+    "tags": [
+      "编程语言"
+    ],
+    "url": "/category/programming",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-language-exam",
+    "type": "category",
+    "title": "语言与考试",
+    "summary": "英语学习、语言能力、考试备考、词汇阅读与写作训练相关模块。",
+    "tags": [
+      "语言与考试"
+    ],
+    "url": "/category/language-exam",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-data",
+    "type": "category",
+    "title": "数据与分析",
+    "summary": "数据分析、商业分析、SQL、Python 数据处理、可视化、指标体系与数据岗位训练。",
+    "tags": [
+      "数据与分析"
+    ],
+    "url": "/category/data",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-math",
+    "type": "category",
+    "title": "数学与基础课",
+    "summary": "大学数学、基础课程、计算训练、公式理解与考试复习相关模块。",
+    "tags": [
+      "数学与基础课"
+    ],
+    "url": "/category/math",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-cs-core",
+    "type": "category",
+    "title": "计算机专业基础",
+    "summary": "计算机组成、操作系统、计算机网络、数据结构、编译原理等计算机专业核心课程。",
+    "tags": [
+      "计算机专业基础"
+    ],
+    "url": "/category/cs-core",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-product-design",
+    "type": "category",
+    "title": "产品与设计",
+    "summary": "产品经理、用户体验、交互设计、UI设计、原型设计、设计系统与作品集训练。",
+    "tags": [
+      "产品与设计"
+    ],
+    "url": "/category/product-design",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-career",
+    "type": "category",
+    "title": "职业发展与作品集",
+    "summary": "求职简历、面试训练、开源项目、作品集、技术写作、职业表达与个人品牌建设。",
+    "tags": [
+      "职业发展与作品集"
+    ],
+    "url": "/category/career",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-learning-growth",
+    "type": "category",
+    "title": "学习能力与个人成长",
+    "summary": "高效学习、知识管理、时间管理、信息检索、研究能力、自我规划与长期成长系统。",
+    "tags": [
+      "学习能力与个人成长"
+    ],
+    "url": "/category/learning-growth",
+    "relatedModules": []
+  },
+  {
+    "id": "cat-project-lab",
+    "type": "category",
+    "title": "综合项目与实战实验室",
+    "summary": "综合项目、课程设计、毕业设计、作品集项目、实战训练、项目展示与交付能力建设。",
+    "tags": [
+      "综合项目与实战实验室"
+    ],
+    "url": "/category/project-lab",
+    "relatedModules": []
+  },
+  {
+    "id": "zero-to-programmer",
+    "type": "learning-path",
+    "title": "零基础编程入门",
+    "summary": "从零开始学习编程，掌握Python/C语言基础，建立编程思维。",
+    "tags": [
+      "学习路线",
+      "beginner"
+    ],
+    "url": "/learning-path/zero-to-programmer",
+    "relatedModules": [
+      "module-python-basic",
+      "module-c-programming",
+      "module-git-github",
+      "module-linux-shell",
+      "module-algorithm-interview"
+    ]
+  },
+  {
+    "id": "frontend-developer",
+    "type": "learning-path",
+    "title": "前端开发工程师",
+    "summary": "学习前端全链路开发技能。",
+    "tags": [
+      "学习路线",
+      "intermediate"
+    ],
+    "url": "/learning-path/frontend-developer",
+    "relatedModules": [
+      "module-frontend-dev",
+      "module-typescript-basic",
+      "module-react-basic",
+      "module-vue-basic",
+      "module-nginx-webserver"
+    ]
+  },
+  {
+    "id": "java-backend",
+    "type": "learning-path",
+    "title": "Java后端开发工程师",
+    "summary": "从Java基础到Spring Boot微服务。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/java-backend",
+    "relatedModules": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql",
+      "module-redis-cache",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-microservices-architecture"
+    ]
+  },
+  {
+    "id": "go-backend",
+    "type": "learning-path",
+    "title": "Go后端与云原生",
+    "summary": "学习Go语言和云原生技术。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/go-backend",
+    "relatedModules": [
+      "module-go-backend",
+      "module-database-sql",
+      "module-redis-cache",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-observability-sre"
+    ]
+  },
+  {
+    "id": "python-data",
+    "type": "learning-path",
+    "title": "Python数据分析师",
+    "summary": "学习Python数据分析全流程。",
+    "tags": [
+      "学习路线",
+      "intermediate"
+    ],
+    "url": "/learning-path/python-data",
+    "relatedModules": [
+      "module-python-basic",
+      "module-data-analyst",
+      "module-higher-math",
+      "module-probability-statistics",
+      "module-database-sql",
+      "module-data-engineering-etl"
+    ]
+  },
+  {
+    "id": "ai-llm",
+    "type": "learning-path",
+    "title": "AI与大模型应用",
+    "summary": "从机器学习到大模型应用开发。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/ai-llm",
+    "relatedModules": [
+      "module-python-basic",
+      "module-linear-algebra",
+      "module-probability-statistics",
+      "module-machine-learning-basic",
+      "module-deep-learning-basic",
+      "module-llm-application",
+      "module-ai-product-manager"
+    ]
+  },
+  {
+    "id": "cs-core",
+    "type": "learning-path",
+    "title": "计算机专业基础",
+    "summary": "系统学习计算机核心课程。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/cs-core",
+    "relatedModules": [
+      "module-c-programming",
+      "module-computer-organization",
+      "module-operating-system",
+      "module-computer-network",
+      "module-database-sql",
+      "module-discrete-math",
+      "module-compiler-principles",
+      "module-software-engineering",
+      "module-system-design-basic"
+    ]
+  },
+  {
+    "id": "devops-cn",
+    "type": "learning-path",
+    "title": "DevOps与云原生",
+    "summary": "学习CI/CD、K8s、监控告警。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/devops-cn",
+    "relatedModules": [
+      "module-linux-shell",
+      "module-git-github",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-nginx-webserver",
+      "module-cloud-computing-basic",
+      "module-observability-sre"
+    ]
+  },
+  {
+    "id": "career-prep",
+    "type": "learning-path",
+    "title": "求职作品集",
+    "summary": "全方位准备计算机求职。",
+    "tags": [
+      "学习路线",
+      "intermediate"
+    ],
+    "url": "/learning-path/career-prep",
+    "relatedModules": [
+      "module-cs-career-interview",
+      "module-open-source-portfolio",
+      "module-technical-writing-docs",
+      "module-algorithm-interview",
+      "module-system-design-basic",
+      "module-capstone-projects"
+    ]
+  },
+  {
+    "id": "fullstack-60",
+    "type": "learning-path",
+    "title": "60模块全栈成长",
+    "summary": "OpenSkill Galaxy 60模块综合学习路线。",
+    "tags": [
+      "学习路线",
+      "advanced"
+    ],
+    "url": "/learning-path/fullstack-60",
+    "relatedModules": [
+      "module-python-basic",
+      "module-c-programming",
+      "module-frontend-dev",
+      "module-react-basic",
+      "module-java-basic",
+      "module-go-backend",
+      "module-database-sql",
+      "module-operating-system",
+      "module-computer-network",
+      "module-machine-learning-basic",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-system-design-basic",
+      "module-capstone-projects",
+      "module-roadmap-navigator"
+    ]
+  },
+  {
+    "id": "frontend-dev",
+    "type": "career-path",
+    "title": "前端开发工程师",
+    "summary": "负责Web前端界面开发和交互实现",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/frontend-dev",
+    "relatedModules": [
+      "module-frontend-dev",
+      "module-react-basic"
+    ]
+  },
+  {
+    "id": "java-backend",
+    "type": "career-path",
+    "title": "Java后端工程师",
+    "summary": "负责Java后端服务和API开发",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/java-backend",
+    "relatedModules": [
+      "module-java-basic",
+      "module-spring-boot",
+      "module-database-sql"
+    ]
+  },
+  {
+    "id": "go-backend",
+    "type": "career-path",
+    "title": "Go后端工程师",
+    "summary": "负责Go语言后端服务和云原生开发",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/go-backend",
+    "relatedModules": [
+      "module-go-backend",
+      "module-database-sql"
+    ]
+  },
+  {
+    "id": "fullstack",
+    "type": "career-path",
+    "title": "全栈开发工程师",
+    "summary": "同时具备前端和后端开发能力",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/fullstack",
+    "relatedModules": [
+      "module-frontend-dev",
+      "module-react-basic",
+      "module-java-basic",
+      "module-go-backend",
+      "module-database-sql"
+    ]
+  },
+  {
+    "id": "data-analyst",
+    "type": "career-path",
+    "title": "数据分析师",
+    "summary": "负责数据分析、可视化和报表",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/data-analyst",
+    "relatedModules": [
+      "module-python-basic",
+      "module-data-analyst",
+      "module-database-sql"
+    ]
+  },
+  {
+    "id": "data-engineer",
+    "type": "career-path",
+    "title": "数据工程师",
+    "summary": "负责数据管道和数据处理平台",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/data-engineer",
+    "relatedModules": [
+      "module-database-sql",
+      "module-data-engineering-etl",
+      "module-python-basic"
+    ]
+  },
+  {
+    "id": "ai-developer",
+    "type": "career-path",
+    "title": "AI应用开发者",
+    "summary": "负责AI模型训练和应用开发",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/ai-developer",
+    "relatedModules": [
+      "module-python-basic",
+      "module-machine-learning-basic",
+      "module-deep-learning-basic"
+    ]
+  },
+  {
+    "id": "ai-pm",
+    "type": "career-path",
+    "title": "AI产品经理",
+    "summary": "负责AI产品设计和规划",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/ai-pm",
+    "relatedModules": [
+      "module-ai-product-manager",
+      "module-machine-learning-basic",
+      "module-llm-application"
+    ]
+  },
+  {
+    "id": "devops-sre",
+    "type": "career-path",
+    "title": "DevOps/SRE工程师",
+    "summary": "负责CI/CD、基础设施和系统稳定性",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/devops-sre",
+    "relatedModules": [
+      "module-linux-shell",
+      "module-docker-devops",
+      "module-kubernetes-basic",
+      "module-observability-sre"
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "type": "career-path",
+    "title": "网络安全工程师",
+    "summary": "负责网络安全防护和审计",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/cybersecurity",
+    "relatedModules": [
+      "module-computer-network",
+      "module-cybersecurity-basic",
+      "module-operating-system",
+      "module-linux-shell"
+    ]
+  },
+  {
+    "id": "embedded-iot",
+    "type": "career-path",
+    "title": "嵌入式/IoT工程师",
+    "summary": "负责嵌入式系统开发和IoT设备",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/embedded-iot",
+    "relatedModules": [
+      "module-c-programming",
+      "module-embedded-iot",
+      "module-computer-organization"
+    ]
+  },
+  {
+    "id": "software-testing",
+    "type": "career-path",
+    "title": "软件测试工程师",
+    "summary": "负责软件测试和质量保障",
+    "tags": [
+      "职业方向"
+    ],
+    "url": "/career/software-testing",
+    "relatedModules": [
+      "module-software-testing",
+      "module-java-basic",
+      "module-database-sql"
+    ]
+  }
+]
