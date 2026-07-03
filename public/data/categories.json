@@ -82,5 +82,12 @@
     "slug": "product-design",
     "description": "产品经理、用户体验、交互设计、UI设计、原型设计、设计系统与作品集训练。",
     "icon": "🎨"
+  },
+  {
+    "id": "cat-career",
+    "name": "职业发展与作品集",
+    "slug": "career",
+    "description": "求职简历、面试训练、开源项目、作品集、技术写作、职业表达与个人品牌建设。",
+    "icon": "🚀"
   }
 ]

@@ -1849,5 +1849,113 @@
       "传感器",
       "物联网"
     ]
+  },
+  {
+    "id": "mod-cs-career-interview",
+    "slug": "module-cs-career-interview",
+    "title": "计算机求职简历与面试",
+    "summary": "面向计算机相关岗位求职者的岗位认知技术简历项目包装八股复习算法面试项目面试HR面试投递策略面试复盘与Offer选择训练。",
+    "category": "cat-career",
+    "level": "intermediate",
+    "tags": [
+      "计算机求职",
+      "技术简历",
+      "面试",
+      "校招",
+      "实习",
+      "项目包装",
+      "算法面试",
+      "HR面试"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-cs-career-interview/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-cs-career-interview",
+    "topics": [
+      "简历",
+      "项目经历",
+      "技术面试",
+      "算法面试",
+      "HR面试",
+      "投递策略",
+      "面试复盘",
+      "Offer选择"
+    ]
+  },
+  {
+    "id": "mod-open-source-portfolio",
+    "slug": "module-open-source-portfolio",
+    "title": "开源项目与作品集实战",
+    "summary": "面向求职开源协作和个人品牌建设的GitHub Profile项目选题README Issue PR License Release Pages作品集网站与项目展示训练。",
+    "category": "cat-career",
+    "level": "intermediate",
+    "tags": [
+      "开源",
+      "GitHub",
+      "作品集",
+      "README",
+      "Pull Request",
+      "个人主页",
+      "GitHub Pages",
+      "项目展示"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-open-source-portfolio/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-open-source-portfolio",
+    "topics": [
+      "开源协作",
+      "项目选题",
+      "README",
+      "Issue",
+      "PR",
+      "Release",
+      "作品集",
+      "个人主页"
+    ]
+  },
+  {
+    "id": "mod-technical-writing-docs",
+    "slug": "module-technical-writing-docs",
+    "title": "技术写作与文档工程",
+    "summary": "面向开发者产品经理开源维护者和团队协作者的Markdown README教程API文档设计文档需求文档故障复盘知识库文档站与技术表达训练。",
+    "category": "cat-career",
+    "level": "beginner",
+    "tags": [
+      "技术写作",
+      "Markdown",
+      "README",
+      "API文档",
+      "设计文档",
+      "文档站",
+      "知识库",
+      "技术表达"
+    ],
+    "estimatedHours": 130,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-technical-writing-docs/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-technical-writing-docs",
+    "topics": [
+      "Markdown",
+      "README",
+      "教程",
+      "API文档",
+      "设计文档",
+      "PRD",
+      "故障复盘",
+      "文档站"
+    ]
   }
 ]
