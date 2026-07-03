@@ -1756,5 +1756,114 @@
       "设计系统",
       "可用性测试"
     ]
+  },
+  {
+    "id": "mod-kubernetes-basic",
+    "slug": "module-kubernetes-basic",
+    "title": "Kubernetes与容器编排基础",
+    "summary": "面向Docker、Linux、云计算和后端部署学习者的Kubernetes、Pod、Deployment、Service、Ingress、ConfigMap、Secret、Volume、Namespace、Helm、日志排错与云原生项目部署训练模块。",
+    "category": "cat-programming",
+    "level": "advanced",
+    "tags": [
+      "Kubernetes",
+      "K8s",
+      "云原生",
+      "容器编排",
+      "Pod",
+      "Deployment",
+      "Service",
+      "Helm"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-kubernetes-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-kubernetes-basic",
+    "topics": [
+      "Pod",
+      "Deployment",
+      "Service",
+      "Ingress",
+      "ConfigMap",
+      "Secret",
+      "Volume",
+      "Helm",
+      "排错"
+    ]
+  },
+  {
+    "id": "mod-nginx-webserver",
+    "slug": "module-nginx-webserver",
+    "title": "Nginx与Web服务部署",
+    "summary": "面向前端、后端、运维和全栈开发学习者的Nginx、静态资源部署、反向代理、负载均衡、HTTPS、缓存、跨域、日志、限流、性能优化与故障排查训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Nginx",
+      "Web部署",
+      "反向代理",
+      "负载均衡",
+      "HTTPS",
+      "跨域",
+      "缓存",
+      "故障排查"
+    ],
+    "estimatedHours": 150,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-nginx-webserver/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-nginx-webserver",
+    "topics": [
+      "静态部署",
+      "反向代理",
+      "负载均衡",
+      "HTTPS",
+      "缓存",
+      "跨域",
+      "日志",
+      "排错"
+    ]
+  },
+  {
+    "id": "mod-redis-cache",
+    "slug": "module-redis-cache",
+    "title": "Redis缓存与高性能数据服务",
+    "summary": "面向后端、高并发和数据库学习者的Redis、数据结构、缓存设计、过期策略、持久化、分布式锁、消息队列、主从哨兵、集群、缓存穿透击穿雪崩与项目实战训练模块。",
+    "category": "cat-cs-core",
+    "level": "intermediate",
+    "tags": [
+      "Redis",
+      "缓存",
+      "高并发",
+      "分布式锁",
+      "消息队列",
+      "持久化",
+      "缓存雪崩",
+      "性能优化"
+    ],
+    "estimatedHours": 160,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-redis-cache/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-redis-cache",
+    "topics": [
+      "Redis数据结构",
+      "缓存设计",
+      "持久化",
+      "分布式锁",
+      "消息队列",
+      "高可用",
+      "集群",
+      "性能优化"
+    ]
   }
 ]
