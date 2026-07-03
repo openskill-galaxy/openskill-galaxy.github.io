@@ -2065,5 +2065,113 @@
       "引用规范",
       "研究报告"
     ]
+  },
+  {
+    "id": "mod-capstone-projects",
+    "slug": "module-capstone-projects",
+    "title": "综合项目实战与毕业作品",
+    "summary": "面向综合项目学习者的项目选题需求分析技术选型架构设计前后端实现AI应用测试部署文档写作作品集包装与毕业设计交付训练。",
+    "category": "cat-project-lab",
+    "level": "advanced",
+    "tags": [
+      "综合项目",
+      "毕业设计",
+      "课程设计",
+      "作品集",
+      "项目实战",
+      "技术选型",
+      "部署上线",
+      "项目答辩"
+    ],
+    "estimatedHours": 200,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-capstone-projects/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-capstone-projects",
+    "topics": [
+      "项目选题",
+      "需求分析",
+      "架构设计",
+      "全栈项目",
+      "AI项目",
+      "测试部署",
+      "文档报告",
+      "作品集"
+    ]
+  },
+  {
+    "id": "mod-roadmap-navigator",
+    "slug": "module-roadmap-navigator",
+    "title": "学习路线规划与能力地图",
+    "summary": "面向全平台学习者的学习路线能力地图知识树模块依赖岗位方向阶段目标项目作品能力评估与个性化学习路径设计训练。",
+    "category": "cat-learning-growth",
+    "level": "beginner",
+    "tags": [
+      "学习路线",
+      "能力地图",
+      "技能树",
+      "路线规划",
+      "岗位方向",
+      "模块导航",
+      "学习路径",
+      "能力评估"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-roadmap-navigator/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-roadmap-navigator",
+    "topics": [
+      "能力地图",
+      "模块依赖",
+      "学习顺序",
+      "岗位路线",
+      "阶段目标",
+      "项目作品",
+      "能力评估",
+      "路线调整"
+    ]
+  },
+  {
+    "id": "mod-ai-learning-assistant",
+    "slug": "module-ai-learning-assistant",
+    "title": "AI辅助学习与自动化学习工作流",
+    "summary": "面向学生自学者和OpenSkill Galaxy用户的AI辅助学习计划知识解释题目生成错题复盘笔记整理代码学习资料核查工作流模板幻觉识别与合规使用训练。",
+    "category": "cat-learning-growth",
+    "level": "beginner",
+    "tags": [
+      "AI学习",
+      "Prompt",
+      "学习助手",
+      "错题复盘",
+      "知识管理",
+      "自动化学习",
+      "事实核查",
+      "学习工作流"
+    ],
+    "estimatedHours": 140,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-ai-learning-assistant/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-ai-learning-assistant",
+    "topics": [
+      "学习计划",
+      "知识解释",
+      "题目生成",
+      "错题复盘",
+      "笔记整理",
+      "Prompt模板",
+      "事实核查",
+      "AI工作流"
+    ]
   }
 ]

@@ -96,5 +96,12 @@
     "slug": "learning-growth",
     "description": "高效学习、知识管理、时间管理、信息检索、研究能力、自我规划与长期成长系统。",
     "icon": "🌱"
+  },
+  {
+    "id": "cat-project-lab",
+    "name": "综合项目与实战实验室",
+    "slug": "project-lab",
+    "description": "综合项目、课程设计、毕业设计、作品集项目、实战训练、项目展示与交付能力建设。",
+    "icon": "🧪"
   }
 ]
