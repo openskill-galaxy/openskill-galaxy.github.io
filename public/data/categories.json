@@ -89,5 +89,12 @@
     "slug": "career",
     "description": "求职简历、面试训练、开源项目、作品集、技术写作、职业表达与个人品牌建设。",
     "icon": "🚀"
+  },
+  {
+    "id": "cat-learning-growth",
+    "name": "学习能力与个人成长",
+    "slug": "learning-growth",
+    "description": "高效学习、知识管理、时间管理、信息检索、研究能力、自我规划与长期成长系统。",
+    "icon": "🌱"
   }
 ]

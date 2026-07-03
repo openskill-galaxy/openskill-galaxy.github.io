@@ -1957,5 +1957,113 @@
       "故障复盘",
       "文档站"
     ]
+  },
+  {
+    "id": "mod-learning-methods",
+    "slug": "module-learning-methods",
+    "title": "高效学习方法与知识管理",
+    "summary": "面向大学生自学编程者和终身学习者的主动回忆间隔重复费曼学习法错题复盘知识卡片项目化学习刻意练习学习路线与个人知识管理训练模块。",
+    "category": "cat-learning-growth",
+    "level": "beginner",
+    "tags": [
+      "学习方法",
+      "知识管理",
+      "主动回忆",
+      "间隔重复",
+      "费曼学习法",
+      "错题复盘",
+      "学习路线",
+      "个人知识库"
+    ],
+    "estimatedHours": 130,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-learning-methods/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-learning-methods",
+    "topics": [
+      "学习计划",
+      "主动回忆",
+      "间隔重复",
+      "费曼学习法",
+      "错题本",
+      "知识卡片",
+      "项目化学习",
+      "复盘"
+    ]
+  },
+  {
+    "id": "mod-personal-productivity",
+    "slug": "module-personal-productivity",
+    "title": "个人效率时间管理与自我规划",
+    "summary": "面向学生开发者和求职者的时间管理目标拆解GTD OKR优先级判断周计划月计划习惯养成精力管理个人看板与长期自我规划训练模块。",
+    "category": "cat-learning-growth",
+    "level": "beginner",
+    "tags": [
+      "时间管理",
+      "个人效率",
+      "GTD",
+      "OKR",
+      "任务管理",
+      "习惯养成",
+      "复盘",
+      "自我规划"
+    ],
+    "estimatedHours": 120,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-personal-productivity/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-personal-productivity",
+    "topics": [
+      "目标管理",
+      "任务拆解",
+      "时间块",
+      "优先级",
+      "周计划",
+      "习惯养成",
+      "精力管理",
+      "复盘"
+    ]
+  },
+  {
+    "id": "mod-information-literacy",
+    "slug": "module-information-literacy",
+    "title": "信息检索资料整理与研究能力",
+    "summary": "面向大学生技术学习者和研究型学习者的搜索技巧关键词设计资料筛选事实核查论文阅读信息源评价引用规范资料整理研究问题拆解与调研报告训练模块。",
+    "category": "cat-learning-growth",
+    "level": "beginner",
+    "tags": [
+      "信息检索",
+      "信息素养",
+      "资料整理",
+      "事实核查",
+      "论文阅读",
+      "研究能力",
+      "引用规范",
+      "调研报告"
+    ],
+    "estimatedHours": 130,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-information-literacy/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-information-literacy",
+    "topics": [
+      "搜索技巧",
+      "关键词",
+      "信息源评价",
+      "事实核查",
+      "论文检索",
+      "资料整理",
+      "引用规范",
+      "研究报告"
+    ]
   }
 ]
