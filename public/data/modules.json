@@ -2082,5 +2082,116 @@
       "故障排查",
       "事故复盘"
     ]
+  },
+  {
+    "id": "mod-cpp-modern",
+    "slug": "module-cpp-modern",
+    "title": "C++现代程序设计",
+    "summary": "面向C语言进阶、系统编程和算法工程学习者的现代C++、面向对象、模板、STL、智能指针、RAII、移动语义、多线程、CMake与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "C++",
+      "现代C++",
+      "STL",
+      "面向对象",
+      "模板",
+      "智能指针",
+      "多线程",
+      "CMake"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-cpp-modern/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-cpp-modern",
+    "topics": [
+      "C++语法",
+      "面向对象",
+      "模板",
+      "STL",
+      "RAII",
+      "智能指针",
+      "移动语义",
+      "多线程",
+      "工程构建"
+    ]
+  },
+  {
+    "id": "mod-rust-basic",
+    "slug": "module-rust-basic",
+    "title": "Rust系统编程基础",
+    "summary": "面向系统编程、后端、云原生和安全编程学习者的Rust语法、所有权、借用、生命周期、结构体、枚举、错误处理、泛型、Trait、并发、异步与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Rust",
+      "系统编程",
+      "所有权",
+      "借用",
+      "生命周期",
+      "Trait",
+      "并发",
+      "异步"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-rust-basic/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-rust-basic",
+    "topics": [
+      "Rust语法",
+      "所有权",
+      "借用",
+      "生命周期",
+      "枚举",
+      "错误处理",
+      "Trait",
+      "并发",
+      "异步"
+    ]
+  },
+  {
+    "id": "mod-embedded-iot",
+    "slug": "module-embedded-iot",
+    "title": "嵌入式C与物联网基础",
+    "summary": "面向电子信息、自动化、计算机和物联网学习者的嵌入式C、MCU、GPIO、定时器、中断、UART、I2C、SPI、ADC、PWM、传感器、RTOS、MQTT与综合项目训练模块。",
+    "category": "cat-hardware",
+    "level": "intermediate",
+    "tags": [
+      "嵌入式",
+      "物联网",
+      "单片机",
+      "C语言",
+      "STM32",
+      "传感器",
+      "RTOS",
+      "MQTT"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-embedded-iot/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-embedded-iot",
+    "topics": [
+      "嵌入式C",
+      "GPIO",
+      "定时器",
+      "中断",
+      "UART",
+      "I2C",
+      "SPI",
+      "传感器",
+      "物联网"
+    ]
   }
 ]
