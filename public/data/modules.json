@@ -1973,5 +1973,114 @@
       "死信队列",
       "最终一致性"
     ]
+  },
+  {
+    "id": "mod-distributed-systems",
+    "slug": "module-distributed-systems",
+    "title": "分布式系统基础",
+    "summary": "面向后端、架构和高并发系统学习者的分布式系统、CAP、BASE、一致性模型、复制、分片、Raft、分布式事务、分布式锁、服务发现、容错与工程实践训练模块。",
+    "category": "cat-cs-core",
+    "level": "advanced",
+    "tags": [
+      "分布式系统",
+      "CAP",
+      "一致性",
+      "Raft",
+      "分布式事务",
+      "分布式锁",
+      "服务发现",
+      "高可用"
+    ],
+    "estimatedHours": 190,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-distributed-systems/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-distributed-systems",
+    "topics": [
+      "CAP",
+      "一致性",
+      "复制",
+      "分片",
+      "Raft",
+      "分布式事务",
+      "分布式锁",
+      "容错"
+    ]
+  },
+  {
+    "id": "mod-go-backend",
+    "slug": "module-go-backend",
+    "title": "Go语言与后端服务开发",
+    "summary": "面向后端、云原生和分布式系统学习者的Go语法、结构体、接口、错误处理、goroutine、channel、context、HTTP服务、Gin、数据库、Redis、测试与项目实战训练模块。",
+    "category": "cat-programming",
+    "level": "intermediate",
+    "tags": [
+      "Go",
+      "Golang",
+      "后端开发",
+      "并发编程",
+      "Gin",
+      "微服务",
+      "云原生",
+      "项目实战"
+    ],
+    "estimatedHours": 180,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-go-backend/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-go-backend",
+    "topics": [
+      "Go语法",
+      "接口",
+      "并发",
+      "channel",
+      "context",
+      "HTTP",
+      "Gin",
+      "数据库",
+      "测试"
+    ]
+  },
+  {
+    "id": "mod-observability-sre",
+    "slug": "module-observability-sre",
+    "title": "可观测性SRE与线上稳定性",
+    "summary": "面向后端、DevOps、运维和架构学习者的日志、指标、链路追踪、Prometheus、Grafana、OpenTelemetry、告警、SLO、错误预算、故障排查、事故复盘与稳定性工程训练模块。",
+    "category": "cat-programming",
+    "level": "advanced",
+    "tags": [
+      "SRE",
+      "可观测性",
+      "Prometheus",
+      "Grafana",
+      "链路追踪",
+      "告警",
+      "SLO",
+      "故障排查"
+    ],
+    "estimatedHours": 170,
+    "authors": [
+      "OpenSkill Community"
+    ],
+    "status": "stable",
+    "updatedAt": "2026-07-03",
+    "url": "https://openskill-galaxy.github.io/module-observability-sre/",
+    "repoUrl": "https://github.com/openskill-galaxy/module-observability-sre",
+    "topics": [
+      "日志",
+      "指标",
+      "链路追踪",
+      "监控告警",
+      "SLO",
+      "错误预算",
+      "故障排查",
+      "事故复盘"
+    ]
   }
 ]
