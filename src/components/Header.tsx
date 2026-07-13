@@ -10,25 +10,25 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 border-b border-white/10 bg-galaxy-900/40 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b border-white/[0.06] bg-slate-950/40 backdrop-blur-md">
       <div className="container-page flex h-16 items-center gap-6">
-        <Link to="/" className="flex items-center gap-2 font-semibold">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-galaxy-600 text-white">
-            ★
+        <Link to="/" className="flex items-center gap-3 font-bold transition hover:opacity-90">
+          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-galaxy-600 to-indigo-500 text-white shadow-md shadow-galaxy-600/20 text-sm">
+            ✦
           </span>
-          <span className="text-white">OpenSkill Galaxy</span>
+          <span className="text-white tracking-wider text-base font-semibold">OpenSkill <span className="text-transparent bg-clip-text bg-gradient-to-r from-galaxy-400 to-cyan-300">Galaxy</span></span>
         </Link>
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden md:flex items-center gap-1.5">
           {navItems.map((n) => (
             <NavLink
               key={n.to}
               to={n.to}
               end={n.to === "/"}
               className={({ isActive }) =>
-                `px-3 py-2 rounded-lg text-sm transition ${
+                `px-4 py-2 rounded-xl text-sm font-medium transition duration-200 ${
                   isActive
-                    ? "bg-white/10 text-white"
-                    : "text-white/70 hover:bg-white/5 hover:text-white"
+                    ? "bg-white/[0.06] text-white shadow-inner"
+                    : "text-white/60 hover:bg-white/[0.03] hover:text-white"
                 }`
               }
             >

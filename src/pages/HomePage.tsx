@@ -21,7 +21,11 @@ export default function HomePage() {
     return <p className="text-rose-300">数据加载失败：{error}</p>;
   }
   if (!data) {
-    return <p className="text-white/60">加载中…</p>;
+    return (
+      <div className="flex h-[40vh] items-center justify-center">
+        <p className="text-white/40 animate-pulse text-sm">加载中星河数据…</p>
+      </div>
+    );
   }
 
   const featured = data.modules.slice(0, 6);
@@ -30,72 +34,103 @@ export default function HomePage() {
     .slice(0, 4);
 
   return (
-    <div className="space-y-12">
-      <section className="text-center py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
-          OpenSkill Galaxy
+    <div className="space-y-16">
+      {/* Hero Section */}
+      <section className="text-center py-16 relative">
+        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-none">
+          OpenSkill <span className="text-transparent bg-clip-text bg-gradient-to-r from-galaxy-400 via-indigo-200 to-cyan-400">Galaxy</span>
         </h1>
-        <p className="mt-4 text-lg text-white/70 max-w-2xl mx-auto">
-          开放技能星河 —— 由社区共建的模块化技能学习平台。
-          浏览技能模块、跟随学习路径、追踪最新动态。
+        <p className="mt-6 text-base md:text-lg text-white/60 max-w-2xl mx-auto font-medium leading-relaxed">
+          开放技能星河 —— 由社区共建的模块化静态技能学习与自测平台。
+          探索各类技能主题、规划专属学习路径、掌握全面前沿知识。
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <Link className="btn-primary" to="/modules">浏览模块</Link>
-          <Link className="btn-ghost" to="/paths">查看路径</Link>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <Link className="btn-primary" to="/modules">浏览技能模块</Link>
+          <Link className="btn-ghost" to="/paths">查看推荐路径</Link>
         </div>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-white/60">
-          <span>{data.modules.length} 个技能模块</span>
-          <span>{data.categories.length} 个分类</span>
-          <span>{data.paths.length} 条学习路径</span>
+        <div className="mt-12 max-w-xl mx-auto grid grid-cols-3 gap-4 p-2.5 rounded-2xl border border-white/[0.04] bg-white/[0.01] backdrop-blur-sm">
+          <div className="py-2.5">
+            <span className="block text-xl font-bold text-white tracking-wide">{data.modules.length}</span>
+            <span className="text-[10px] font-semibold text-white/30 uppercase tracking-widest mt-1 block">技能模块</span>
+          </div>
+          <div className="py-2.5 border-x border-white/[0.05]">
+            <span className="block text-xl font-bold text-white tracking-wide">{data.categories.length}</span>
+            <span className="text-[10px] font-semibold text-white/30 uppercase tracking-widest mt-1 block">学科分类</span>
+          </div>
+          <div className="py-2.5">
+            <span className="block text-xl font-bold text-white tracking-wide">{data.paths.length}</span>
+            <span className="text-[10px] font-semibold text-white/30 uppercase tracking-widest mt-1 block">学习路线</span>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold text-white">精选模块</h2>
-          <Link className="text-sm text-galaxy-100 hover:text-white" to="/modules">
-            查看全部 →
+      {/* Featured Modules */}
+      <section className="space-y-6">
+        <div className="flex items-end justify-between">
+          <div>
+            <h2 className="text-xl font-extrabold tracking-wide text-white">✨ 精选推荐模块</h2>
+            <p className="text-xs text-white/40 mt-1">社区高人气精品学习自测方案</p>
+          </div>
+          <Link className="text-xs font-semibold text-galaxy-400 hover:text-galaxy-300 transition duration-200" to="/modules">
+            查看全部模块 →
           </Link>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((m) => (
             <ModuleCard key={m.id} module={m} />
           ))}
         </div>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold text-white mb-4">学习路径</h2>
-        <div className="grid gap-4 sm:grid-cols-2">
+      {/* Learning Paths */}
+      <section className="space-y-6">
+        <div>
+          <h2 className="text-xl font-extrabold tracking-wide text-white">🛣️ 技能通关路径</h2>
+          <p className="text-xs text-white/40 mt-1">系统化技能进阶导航推荐</p>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2">
           {data.paths.slice(0, 4).map((p) => (
             <Link
               key={p.id}
               to="/paths"
-              className="card p-5 hover:border-galaxy-500/40 hover:bg-white/10 transition"
+              className="card-hover p-6 block flex flex-col justify-between"
             >
-              <h3 className="text-base font-semibold text-white">{p.title}</h3>
-              <p className="mt-2 text-sm text-white/70 line-clamp-2">{p.summary}</p>
-              <p className="mt-3 text-xs text-white/50">
-                {p.modules.length} 个模块 · 约 {p.estimatedHours}h
-              </p>
+              <div>
+                <h3 className="text-base font-bold text-white tracking-wide">{p.title}</h3>
+                <p className="mt-2 text-sm text-white/60 leading-relaxed line-clamp-2">{p.summary}</p>
+              </div>
+              <div className="mt-4 flex items-center justify-between border-t border-white/[0.04] pt-4 text-xs text-white/40 font-medium">
+                <span>{p.modules.length} 个知识模块</span>
+                <span>约 {p.estimatedHours} 小时总长</span>
+              </div>
             </Link>
           ))}
         </div>
       </section>
 
-      <section>
-        <h2 className="text-xl font-semibold text-white mb-4">最新动态</h2>
-        <ul className="card divide-y divide-white/10">
-          {latestUpdates.map((u) => (
-            <li key={u.id} className="p-4">
-              <div className="flex items-center justify-between gap-3">
-                <span className="text-white font-medium">{u.title}</span>
-                <time className="text-xs text-white/50">{u.date}</time>
+      {/* Latest Updates */}
+      <section className="space-y-6">
+        <div>
+          <h2 className="text-xl font-extrabold tracking-wide text-white">📢 平台动态简报</h2>
+          <p className="text-xs text-white/40 mt-1">获取技能星河最新功能与模块发布快讯</p>
+        </div>
+        <div className="card divide-y divide-white/[0.04] overflow-hidden">
+          {latestUpdates.map((u) => {
+            const icon = u.type === "release" ? "🚀" : u.type === "event" ? "🎉" : "📰";
+            return (
+              <div key={u.id} className="p-5 flex gap-4 items-start hover:bg-white/[0.01] transition-all">
+                <span className="text-xl filter drop-shadow mt-0.5">{icon}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-sm font-bold text-white tracking-wide">{u.title}</span>
+                    <time className="text-[10px] font-semibold text-white/30 uppercase tracking-wider">{u.date}</time>
+                  </div>
+                  <p className="mt-1 text-sm text-white/60 leading-relaxed">{u.description}</p>
+                </div>
               </div>
-              <p className="mt-1 text-sm text-white/70">{u.description}</p>
-            </li>
-          ))}
-        </ul>
+            );
+          })}
+        </div>
       </section>
     </div>
   );

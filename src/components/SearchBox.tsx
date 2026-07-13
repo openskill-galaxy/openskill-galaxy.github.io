@@ -61,30 +61,39 @@ export default function SearchBox() {
     category: "分类",
   };
 
+  const typeColor: Record<SearchResult["type"], string> = {
+    module: "bg-galaxy-500/10 text-galaxy-300 border-galaxy-500/20",
+    path: "bg-cyan-500/10 text-cyan-300 border-cyan-500/20",
+    category: "bg-purple-500/10 text-purple-300 border-purple-500/20",
+  };
+
   return (
     <div ref={boxRef} className="relative">
-      <input
-        type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="搜索模块、路径、分类…"
-        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder-white/40 focus:border-galaxy-500 focus:outline-none"
-      />
+      <div className="relative flex items-center">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="搜索模块、路径、分类…"
+          className="w-full rounded-xl border border-white/10 bg-white/[0.02] pl-10 pr-4 py-2 text-sm text-white placeholder-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition duration-200"
+        />
+        <span className="absolute left-3.5 text-white/30 text-xs">🔍</span>
+      </div>
       {open && results.length > 0 && (
-        <ul className="absolute z-30 mt-1 w-full rounded-lg border border-white/10 bg-galaxy-900/95 backdrop-blur shadow-lg">
+        <ul className="absolute right-0 z-30 mt-2 w-[320px] sm:w-[400px] rounded-2xl border border-white/[0.08] bg-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden p-1.5 space-y-0.5">
           {results.map((r) => (
             <li key={`${r.type}-${r.id}`}>
               <button
                 type="button"
                 onClick={() => go(r)}
-                className="flex w-full items-start gap-2 px-3 py-2 text-left hover:bg-white/10"
+                className="flex w-full items-start gap-3 rounded-xl px-3.5 py-2.5 text-left hover:bg-white/[0.04] active:scale-[0.99] transition-all duration-150"
               >
-                <span className="mt-0.5 rounded bg-galaxy-500/20 px-1.5 py-0.5 text-xs text-galaxy-100">
+                <span className={`mt-0.5 shrink-0 rounded-md border px-1.5 py-0.5 text-[10px] font-semibold ${typeColor[r.type]}`}>
                   {typeLabel[r.type]}
                 </span>
-                <span>
-                  <span className="block text-sm text-white">{r.title}</span>
-                  <span className="block text-xs text-white/50 line-clamp-1">
+                <span className="min-w-0">
+                  <span className="block text-sm text-white font-medium truncate">{r.title}</span>
+                  <span className="block text-xs text-white/40 truncate mt-0.5">
                     {r.summary}
                   </span>
                 </span>
@@ -94,7 +103,7 @@ export default function SearchBox() {
         </ul>
       )}
       {open && results.length === 0 && (
-        <div className="absolute z-30 mt-1 w-full rounded-lg border border-white/10 bg-galaxy-900/95 px-3 py-2 text-xs text-white/50">
+        <div className="absolute right-0 z-30 mt-2 w-[320px] rounded-2xl border border-white/[0.08] bg-slate-950/95 p-4 text-xs text-white/40 shadow-2xl">
           未找到匹配结果
         </div>
       )}
