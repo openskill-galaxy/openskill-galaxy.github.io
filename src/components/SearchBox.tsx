@@ -11,6 +11,7 @@ export default function SearchBox() {
   const [index, setIndex] = useState<SearchResult[]>([]);
   const navigate = useNavigate();
   const boxRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -49,6 +50,21 @@ export default function SearchBox() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+      if (e.key === "Escape") {
+        setOpen(false);
+        inputRef.current?.blur();
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   function go(r: SearchResult) {
     setQuery("");
     setOpen(false);
@@ -71,13 +87,17 @@ export default function SearchBox() {
     <div ref={boxRef} className="relative">
       <div className="relative flex items-center">
         <input
+          ref={inputRef}
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="搜索模块、路径、分类…"
-          className="w-full rounded-xl border border-white/10 bg-white/[0.02] pl-10 pr-4 py-2 text-sm text-white placeholder-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition duration-200"
+          className="w-full rounded-xl border border-white/10 bg-white/[0.02] pl-10 pr-16 py-2 text-sm text-white placeholder-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition duration-200"
         />
         <span className="absolute left-3.5 text-white/30 text-xs">🔍</span>
+        <span className="hidden sm:inline absolute right-3 text-[9px] font-bold text-white/20 border border-white/10 rounded px-1.5 py-0.5 pointer-events-none select-none bg-white/[0.01]">
+          Ctrl+K
+        </span>
       </div>
       {open && results.length > 0 && (
         <ul className="absolute right-0 z-30 mt-2 w-[320px] sm:w-[400px] rounded-2xl border border-white/[0.08] bg-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden p-1.5 space-y-0.5">

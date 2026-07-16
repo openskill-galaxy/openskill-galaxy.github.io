@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <div className="cosmic-glow" />
       <Header />
       <main className="flex-1">
-        <div className="container-page py-8">{children}</div>
+        <div className="container-page py-8 animate-fade-in">{children}</div>
       </main>
       <Footer />
     </div>
