@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function AboutPage() {
+  useEffect(() => {
+    document.title = "关于我们 | OpenSkill Galaxy";
+  }, []);
+
   return (
     <article className="space-y-8 max-w-3xl">
       <header className="space-y-2">

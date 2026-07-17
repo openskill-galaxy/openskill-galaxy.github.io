@@ -14,6 +14,10 @@ export default function LearningPathsPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    document.title = "学习路径 | OpenSkill Galaxy";
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
     loadAll()
       .then((d) => !cancelled && setData(d))

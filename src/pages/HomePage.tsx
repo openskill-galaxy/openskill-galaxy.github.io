@@ -8,6 +8,10 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    document.title = "OpenSkill Galaxy | 开放技能星河";
+  }, []);
+
+  useEffect(() => {
     let cancelled = false;
     loadAll()
       .then((d) => !cancelled && setData(d))
@@ -22,8 +26,25 @@ export default function HomePage() {
   }
   if (!data) {
     return (
-      <div className="flex h-[40vh] items-center justify-center">
-        <p className="text-white/40 animate-pulse text-sm">加载中星河数据…</p>
+      <div className="space-y-16 animate-pulse py-8">
+        <section className="text-center space-y-6 max-w-2xl mx-auto">
+          <div className="h-12 bg-white/5 rounded-2xl w-3/4 mx-auto" />
+          <div className="h-6 bg-white/5 rounded-xl w-5/6 mx-auto" />
+          <div className="h-10 bg-white/5 rounded-xl w-40 mx-auto" />
+          <div className="h-20 bg-white/[0.02] border border-white/5 rounded-2xl grid grid-cols-3 p-2.5 mt-8">
+            <div className="h-full border-r border-white/5" />
+            <div className="h-full border-r border-white/5" />
+            <div className="h-full" />
+          </div>
+        </section>
+        <section className="space-y-6">
+          <div className="h-6 bg-white/5 rounded-xl w-32" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[1, 2, 3].map(i => (
+              <div key={i} className="h-48 rounded-2xl border border-white/5 bg-white/[0.01]" />
+            ))}
+          </div>
+        </section>
       </div>
     );
   }

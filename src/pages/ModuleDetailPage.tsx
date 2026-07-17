@@ -25,6 +25,14 @@ export default function ModuleDetailPage() {
     };
   }, []);
 
+  const module = data?.modules.find((m) => m.slug === slug);
+
+  useEffect(() => {
+    if (module) {
+      document.title = `${module.title} | OpenSkill Galaxy`;
+    }
+  }, [module]);
+
   if (error) return <p className="text-rose-300">数据加载失败：{error}</p>;
   if (!data) {
     return (
@@ -33,8 +41,6 @@ export default function ModuleDetailPage() {
       </div>
     );
   }
-
-  const module = data.modules.find((m) => m.slug === slug);
   if (!module) {
     return (
       <div className="space-y-4">
