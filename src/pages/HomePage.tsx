@@ -97,8 +97,8 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((m) => (
-            <ModuleCard key={m.id} module={m} />
+          {featured.map((m, idx) => (
+            <ModuleCard key={m.id} module={m} className={`animate-slide-up stagger-${(idx % 6) + 1}`} />
           ))}
         </div>
       </section>

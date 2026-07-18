@@ -127,8 +127,8 @@ export default function ModulesPage() {
         </div>
       ) : (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((m) => (
-            <ModuleCard key={m.id} module={m} />
+          {filtered.map((m, idx) => (
+            <ModuleCard key={m.id} module={m} className={`animate-slide-up stagger-${(idx % 6) + 1}`} />
           ))}
         </div>
       )}

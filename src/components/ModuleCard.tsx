@@ -41,10 +41,10 @@ function getModuleEmoji(slug: string): string {
   return "✨";
 }
 
-export default function ModuleCard({ module }: { module: Module }) {
+export default function ModuleCard({ module, className = "" }: { module: Module; className?: string }) {
   const emoji = getModuleEmoji(module.slug);
   return (
-    <div className="card-hover block p-6 flex flex-col justify-between">
+    <div className={`card-hover block p-6 flex flex-col justify-between ${className}`}>
       <Link to={`/modules/${module.slug}`} className="block flex-1">
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
