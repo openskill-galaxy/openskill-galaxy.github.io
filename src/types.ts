@@ -46,9 +46,10 @@ export interface UpdateItem {
 }
 
 export interface SearchResult {
-  type: "module" | "path" | "category";
+  type: "module" | "path" | "category" | "lesson" | "question";
   id: string;
   title: string;
   summary: string;
   url: string;
+  moduleTitle?: string;
 }

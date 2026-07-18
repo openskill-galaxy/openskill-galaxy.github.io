@@ -15,21 +15,39 @@ export default function SearchBox() {
 
   useEffect(() => {
     let cancelled = false;
-    loadAll()
-      .then((data) => {
+    Promise.all([
+      loadAll(),
+      fetch("/data/global-search-index.json")
+        .then((res) => res.json())
+        .catch(() => [] as any[])
+    ])
+      .then(([data, globalItems]) => {
         if (!cancelled) {
-          setIndex(
-            buildSearchIndex({
-              modules: data.modules,
-              paths: data.paths,
-              categories: data.categories,
-            })
-          );
+          const metaIndex = buildSearchIndex({
+            modules: data.modules,
+            paths: data.paths,
+            categories: data.categories,
+          });
+
+          const formattedGlobal = (globalItems || []).map((item: any) => {
+            const mod = data.modules.find((m) => m.slug === item.moduleSlug);
+            const baseUrl = mod ? mod.url || `/${mod.category}/${mod.slug}/` : "";
+            const cleanUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
+            const pagePath = item.type === "question" ? `/questions/${item.slug}` : `/lessons/${item.slug}`;
+            return {
+              type: item.type as any,
+              id: item.id,
+              title: item.title,
+              summary: item.summary,
+              url: `${cleanUrl}?page=${encodeURIComponent(pagePath)}`,
+              moduleTitle: item.moduleTitle,
+            };
+          });
+
+          setIndex([...metaIndex, ...formattedGlobal]);
         }
       })
-      .catch(() => {
-        /* 数据加载失败时静默，不影响页面渲染 */
-      });
+      .catch(() => {});
     return () => {
       cancelled = true;
     };
@@ -68,19 +86,27 @@ export default function SearchBox() {
   function go(r: SearchResult) {
     setQuery("");
     setOpen(false);
-    navigate(r.url);
+    if (r.url.startsWith("/")) {
+      navigate(r.url);
+    } else {
+      window.location.href = r.url;
+    }
   }
 
   const typeLabel: Record<SearchResult["type"], string> = {
     module: "模块",
     path: "路径",
     category: "分类",
+    lesson: "课时",
+    question: "测试",
   };
 
   const typeColor: Record<SearchResult["type"], string> = {
     module: "bg-galaxy-500/10 text-galaxy-300 border-galaxy-500/20",
     path: "bg-cyan-500/10 text-cyan-300 border-cyan-500/20",
     category: "bg-purple-500/10 text-purple-300 border-purple-500/20",
+    lesson: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
+    question: "bg-amber-500/10 text-amber-300 border-amber-500/20",
   };
 
   return (
@@ -91,7 +117,7 @@ export default function SearchBox() {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="搜索模块、路径、分类…"
+          placeholder="搜索模块、课时、评测题…"
           className="w-full rounded-xl border border-white/10 bg-white/[0.02] pl-10 pr-16 py-2 text-sm text-white placeholder-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition duration-200"
         />
         <span className="absolute left-3.5 text-white/30 text-xs">🔍</span>
@@ -100,7 +126,7 @@ export default function SearchBox() {
         </span>
       </div>
       {open && results.length > 0 && (
-        <ul className="absolute right-0 z-30 mt-2 w-[320px] sm:w-[400px] rounded-2xl border border-white/[0.08] bg-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden p-1.5 space-y-0.5">
+        <ul className="absolute right-0 z-30 mt-2 w-[320px] sm:w-[460px] rounded-2xl border border-white/[0.08] bg-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden p-1.5 space-y-0.5">
           {results.map((r) => (
             <li key={`${r.type}-${r.id}`}>
               <button
@@ -111,8 +137,15 @@ export default function SearchBox() {
                 <span className={`mt-0.5 shrink-0 rounded-md border px-1.5 py-0.5 text-[10px] font-semibold ${typeColor[r.type]}`}>
                   {typeLabel[r.type]}
                 </span>
-                <span className="min-w-0">
-                  <span className="block text-sm text-white font-medium truncate">{r.title}</span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm text-white font-medium truncate flex items-center justify-between gap-2">
+                    <span className="truncate">{r.title}</span>
+                    {r.moduleTitle && (
+                      <span className="shrink-0 text-[9px] text-indigo-300 font-semibold px-1.5 py-0.5 rounded border border-indigo-500/25 bg-indigo-500/5">
+                        {r.moduleTitle}
+                      </span>
+                    )}
+                  </span>
                   <span className="block text-xs text-white/40 truncate mt-0.5">
                     {r.summary}
                   </span>
