@@ -1,0 +1,16 @@
+{
+  "short_name": "OpenSkill",
+  "name": "OpenSkill Galaxy — 开放技能星河",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#05060b",
+  "theme_color": "#4f46e5",
+  "display": "standalone",
+  "orientation": "portrait"
+}
