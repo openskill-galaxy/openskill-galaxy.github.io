@@ -19,16 +19,16 @@ export default function CategoryTabs({ categories, active, counts, onSelect }: P
             key={t.id}
             type="button"
             onClick={() => onSelect(t.id)}
-            className={`rounded-full px-4 py-2 text-xs font-semibold tracking-wide transition duration-200 ${
+            className={`rounded-full px-4 py-2 text-xs font-bold tracking-wide transition duration-200 ${
               isActive
                 ? "bg-galaxy-600 text-white shadow-lg shadow-galaxy-600/15"
-                : "border border-white/10 text-white/60 bg-white/[0.01] hover:bg-white/[0.04] hover:text-white"
+                : "border border-slate-200 dark:border-white/10 text-slate-700 dark:text-white/60 bg-slate-100/60 dark:bg-white/[0.01] hover:bg-slate-200 dark:hover:bg-white/[0.04] hover:text-slate-900 dark:hover:text-white"
             }`}
           >
             {t.name}
             {typeof c === "number" ? (
               <span className={`ml-1.5 rounded-full px-1.5 py-0.5 text-[9px] ${
-                isActive ? "bg-white/20 text-white" : "bg-white/10 text-white/50"
+                isActive ? "bg-white/20 text-white" : "bg-slate-200 dark:bg-white/10 text-slate-600 dark:text-white/50"
               }`}>
                 {c}
               </span>
