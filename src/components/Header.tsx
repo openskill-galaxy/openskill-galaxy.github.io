@@ -127,13 +127,13 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-white/[0.06] bg-slate-950/40 backdrop-blur-md">
+    <header className="sticky top-0 z-20 border-b border-slate-200 dark:border-white/[0.06] bg-white/90 dark:bg-slate-950/40 backdrop-blur-md">
       <div className="container-page flex h-16 items-center gap-6">
         <Link to="/" className="flex items-center gap-3 font-bold transition hover:opacity-90">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-galaxy-600 to-indigo-500 text-white shadow-md shadow-galaxy-600/20 text-sm">
             ✦
           </span>
-          <span className="text-white tracking-wider text-base font-semibold">OpenSkill <span className="text-transparent bg-clip-text bg-gradient-to-r from-galaxy-400 to-cyan-300">Galaxy</span></span>
+          <span className="text-slate-900 dark:text-white tracking-wider text-base font-bold">OpenSkill <span className="text-transparent bg-clip-text bg-gradient-to-r from-galaxy-500 to-cyan-500 dark:from-galaxy-400 dark:to-cyan-300">Galaxy</span></span>
         </Link>
         <nav className="hidden md:flex items-center gap-1.5">
           {navItems.map((n) => (
@@ -142,10 +142,10 @@ export default function Header() {
               to={n.to}
               end={n.to === "/"}
               className={({ isActive }) =>
-                `px-4 py-2 rounded-xl text-sm font-medium transition duration-200 ${
+                `px-4 py-2 rounded-xl text-sm font-semibold transition duration-200 ${
                   isActive
-                    ? "bg-white/[0.06] text-white shadow-inner"
-                    : "text-white/60 hover:bg-white/[0.03] hover:text-white"
+                    ? "bg-indigo-50 dark:bg-white/[0.06] text-indigo-700 dark:text-white shadow-inner font-bold"
+                    : "text-slate-600 dark:text-white/60 hover:bg-slate-100 dark:hover:bg-white/[0.03] hover:text-slate-900 dark:hover:text-white"
                 }`
               }
             >
@@ -160,15 +160,15 @@ export default function Header() {
           </div>
           <button
             onClick={() => setShowAppwrite(true)}
-            className="flex h-9 px-2 shrink-0 items-center gap-1 rounded-xl border border-white/10 bg-white/[0.02] text-xs text-white/70 hover:bg-white/5 hover:text-white transition duration-200"
+            className="flex h-9 px-2.5 shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/60 dark:bg-white/[0.02] text-xs text-slate-700 dark:text-white/70 hover:bg-slate-200 dark:hover:bg-white/5 transition duration-200 font-semibold"
             title="Appwrite 云端数据同步与认证"
             type="button"
           >
-            ⚡ <span className="hidden sm:inline text-[10px] font-semibold">云同步</span>
+            ⚡ <span className="hidden sm:inline text-[10px]">云同步</span>
           </button>
           <button
             onClick={() => setShowBackup(true)}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] text-sm text-white/70 hover:bg-white/5 hover:text-white transition duration-200"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/60 dark:bg-white/[0.02] text-sm text-slate-700 dark:text-white/70 hover:bg-slate-200 dark:hover:bg-white/5 transition duration-200"
             title="本地 JSON 进度备份"
             type="button"
           >
@@ -176,7 +176,7 @@ export default function Header() {
           </button>
           <button
             onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] text-sm text-white/70 hover:bg-white/5 hover:text-white transition duration-200"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 dark:border-white/10 bg-slate-100/60 dark:bg-white/[0.02] text-sm text-slate-700 dark:text-white/70 hover:bg-slate-200 dark:hover:bg-white/5 transition duration-200"
             title={theme === 'dark' ? '切换至亮色模式' : '切换至暗色模式'}
             type="button"
           >

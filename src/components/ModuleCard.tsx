@@ -8,9 +8,9 @@ const levelLabel: Record<Module["level"], string> = {
 };
 
 const levelColor: Record<Module["level"], string> = {
-  beginner: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
-  intermediate: "bg-amber-500/10 text-amber-300 border-amber-500/20",
-  advanced: "bg-rose-500/10 text-rose-300 border-rose-500/20",
+  beginner: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30",
+  intermediate: "bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/30",
+  advanced: "bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30",
 };
 
 const statusLabel: Record<Module["status"], string> = {
@@ -49,15 +49,15 @@ export default function ModuleCard({ module, className = "" }: { module: Module;
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
             <span className="text-3xl filter drop-shadow">{emoji}</span>
-            <h3 className="text-base font-bold text-white tracking-wide">{module.title}</h3>
+            <h3 className="text-base font-bold text-slate-900 dark:text-white tracking-wide">{module.title}</h3>
           </div>
           <span
-            className={`shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-semibold ${levelColor[module.level]}`}
+            className={`shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold ${levelColor[module.level]}`}
           >
             {levelLabel[module.level]}
           </span>
         </div>
-        <p className="mt-3 text-sm text-white/60 line-clamp-3 leading-relaxed">{module.summary}</p>
+        <p className="mt-3 text-sm text-slate-600 dark:text-white/60 line-clamp-3 leading-relaxed">{module.summary}</p>
         <div className="mt-4 flex flex-wrap items-center gap-1.5">
           {module.tags.slice(0, 3).map((t) => (
             <span key={t} className="tag text-[10px]">{t}</span>
@@ -65,7 +65,7 @@ export default function ModuleCard({ module, className = "" }: { module: Module;
         </div>
       </Link>
 
-      <div className="mt-5 flex flex-wrap items-center gap-2 border-t border-white/[0.04] pt-4">
+      <div className="mt-5 flex flex-wrap items-center gap-2 border-t border-slate-200 dark:border-white/[0.04] pt-4">
         {module.url && (
           <a
             href={module.url}
@@ -86,7 +86,7 @@ export default function ModuleCard({ module, className = "" }: { module: Module;
             GitHub
           </a>
         )}
-        <span className="ml-auto text-xs text-white/30 font-medium">
+        <span className="ml-auto text-xs text-slate-500 dark:text-white/40 font-semibold">
           {statusLabel[module.status]} · 约 {module.estimatedHours}h
         </span>
       </div>
