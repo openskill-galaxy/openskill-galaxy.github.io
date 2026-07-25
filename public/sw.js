@@ -1,11 +1,19 @@
-const CACHE_NAME = "openskill-galaxy-portal-v1";
+const CACHE_NAME = "openskill-galaxy-portal-v2";
 
 self.addEventListener("install", () => {
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (e) => {
-  e.waitUntil(self.clients.claim());
+  e.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys.map((key) => {
+          if (key !== CACHE_NAME) return caches.delete(key);
+        })
+      )
+    ).then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener("fetch", (e) => {
@@ -15,24 +23,23 @@ self.addEventListener("fetch", (e) => {
   if (url.origin !== self.location.origin) return;
 
   e.respondWith(
-    caches.match(e.request).then((cachedResponse) => {
-      const fetchPromise = fetch(e.request)
-        .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            const responseToCache = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(e.request, responseToCache);
-            });
-          }
-          return networkResponse;
-        })
-        .catch(() => null);
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.match(e.request).then((cachedResponse) => {
+        const fetchPromise = fetch(e.request)
+          .then((networkResponse) => {
+            if (networkResponse && networkResponse.status === 200) {
+              cache.put(e.request, networkResponse.clone());
+            }
+            return networkResponse;
+          })
+          .catch(() => null);
 
-      return (
-        cachedResponse ||
-        fetchPromise ||
-        new Response("Offline", { status: 503, statusText: "Service Unavailable" })
-      );
+        return (
+          cachedResponse ||
+          fetchPromise ||
+          new Response("Offline", { status: 503, statusText: "Service Unavailable" })
+        );
+      });
     })
   );
 });
