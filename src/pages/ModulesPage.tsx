@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { loadAll, type PortalData } from "../data/loaders";
 import CategoryTabs from "../components/CategoryTabs";
 import ModuleCard from "../components/ModuleCard";
+import { IconSearch } from "../components/icons";
 import type { SkillLevel } from "../types";
 
 const levelOrder: Record<SkillLevel, number> = {
@@ -69,22 +70,22 @@ export default function ModulesPage() {
       .sort((a, b) => levelOrder[a.level] - levelOrder[b.level] || a.title.localeCompare(b.title));
   }, [data, active, keyword]);
 
-  if (error) return <p className="text-rose-600 dark:text-rose-300">数据加载失败：{error}</p>;
+  if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
   if (!data) {
     return (
       <div className="space-y-8 animate-pulse py-8">
         <header className="space-y-4">
-          <div className="h-8 bg-slate-200 dark:bg-white/5 rounded-xl w-40" />
-          <div className="h-4 bg-slate-200 dark:bg-white/5 rounded-lg w-64" />
+          <div className="h-9 bg-surface-2 rounded-xl w-48" />
+          <div className="h-4 bg-surface-2 rounded-lg w-72" />
         </header>
-        <div className="flex flex-wrap gap-2 border-b border-slate-200 dark:border-white/[0.04] pb-4">
-          {[1, 2, 3, 4, 5].map(i => (
-            <div key={i} className="h-8 bg-slate-200 dark:bg-white/5 rounded-full w-20" />
+        <div className="flex flex-wrap gap-2 pb-4">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div key={i} className="h-8 bg-surface-2 rounded-lg w-20" />
           ))}
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3, 4, 5, 6].map(i => (
-            <div key={i} className="h-48 rounded-2xl border border-slate-200 dark:border-white/5 bg-slate-100 dark:bg-white/[0.01]" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div key={i} className="h-48 rounded-2xl border border-line bg-surface-2" />
           ))}
         </div>
       </div>
@@ -94,39 +95,39 @@ export default function ModulesPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <h1 className="text-2xl font-extrabold tracking-wide text-slate-900 dark:text-white">📦 技能模块图谱</h1>
-        <p className="text-xs text-slate-600 dark:text-white/40">
+        <h1 className="text-3xl font-bold tracking-tight text-body">技能模块图谱</h1>
+        <p className="text-sm text-muted">
           共收录 {data.modules.length} 个独立技能模块，分布于 {data.categories.length} 个专业学科分类。
         </p>
       </header>
 
-      <div className="space-y-4">
-        <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between border-b border-slate-200 dark:border-white/[0.04] pb-4">
-          <CategoryTabs
-            categories={data.categories}
-            active={active}
-            counts={counts}
-            onSelect={handleSelect}
+      <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
+        <CategoryTabs
+          categories={data.categories}
+          active={active}
+          counts={counts}
+          onSelect={handleSelect}
+        />
+        <div className="w-full md:w-72 relative flex items-center shrink-0">
+          <input
+            type="search"
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+            placeholder="过滤模块、标签…"
+            className="input pl-9 py-2 text-sm"
           />
-          <div className="w-full md:w-80 relative flex items-center">
-            <input
-              type="search"
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}
-              placeholder="快捷过滤模块、标签…"
-              className="w-full rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/[0.02] pl-9 pr-4 py-2 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition"
-            />
-            <span className="absolute left-3 text-slate-400 dark:text-white/30 text-[10px]">🔍</span>
-          </div>
+          <span className="absolute left-3 text-subtle">
+            <IconSearch size={15} />
+          </span>
         </div>
       </div>
 
       {filtered.length === 0 ? (
         <div className="card p-12 text-center">
-          <p className="text-sm text-slate-500 dark:text-white/40">没有找到匹配的技能模块。</p>
+          <p className="text-sm text-muted">没有找到匹配的技能模块。</p>
         </div>
       ) : (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((m, idx) => (
             <ModuleCard key={m.id} module={m} className={`animate-slide-up stagger-${(idx % 6) + 1}`} />
           ))}

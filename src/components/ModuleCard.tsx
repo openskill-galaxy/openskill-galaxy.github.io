@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Module } from "../types";
+import { colorFromId, monogram, IconArrowRight, IconClock } from "./icons";
 
 const levelLabel: Record<Module["level"], string> = {
   beginner: "入门",
@@ -8,9 +9,9 @@ const levelLabel: Record<Module["level"], string> = {
 };
 
 const levelColor: Record<Module["level"], string> = {
-  beginner: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/30",
-  intermediate: "bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/30",
-  advanced: "bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30",
+  beginner: "text-emerald-600 dark:text-emerald-300 bg-emerald-500/10",
+  intermediate: "text-amber-600 dark:text-amber-300 bg-amber-500/10",
+  advanced: "text-rose-600 dark:text-rose-300 bg-rose-500/10",
 };
 
 const statusLabel: Record<Module["status"], string> = {
@@ -19,76 +20,55 @@ const statusLabel: Record<Module["status"], string> = {
   draft: "草稿",
 };
 
-function getModuleEmoji(slug: string): string {
-  const s = slug.toLowerCase();
-  if (s.includes("python")) return "🐍";
-  if (s.includes("go-")) return "🐹";
-  if (s.includes("java")) return "☕";
-  if (s.includes("rust")) return "🦀";
-  if (s.includes("react")) return "⚛️";
-  if (s.includes("vue")) return "💚";
-  if (s.includes("typescript")) return "🟦";
-  if (s.includes("git")) return "🐙";
-  if (s.includes("docker")) return "🐳";
-  if (s.includes("kubernetes")) return "☸️";
-  if (s.includes("linux")) return "🐧";
-  if (s.includes("database") || s.includes("sql")) return "💾";
-  if (s.includes("ai") || s.includes("llm") || s.includes("machine")) return "🤖";
-  if (s.includes("algorithm")) return "🧮";
-  if (s.includes("network")) return "🌐";
-  if (s.includes("security")) return "🛡️";
-  if (s.includes("web") || s.includes("frontend")) return "💻";
-  return "✨";
-}
-
 export default function ModuleCard({ module, className = "" }: { module: Module; className?: string }) {
-  const emoji = getModuleEmoji(module.slug);
+  const c = colorFromId(module.category);
   return (
-    <div className={`card-hover block p-6 flex flex-col justify-between ${className}`}>
-      <Link to={`/modules/${module.slug}`} className="block flex-1">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl filter drop-shadow">{emoji}</span>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white tracking-wide">{module.title}</h3>
+    <div className={`card-hover group flex flex-col p-5 ${className}`}>
+      <Link to={`/modules/${module.slug}`} className="flex flex-1 flex-col">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-center gap-3 min-w-0">
+            <span
+              className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-base font-bold"
+              style={{ background: c.soft, color: c.fg }}
+            >
+              {monogram(module.title)}
+            </span>
+            <h3 className="text-[15px] font-semibold text-body leading-tight truncate">
+              {module.title}
+            </h3>
           </div>
           <span
-            className={`shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold ${levelColor[module.level]}`}
+            className={`shrink-0 rounded-md px-2 py-0.5 text-[11px] font-semibold ${levelColor[module.level]}`}
           >
             {levelLabel[module.level]}
           </span>
         </div>
-        <p className="mt-3 text-sm text-slate-600 dark:text-white/60 line-clamp-3 leading-relaxed">{module.summary}</p>
+
+        <p className="mt-3.5 text-sm text-muted line-clamp-2 leading-relaxed">{module.summary}</p>
+
         <div className="mt-4 flex flex-wrap items-center gap-1.5">
           {module.tags.slice(0, 3).map((t) => (
-            <span key={t} className="tag text-[10px]">{t}</span>
+            <span key={t} className="tag">{t}</span>
           ))}
         </div>
       </Link>
 
-      <div className="mt-5 flex flex-wrap items-center gap-2 border-t border-slate-200 dark:border-white/[0.04] pt-4">
+      <div className="mt-5 flex items-center gap-3 border-t border-line pt-4">
+        <span className="inline-flex items-center gap-1.5 text-xs text-subtle font-medium">
+          <IconClock size={14} /> {module.estimatedHours}h
+        </span>
+        <span className="text-xs text-subtle">·</span>
+        <span className="text-xs text-subtle font-medium">{statusLabel[module.status]}</span>
         {module.url && (
           <a
             href={module.url}
             target="_blank"
             rel="noreferrer"
-            className="btn-primary !px-3.5 !py-2 text-xs"
+            className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-brand hover:gap-1.5 transition-all"
           >
-            进入模块 →
+            进入模块 <IconArrowRight size={15} />
           </a>
         )}
-        {module.repoUrl && (
-          <a
-            href={module.repoUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="btn-ghost !px-3.5 !py-2 text-xs"
-          >
-            GitHub
-          </a>
-        )}
-        <span className="ml-auto text-xs text-slate-500 dark:text-white/40 font-semibold">
-          {statusLabel[module.status]} · 约 {module.estimatedHours}h
-        </span>
       </div>
     </div>
   );

@@ -135,73 +135,61 @@ export default function AppwriteModal({ onClose }: Props) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 backdrop-blur-md animate-fade-in p-4">
-      <div className="card w-full max-w-md p-6 relative border border-white/10 bg-slate-900/90 shadow-2xl flex flex-col gap-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm animate-fade-in p-4" onClick={onClose}>
+      <div
+        className="card w-full max-w-md p-6 relative flex flex-col gap-4"
+        style={{ boxShadow: "var(--shadow-lg)" }}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-white/40 hover:text-white transition text-sm"
+          className="absolute right-4 top-4 text-subtle hover:text-body transition text-sm"
           type="button"
         >
           ✕
         </button>
 
-        <div className="flex items-center gap-2">
-          <span className="text-xl">⚡</span>
-          <div>
-            <h3 className="text-base font-bold text-white tracking-wide">Appwrite BaaS 云端集成</h3>
-            <p className="text-xs text-white/40 mt-0.5">无缝同步星河 60 模块进阶进度与答题记录</p>
-          </div>
+        <div>
+          <h3 className="text-base font-semibold text-body">Appwrite 云端集成</h3>
+          <p className="text-xs text-muted mt-0.5">无缝同步全站 60 模块的学习进度与答题记录</p>
         </div>
 
         {/* Status Indicator */}
-        <div className="flex items-center justify-between border-y border-white/5 py-2 text-xs">
-          <span className="text-white/40">当前状态:</span>
+        <div className="flex items-center justify-between border-y border-line py-2 text-xs">
+          <span className="text-subtle">当前状态</span>
           {user ? (
-            <span className="text-emerald-300 font-semibold flex items-center gap-1">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="text-emerald-500 font-semibold flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
               {user.email ? user.email : `匿名用户 (${user.$id.slice(0, 8)}...)`}
             </span>
           ) : (
-            <span className="text-amber-300/80">未连接 / 离线模式</span>
+            <span className="text-amber-500">未连接 / 离线模式</span>
           )}
         </div>
 
         {/* Tabs */}
-        <div className="flex rounded-lg bg-slate-950/50 p-1 border border-white/5 text-xs">
-          <button
-            onClick={() => setActiveTab("sync")}
-            className={`flex-1 py-1.5 rounded-md transition font-medium ${
-              activeTab === "sync" ? "bg-brand-500 text-white shadow" : "text-white/60 hover:text-white"
-            }`}
-          >
-            ☁️ 云端同步
-          </button>
-          <button
-            onClick={() => setActiveTab("auth")}
-            className={`flex-1 py-1.5 rounded-md transition font-medium ${
-              activeTab === "auth" ? "bg-brand-500 text-white shadow" : "text-white/60 hover:text-white"
-            }`}
-          >
-            👤 账户验证
-          </button>
-          <button
-            onClick={() => setActiveTab("config")}
-            className={`flex-1 py-1.5 rounded-md transition font-medium ${
-              activeTab === "config" ? "bg-brand-500 text-white shadow" : "text-white/60 hover:text-white"
-            }`}
-          >
-            ⚙️ 配置端点
-          </button>
+        <div className="flex rounded-lg bg-surface-2 p-1 border border-line text-xs">
+          {([["sync", "云端同步"], ["auth", "账户验证"], ["config", "配置端点"]] as const).map(([key, label]) => (
+            <button
+              key={key}
+              onClick={() => setActiveTab(key)}
+              className={`flex-1 py-1.5 rounded-md transition font-medium ${
+                activeTab === key ? "bg-accent text-white shadow-sm" : "text-muted hover:text-body"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         {/* Feedback Messages */}
-        {errorMsg && <div className="text-xs text-rose-300 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">{errorMsg}</div>}
-        {statusMsg && <div className="text-xs text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">{statusMsg}</div>}
+        {errorMsg && <div className="text-xs text-rose-500 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">{errorMsg}</div>}
+        {statusMsg && <div className="text-xs text-emerald-500 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">{statusMsg}</div>}
 
         {/* Tab 1: Sync */}
         {activeTab === "sync" && (
           <div className="space-y-3 py-1">
-            <p className="text-xs text-white/50 leading-relaxed">
+            <p className="text-xs text-muted leading-relaxed">
               将本地离线缓存的 60 个模块的刷题记录、收藏真题与练习成就同步至 Appwrite 云端数据库。
             </p>
             <div className="flex flex-col gap-2.5">
@@ -232,7 +220,7 @@ export default function AppwriteModal({ onClose }: Props) {
               <form onSubmit={handleAuthSubmit} className="space-y-3">
                 {isRegister && (
                   <div>
-                    <label className="text-[10px] text-white/40 mb-1 block">昵称</label>
+                    <label className="text-[10px] text-subtle mb-1 block">昵称</label>
                     <input
                       type="text"
                       value={name}
@@ -243,7 +231,7 @@ export default function AppwriteModal({ onClose }: Props) {
                   </div>
                 )}
                 <div>
-                  <label className="text-[10px] text-white/40 mb-1 block">邮箱</label>
+                  <label className="text-[10px] text-subtle mb-1 block">邮箱</label>
                   <input
                     type="email"
                     required
@@ -254,7 +242,7 @@ export default function AppwriteModal({ onClose }: Props) {
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] text-white/40 mb-1 block">密码</label>
+                  <label className="text-[10px] text-subtle mb-1 block">密码</label>
                   <input
                     type="password"
                     required
@@ -276,12 +264,12 @@ export default function AppwriteModal({ onClose }: Props) {
                     {isRegister ? "切至登录" : "切至注册"}
                   </button>
                 </div>
-                <div className="border-t border-white/5 pt-2">
+                <div className="border-t border-line pt-2">
                   <button
                     type="button"
                     onClick={handleAnonymous}
                     disabled={loading}
-                    className="btn-ghost w-full text-xs text-white/60 py-1.5"
+                    className="btn-ghost w-full text-xs text-muted py-1.5"
                   >
                     👤 一键开启 Appwrite 匿名会话
                   </button>
@@ -289,12 +277,12 @@ export default function AppwriteModal({ onClose }: Props) {
               </form>
             ) : (
               <div className="space-y-3 text-center py-2">
-                <p className="text-xs text-white/60">您已使用 Appwrite 完成认证。</p>
+                <p className="text-xs text-muted">您已使用 Appwrite 完成认证。</p>
                 <button
                   type="button"
                   onClick={handleLogout}
                   disabled={loading}
-                  className="btn-danger text-xs px-4 py-2"
+                  className="btn-ghost text-rose-500 text-xs px-4 py-2"
                 >
                   退出会话
                 </button>
@@ -307,7 +295,7 @@ export default function AppwriteModal({ onClose }: Props) {
         {activeTab === "config" && (
           <form onSubmit={handleSaveConfig} className="space-y-3">
             <div>
-              <label className="text-[10px] text-white/40 mb-1 block">Appwrite Endpoint API URL</label>
+              <label className="text-[10px] text-subtle mb-1 block">Appwrite Endpoint API URL</label>
               <input
                 type="text"
                 required
@@ -318,7 +306,7 @@ export default function AppwriteModal({ onClose }: Props) {
               />
             </div>
             <div>
-              <label className="text-[10px] text-white/40 mb-1 block">Appwrite Project ID</label>
+              <label className="text-[10px] text-subtle mb-1 block">Appwrite Project ID</label>
               <input
                 type="text"
                 required

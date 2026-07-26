@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import type { SearchResult } from "../types";
 import { buildSearchIndex, search } from "../search/search";
 import { loadAll } from "../data/loaders";
+import { IconSearch } from "./icons";
 
 export default function SearchBox() {
   const [query, setQuery] = useState("");
@@ -102,11 +103,11 @@ export default function SearchBox() {
   };
 
   const typeColor: Record<SearchResult["type"], string> = {
-    module: "bg-galaxy-500/10 text-galaxy-300 border-galaxy-500/20",
-    path: "bg-cyan-500/10 text-cyan-300 border-cyan-500/20",
-    category: "bg-purple-500/10 text-purple-300 border-purple-500/20",
-    lesson: "bg-emerald-500/10 text-emerald-300 border-emerald-500/20",
-    question: "bg-amber-500/10 text-amber-300 border-amber-500/20",
+    module: "bg-accent-soft text-brand",
+    path: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-300",
+    category: "bg-violet-500/10 text-violet-600 dark:text-violet-300",
+    lesson: "bg-emerald-500/10 text-emerald-600 dark:text-emerald-300",
+    question: "bg-amber-500/10 text-amber-600 dark:text-amber-300",
   };
 
   return (
@@ -117,38 +118,38 @@ export default function SearchBox() {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="搜索模块、课时、评测题…"
-          className="w-full rounded-xl border border-white/10 bg-white/[0.02] pl-10 pr-16 py-2 text-sm text-white placeholder-white/30 focus:border-galaxy-500 focus:outline-none focus:ring-1 focus:ring-galaxy-500 transition duration-200"
+          placeholder="搜索模块、课时…"
+          className="input pl-9 pr-14 py-2"
         />
-        <span className="absolute left-3.5 text-white/30 text-xs">🔍</span>
-        <span className="hidden sm:inline absolute right-3 text-[9px] font-bold text-white/20 border border-white/10 rounded px-1.5 py-0.5 pointer-events-none select-none bg-white/[0.01]">
+        <span className="absolute left-3 text-subtle pointer-events-none">
+          <IconSearch size={16} />
+        </span>
+        <span className="hidden lg:inline absolute right-2.5 text-[10px] font-medium text-subtle border border-line rounded px-1.5 py-0.5 pointer-events-none select-none">
           Ctrl+K
         </span>
       </div>
       {open && results.length > 0 && (
-        <ul className="absolute right-0 z-30 mt-2 w-[320px] sm:w-[460px] rounded-2xl border border-white/[0.08] bg-slate-950/95 backdrop-blur-xl shadow-2xl overflow-hidden p-1.5 space-y-0.5">
+        <ul className="absolute right-0 z-40 mt-2 w-[320px] sm:w-[440px] rounded-2xl border border-line bg-surface backdrop-blur-xl shadow-[var(--shadow-lg)] overflow-hidden p-1.5 space-y-0.5">
           {results.map((r) => (
             <li key={`${r.type}-${r.id}`}>
               <button
                 type="button"
                 onClick={() => go(r)}
-                className="flex w-full items-start gap-3 rounded-xl px-3.5 py-2.5 text-left hover:bg-white/[0.04] active:scale-[0.99] transition-all duration-150"
+                className="flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-surface-2 active:scale-[0.99] transition-all duration-150"
               >
-                <span className={`mt-0.5 shrink-0 rounded-md border px-1.5 py-0.5 text-[10px] font-semibold ${typeColor[r.type]}`}>
+                <span className={`mt-0.5 shrink-0 rounded-md px-1.5 py-0.5 text-[10px] font-semibold ${typeColor[r.type]}`}>
                   {typeLabel[r.type]}
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-sm text-white font-medium truncate flex items-center justify-between gap-2">
-                    <span className="truncate">{r.title}</span>
+                  <span className="flex items-center justify-between gap-2">
+                    <span className="block text-sm text-body font-medium truncate">{r.title}</span>
                     {r.moduleTitle && (
-                      <span className="shrink-0 text-[9px] text-indigo-300 font-semibold px-1.5 py-0.5 rounded border border-indigo-500/25 bg-indigo-500/5">
+                      <span className="shrink-0 text-[10px] text-brand font-medium px-1.5 py-0.5 rounded bg-accent-soft">
                         {r.moduleTitle}
                       </span>
                     )}
                   </span>
-                  <span className="block text-xs text-white/40 truncate mt-0.5">
-                    {r.summary}
-                  </span>
+                  <span className="block text-xs text-subtle truncate mt-0.5">{r.summary}</span>
                 </span>
               </button>
             </li>
@@ -156,7 +157,7 @@ export default function SearchBox() {
         </ul>
       )}
       {open && results.length === 0 && (
-        <div className="absolute right-0 z-30 mt-2 w-[320px] rounded-2xl border border-white/[0.08] bg-slate-950/95 p-4 text-xs text-white/40 shadow-2xl">
+        <div className="absolute right-0 z-40 mt-2 w-[320px] rounded-2xl border border-line bg-surface p-4 text-xs text-subtle shadow-[var(--shadow-lg)]">
           未找到匹配结果
         </div>
       )}
