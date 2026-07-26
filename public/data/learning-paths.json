@@ -47,7 +47,8 @@
       "用Python完成一个命令行工具"
     ],
     "tags": [],
-    "estimatedHours": 650
+    "estimatedHours": 650,
+    "slug": "zero-to-programmer"
   },
   {
     "id": "frontend-developer",
@@ -97,7 +98,8 @@
       "开发一个完整单页应用"
     ],
     "tags": [],
-    "estimatedHours": 720
+    "estimatedHours": 720,
+    "slug": "frontend-developer"
   },
   {
     "id": "java-backend",
@@ -151,7 +153,8 @@
       "开发一个微服务系统"
     ],
     "tags": [],
-    "estimatedHours": 1190
+    "estimatedHours": 1190,
+    "slug": "java-backend"
   },
   {
     "id": "go-backend",
@@ -203,7 +206,8 @@
       "开发并部署云原生应用"
     ],
     "tags": [],
-    "estimatedHours": 1010
+    "estimatedHours": 1010,
+    "slug": "go-backend"
   },
   {
     "id": "python-data",
@@ -255,7 +259,8 @@
       "完成端到端数据分析项目"
     ],
     "tags": [],
-    "estimatedHours": 910
+    "estimatedHours": 910,
+    "slug": "python-data"
   },
   {
     "id": "ai-llm",
@@ -309,7 +314,8 @@
       "开发RAG知识库问答系统"
     ],
     "tags": [],
-    "estimatedHours": 1090
+    "estimatedHours": 1090,
+    "slug": "ai-llm"
   },
   {
     "id": "cs-core",
@@ -367,7 +373,8 @@
       "设计一个迷你OS或编译器"
     ],
     "tags": [],
-    "estimatedHours": 1520
+    "estimatedHours": 1520,
+    "slug": "cs-core"
   },
   {
     "id": "devops-cn",
@@ -421,7 +428,8 @@
       "搭建完整DevOps流水线"
     ],
     "tags": [],
-    "estimatedHours": 1070
+    "estimatedHours": 1070,
+    "slug": "devops-cn"
   },
   {
     "id": "career-prep",
@@ -467,7 +475,8 @@
       "完成求职作品集"
     ],
     "tags": [],
-    "estimatedHours": 970
+    "estimatedHours": 970,
+    "slug": "career-prep"
   },
   {
     "id": "fullstack-60",
@@ -549,6 +558,7 @@
       "完成综合毕业设计"
     ],
     "tags": [],
-    "estimatedHours": 2380
+    "estimatedHours": 2380,
+    "slug": "fullstack-60"
   }
 ]

@@ -72,6 +72,7 @@ async function doLoadAll(): Promise<PortalData> {
       .filter((id): id is string => Boolean(id));
     return {
       ...p,
+      slug: p.slug ?? p.id,
       modules: ids,
       tags: p.tags ?? [],
       estimatedHours:
