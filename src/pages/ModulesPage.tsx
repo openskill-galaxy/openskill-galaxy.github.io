@@ -18,7 +18,22 @@ export default function ModulesPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get("category") || "all";
   const [active, setActive] = useState<string>(categoryParam);
-  const [keyword, setKeyword] = useState("");
+  const [keyword, setKeyword] = useState(() => searchParams.get("q") || "");
+
+  // 关键词同步到 URL（可分享、后退可恢复）
+  useEffect(() => {
+    const current = searchParams.get("q") || "";
+    const next = keyword.trim();
+    if (current === next) return;
+    const params = new URLSearchParams(searchParams);
+    if (next) {
+      params.set("q", next);
+    } else {
+      params.delete("q");
+    }
+    setSearchParams(params, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [keyword]);
 
   useEffect(() => {
     document.title = "技能模块 | OpenSkill Galaxy";

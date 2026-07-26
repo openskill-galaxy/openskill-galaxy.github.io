@@ -62,6 +62,22 @@ export function IconArchive(p: IconProps) {
   );
 }
 
+export function IconMenu(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <path d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  );
+}
+
+export function IconClose(p: IconProps) {
+  return (
+    <svg {...base(p)}>
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  );
+}
+
 export function IconArrowRight(p: IconProps) {
   return (
     <svg {...base(p)}>
@@ -161,8 +177,9 @@ export function colorFromId(id: string): { fg: string; soft: string } {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
   const hue = h % 360;
+  // light-dark() 依赖 :root/.dark 上的 color-scheme；暗色下提亮以保证对比度
   return {
-    fg: `hsl(${hue} 62% 48%)`,
+    fg: `light-dark(hsl(${hue} 62% 44%), hsl(${hue} 72% 72%))`,
     soft: `hsl(${hue} 66% 50% / 0.12)`,
   };
 }

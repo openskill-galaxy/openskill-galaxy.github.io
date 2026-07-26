@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { loadAll, type PortalData } from "../data/loaders";
 
 const levelLabel = { beginner: "入门", intermediate: "进阶", advanced: "高阶" };
@@ -12,10 +12,18 @@ const levelColor = {
 export default function LearningPathsPage() {
   const [data, setData] = useState<PortalData | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const { hash } = useLocation();
 
   useEffect(() => {
     document.title = "学习路径 | OpenSkill Galaxy";
   }, []);
+
+  // 数据就绪后滚动到 #<path-slug> 锚点（搜索结果 / 模块详情页跳转过来）
+  useEffect(() => {
+    if (!data || !hash) return;
+    const el = document.getElementById(hash.slice(1));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [data, hash]);
 
   useEffect(() => {
     let cancelled = false;
@@ -30,8 +38,14 @@ export default function LearningPathsPage() {
   if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
   if (!data) {
     return (
-      <div className="flex h-[40vh] items-center justify-center">
-        <p className="text-subtle animate-pulse text-sm">加载中…</p>
+      <div className="space-y-8 animate-pulse py-4">
+        <header className="space-y-3">
+          <div className="h-9 bg-surface-2 rounded-xl w-64" />
+          <div className="h-4 bg-surface-2 rounded-lg w-96 max-w-full" />
+        </header>
+        {[1, 2, 3].map((i) => (
+          <div key={i} className="h-56 rounded-2xl border border-line bg-surface-2" />
+        ))}
       </div>
     );
   }
@@ -51,7 +65,7 @@ export default function LearningPathsPage() {
             .map((id) => data.modules.find((m) => m.id === id))
             .filter(Boolean);
           return (
-            <section key={p.id} className="card p-6 md:p-8 space-y-6">
+            <section key={p.id} id={p.slug} className="card p-6 md:p-8 space-y-6 scroll-mt-24">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-line pb-5">
                 <div className="space-y-2">
                   <h2 className="text-xl font-semibold text-body tracking-tight">{p.title}</h2>

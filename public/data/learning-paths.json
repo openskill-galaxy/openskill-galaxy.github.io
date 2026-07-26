@@ -7,11 +7,11 @@
     "estimatedMonths": 3,
     "level": "beginner",
     "modules": [
-      "module-python-basic",
-      "module-c-programming",
-      "module-git-github",
-      "module-linux-shell",
-      "module-algorithm-interview"
+      "mod-python-basic",
+      "mod-c-programming",
+      "mod-git-github",
+      "mod-linux-shell",
+      "mod-algorithm-interview"
     ],
     "stages": [
       {
@@ -45,7 +45,9 @@
     ],
     "capstoneProjects": [
       "用Python完成一个命令行工具"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 650
   },
   {
     "id": "frontend-developer",
@@ -55,11 +57,11 @@
     "estimatedMonths": 6,
     "level": "intermediate",
     "modules": [
-      "module-frontend-dev",
-      "module-typescript-basic",
-      "module-react-basic",
-      "module-vue-basic",
-      "module-nginx-webserver"
+      "mod-frontend-dev",
+      "mod-typescript-basic",
+      "mod-react-basic",
+      "mod-vue-basic",
+      "mod-nginx-webserver"
     ],
     "stages": [
       {
@@ -93,7 +95,9 @@
     ],
     "capstoneProjects": [
       "开发一个完整单页应用"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 720
   },
   {
     "id": "java-backend",
@@ -103,13 +107,13 @@
     "estimatedMonths": 8,
     "level": "advanced",
     "modules": [
-      "module-java-basic",
-      "module-spring-boot",
-      "module-database-sql",
-      "module-redis-cache",
-      "module-docker-devops",
-      "module-kubernetes-basic",
-      "module-microservices-architecture"
+      "mod-java-basic",
+      "mod-spring-boot",
+      "mod-database-sql",
+      "mod-redis-cache",
+      "mod-docker-devops",
+      "mod-kubernetes-basic",
+      "mod-microservices-architecture"
     ],
     "stages": [
       {
@@ -145,7 +149,9 @@
     ],
     "capstoneProjects": [
       "开发一个微服务系统"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 1190
   },
   {
     "id": "go-backend",
@@ -155,12 +161,12 @@
     "estimatedMonths": 6,
     "level": "advanced",
     "modules": [
-      "module-go-backend",
-      "module-database-sql",
-      "module-redis-cache",
-      "module-docker-devops",
-      "module-kubernetes-basic",
-      "module-observability-sre"
+      "mod-go-backend",
+      "mod-database-sql",
+      "mod-redis-cache",
+      "mod-docker-devops",
+      "mod-kubernetes-basic",
+      "mod-observability-sre"
     ],
     "stages": [
       {
@@ -195,7 +201,9 @@
     ],
     "capstoneProjects": [
       "开发并部署云原生应用"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 1010
   },
   {
     "id": "python-data",
@@ -205,12 +213,12 @@
     "estimatedMonths": 5,
     "level": "intermediate",
     "modules": [
-      "module-python-basic",
-      "module-data-analyst",
-      "module-higher-math",
-      "module-probability-statistics",
-      "module-database-sql",
-      "module-data-engineering-etl"
+      "mod-python-basic",
+      "mod-data-analyst",
+      "mod-higher-math",
+      "mod-probability-statistics",
+      "mod-database-sql",
+      "mod-data-engineering-etl"
     ],
     "stages": [
       {
@@ -245,7 +253,9 @@
     ],
     "capstoneProjects": [
       "完成端到端数据分析项目"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 910
   },
   {
     "id": "ai-llm",
@@ -255,13 +265,13 @@
     "estimatedMonths": 8,
     "level": "advanced",
     "modules": [
-      "module-python-basic",
-      "module-linear-algebra",
-      "module-probability-statistics",
-      "module-machine-learning-basic",
-      "module-deep-learning-basic",
-      "module-llm-application",
-      "module-ai-product-manager"
+      "mod-python-basic",
+      "mod-linear-algebra",
+      "mod-probability-statistics",
+      "mod-machine-learning-basic",
+      "mod-deep-learning-basic",
+      "mod-llm-application",
+      "mod-ai-product-manager"
     ],
     "stages": [
       {
@@ -297,7 +307,9 @@
     ],
     "capstoneProjects": [
       "开发RAG知识库问答系统"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 1090
   },
   {
     "id": "cs-core",
@@ -307,15 +319,15 @@
     "estimatedMonths": 10,
     "level": "advanced",
     "modules": [
-      "module-c-programming",
-      "module-computer-organization",
-      "module-operating-system",
-      "module-computer-network",
-      "module-database-sql",
-      "module-discrete-math",
-      "module-compiler-principles",
-      "module-software-engineering",
-      "module-system-design-basic"
+      "mod-c-programming",
+      "mod-computer-organization",
+      "mod-operating-system",
+      "mod-computer-network",
+      "mod-database-sql",
+      "mod-discrete-math",
+      "mod-compiler-principles",
+      "mod-software-engineering",
+      "mod-system-design-basic"
     ],
     "stages": [
       {
@@ -353,7 +365,9 @@
     ],
     "capstoneProjects": [
       "设计一个迷你OS或编译器"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 1520
   },
   {
     "id": "devops-cn",
@@ -363,13 +377,13 @@
     "estimatedMonths": 6,
     "level": "advanced",
     "modules": [
-      "module-linux-shell",
-      "module-git-github",
-      "module-docker-devops",
-      "module-kubernetes-basic",
-      "module-nginx-webserver",
-      "module-cloud-computing-basic",
-      "module-observability-sre"
+      "mod-linux-shell",
+      "mod-git-github",
+      "mod-docker-devops",
+      "mod-kubernetes-basic",
+      "mod-nginx-webserver",
+      "mod-cloud-computing-basic",
+      "mod-observability-sre"
     ],
     "stages": [
       {
@@ -405,7 +419,9 @@
     ],
     "capstoneProjects": [
       "搭建完整DevOps流水线"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 1070
   },
   {
     "id": "career-prep",
@@ -415,12 +431,12 @@
     "estimatedMonths": 4,
     "level": "intermediate",
     "modules": [
-      "module-cs-career-interview",
-      "module-open-source-portfolio",
-      "module-technical-writing-docs",
-      "module-algorithm-interview",
-      "module-system-design-basic",
-      "module-capstone-projects"
+      "mod-cs-career-interview",
+      "mod-open-source-portfolio",
+      "mod-technical-writing-docs",
+      "mod-algorithm-interview",
+      "mod-system-design-basic",
+      "mod-capstone-projects"
     ],
     "stages": [
       {
@@ -449,7 +465,9 @@
     ],
     "capstoneProjects": [
       "完成求职作品集"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 970
   },
   {
     "id": "fullstack-60",
@@ -459,21 +477,21 @@
     "estimatedMonths": 24,
     "level": "advanced",
     "modules": [
-      "module-python-basic",
-      "module-c-programming",
-      "module-frontend-dev",
-      "module-react-basic",
-      "module-java-basic",
-      "module-go-backend",
-      "module-database-sql",
-      "module-operating-system",
-      "module-computer-network",
-      "module-machine-learning-basic",
-      "module-docker-devops",
-      "module-kubernetes-basic",
-      "module-system-design-basic",
-      "module-capstone-projects",
-      "module-roadmap-navigator"
+      "mod-python-basic",
+      "mod-c-programming",
+      "mod-frontend-dev",
+      "mod-react-basic",
+      "mod-java-basic",
+      "mod-go-backend",
+      "mod-database-sql",
+      "mod-operating-system",
+      "mod-computer-network",
+      "mod-machine-learning-basic",
+      "mod-docker-devops",
+      "mod-kubernetes-basic",
+      "mod-system-design-basic",
+      "mod-capstone-projects",
+      "mod-roadmap-navigator"
     ],
     "stages": [
       {
@@ -529,6 +547,8 @@
     ],
     "capstoneProjects": [
       "完成综合毕业设计"
-    ]
+    ],
+    "tags": [],
+    "estimatedHours": 2380
   }
 ]

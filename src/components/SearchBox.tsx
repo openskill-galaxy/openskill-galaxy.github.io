@@ -9,6 +9,7 @@ export default function SearchBox() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const [index, setIndex] = useState<SearchResult[]>([]);
   const navigate = useNavigate();
   const boxRef = useRef<HTMLDivElement>(null);
@@ -30,19 +31,24 @@ export default function SearchBox() {
             categories: data.categories,
           });
 
-          const formattedGlobal = (globalItems || []).map((item: any) => {
-            const mod = data.modules.find((m) => m.slug === item.moduleSlug);
-            const baseUrl = mod ? mod.url || `/${mod.category}/${mod.slug}/` : "";
-            const cleanUrl = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
+          const formattedGlobal = (globalItems || []).flatMap((item: any) => {
+            // 索引里的 moduleSlug 与 modules.json 的 slug 不一致，用条目 id 前缀匹配模块 id
+            const mod =
+              data.modules
+                .filter((m) => typeof item.id === "string" && item.id.startsWith(m.id + "-"))
+                .sort((a, b) => b.id.length - a.id.length)[0] ||
+              data.modules.find((m) => m.slug === item.moduleSlug);
+            if (!mod || !mod.url) return [];
+            const cleanUrl = mod.url.endsWith("/") ? mod.url : mod.url + "/";
             const pagePath = item.type === "question" ? `/questions/${item.slug}` : `/lessons/${item.slug}`;
-            return {
+            return [{
               type: item.type as any,
               id: item.id,
               title: item.title,
               summary: item.summary,
               url: `${cleanUrl}?page=${encodeURIComponent(pagePath)}`,
               moduleTitle: item.moduleTitle,
-            };
+            }];
           });
 
           setIndex([...metaIndex, ...formattedGlobal]);
@@ -57,6 +63,7 @@ export default function SearchBox() {
   useEffect(() => {
     setResults(search(index, query, 8));
     setOpen(query.trim().length > 0);
+    setActiveIndex(-1);
   }, [query, index]);
 
   useEffect(() => {
@@ -118,7 +125,26 @@ export default function SearchBox() {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (!open || results.length === 0) return;
+            if (e.key === "ArrowDown") {
+              e.preventDefault();
+              setActiveIndex((i) => (i + 1) % results.length);
+            } else if (e.key === "ArrowUp") {
+              e.preventDefault();
+              setActiveIndex((i) => (i <= 0 ? results.length - 1 : i - 1));
+            } else if (e.key === "Enter" && activeIndex >= 0 && activeIndex < results.length) {
+              e.preventDefault();
+              go(results[activeIndex]);
+            }
+          }}
           placeholder="搜索模块、课时…"
+          role="combobox"
+          aria-expanded={open && results.length > 0}
+          aria-controls="portal-search-results"
+          aria-activedescendant={activeIndex >= 0 ? `portal-search-option-${activeIndex}` : undefined}
+          aria-autocomplete="list"
+          aria-label="全站搜索"
           className="input pl-9 pr-14 py-2"
         />
         <span className="absolute left-3 text-subtle pointer-events-none">
@@ -129,13 +155,18 @@ export default function SearchBox() {
         </span>
       </div>
       {open && results.length > 0 && (
-        <ul className="absolute right-0 z-40 mt-2 w-[320px] sm:w-[440px] rounded-2xl border border-line bg-surface backdrop-blur-xl shadow-[var(--shadow-lg)] overflow-hidden p-1.5 space-y-0.5">
-          {results.map((r) => (
-            <li key={`${r.type}-${r.id}`}>
+        <ul
+          id="portal-search-results"
+          role="listbox"
+          className="absolute right-0 z-40 mt-2 w-[320px] sm:w-[440px] rounded-2xl border border-line bg-surface backdrop-blur-xl shadow-[var(--shadow-lg)] overflow-hidden p-1.5 space-y-0.5"
+        >
+          {results.map((r, i) => (
+            <li key={`${r.type}-${r.id}`} id={`portal-search-option-${i}`} role="option" aria-selected={i === activeIndex}>
               <button
                 type="button"
                 onClick={() => go(r)}
-                className="flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-surface-2 active:scale-[0.99] transition-all duration-150"
+                onMouseEnter={() => setActiveIndex(i)}
+                className={`flex w-full items-start gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-surface-2 active:scale-[0.99] transition-all duration-150 ${i === activeIndex ? "bg-surface-2" : ""}`}
               >
                 <span className={`mt-0.5 shrink-0 rounded-md px-1.5 py-0.5 text-[10px] font-semibold ${typeColor[r.type]}`}>
                   {typeLabel[r.type]}

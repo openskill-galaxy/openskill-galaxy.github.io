@@ -35,7 +35,20 @@ export interface PortalData {
   updates: UpdateItem[];
 }
 
-export async function loadAll(): Promise<PortalData> {
+let allCache: Promise<PortalData> | null = null;
+
+export function loadAll(): Promise<PortalData> {
+  // 数据是静态 JSON，进程内缓存首个请求，避免每次路由切换重复拉取
+  if (!allCache) {
+    allCache = doLoadAll().catch((err) => {
+      allCache = null;
+      throw err;
+    });
+  }
+  return allCache;
+}
+
+async function doLoadAll(): Promise<PortalData> {
   const [modules, categories, paths, updates] = await Promise.all([
     loadModules(),
     loadCategories(),

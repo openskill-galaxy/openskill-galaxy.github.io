@@ -37,14 +37,30 @@ export default function ModuleDetailPage() {
   const module = data?.modules.find((m) => m.slug === slug);
 
   useEffect(() => {
-    if (module) document.title = `${module.title} | OpenSkill Galaxy`;
-  }, [module]);
+    if (module) {
+      document.title = `${module.title} | OpenSkill Galaxy`;
+    } else if (data) {
+      document.title = "未找到模块 | OpenSkill Galaxy";
+    }
+  }, [module, data]);
 
   if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
   if (!data) {
     return (
-      <div className="flex h-[40vh] items-center justify-center">
-        <p className="text-subtle animate-pulse text-sm">加载中…</p>
+      <div className="space-y-8 animate-pulse py-4 max-w-4xl">
+        <div className="h-4 bg-surface-2 rounded w-52" />
+        <div className="flex items-center gap-5">
+          <div className="h-16 w-16 rounded-2xl bg-surface-2" />
+          <div className="space-y-3 flex-1">
+            <div className="h-8 bg-surface-2 rounded-xl w-64" />
+            <div className="h-4 bg-surface-2 rounded-lg w-96 max-w-full" />
+          </div>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="h-20 rounded-2xl border border-line bg-surface-2" />
+          ))}
+        </div>
       </div>
     );
   }
@@ -166,7 +182,7 @@ export default function ModuleDetailPage() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {relatedPaths.map((p) => (
-              <Link key={p.id} to="/paths" className="card-hover p-5 space-y-2 block">
+              <Link key={p.id} to={`/paths#${p.slug}`} className="card-hover p-5 space-y-2 block">
                 <h3 className="text-sm font-semibold text-body">{p.title}</h3>
                 <p className="text-xs text-muted leading-relaxed line-clamp-2">{p.summary}</p>
               </Link>

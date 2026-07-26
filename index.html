@@ -6,8 +6,32 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="OpenSkill Galaxy — 开放技能星河，模块化技能学习与路径导航。" />
-    <meta name="theme-color" content="#fbfbfd" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0b0f" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://openskill-galaxy.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OpenSkill Galaxy" />
+    <meta property="og:description" content="开放技能星河 — 60+ 模块化技能学习站点与通关路径导航。" />
+    <meta property="og:url" content="https://openskill-galaxy.github.io/" />
+    <meta property="og:image" content="https://openskill-galaxy.github.io/favicon.svg" />
+    <meta name="twitter:card" content="summary" />
     <title>OpenSkill Galaxy</title>
+    <script>
+      // Restore deep links redirected by 404.html (?page=path) before the app mounts
+      (function () {
+        try {
+          var l = window.location;
+          var q = new URLSearchParams(l.search);
+          var page = q.get("page");
+          if (page !== null) {
+            q.delete("page");
+            var rest = q.toString().replace(/~and~/g, "&");
+            var path = "/" + page.replace(/~and~/g, "&").replace(/^\/+/, "");
+            history.replaceState(null, "", path + (rest ? "?" + rest : "") + l.hash);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <script>
       // Set theme before paint to avoid flash (light default)
       (function () {
@@ -21,14 +45,19 @@
     </script>
     <script>
       function showUpdateToast() {
+        const dark = document.documentElement.classList.contains('dark');
+        const surface = dark ? 'rgba(20, 22, 29, 0.94)' : 'rgba(255, 255, 255, 0.92)';
+        const border = dark ? 'rgba(255, 255, 255, 0.12)' : 'rgba(15, 23, 42, 0.1)';
+        const heading = dark ? '#f4f5f7' : '#0b0f19';
+        const body = dark ? '#a3aab8' : '#4b5468';
         const toast = document.createElement('div');
         toast.className = 'update-toast';
         toast.innerHTML = `
-          <div style="background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px); border: 1px solid rgba(15, 23, 42, 0.1); border-radius: 16px; padding: 16px; box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18); display: flex; align-items: center; gap: 12px; max-width: 320px;">
+          <div style="background: ${surface}; backdrop-filter: blur(12px); border: 1px solid ${border}; border-radius: 16px; padding: 16px; box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18); display: flex; align-items: center; gap: 12px; max-width: 320px;">
             <span style="font-size: 16px;">✦</span>
             <div style="flex: 1;">
-              <h4 style="margin: 0; color: #0b0f19; font-size: 13px; font-weight: 600; font-family: Inter, system-ui, sans-serif;">星河图谱内容升级</h4>
-              <p style="margin: 4px 0 0 0; color: #4b5468; font-size: 11px; line-height: 1.4; font-family: Inter, system-ui, sans-serif;">新课程与题库内容已准备就绪，立即重载体验最新版本。</p>
+              <h4 style="margin: 0; color: ${heading}; font-size: 13px; font-weight: 600; font-family: Inter, system-ui, sans-serif;">星河图谱内容升级</h4>
+              <p style="margin: 4px 0 0 0; color: ${body}; font-size: 11px; line-height: 1.4; font-family: Inter, system-ui, sans-serif;">新课程与题库内容已准备就绪，立即重载体验最新版本。</p>
             </div>
             <button onclick="window.location.reload()" style="background: #4f46e5; color: #fff; border: 0; padding: 6px 12px; border-radius: 8px; font-size: 10px; font-weight: 600; cursor: pointer; white-space: nowrap; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2); font-family: Inter, system-ui, sans-serif;">重载</button>
           </div>

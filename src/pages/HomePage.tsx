@@ -147,7 +147,7 @@ export default function HomePage() {
         />
         <div className="grid gap-5 sm:grid-cols-2">
           {data.paths.slice(0, 4).map((p) => (
-            <Link key={p.id} to="/paths" className="card-hover group flex flex-col justify-between p-6">
+            <Link key={p.id} to={`/paths#${p.slug}`} className="card-hover group flex flex-col justify-between p-6">
               <div>
                 <div className="flex items-center gap-2.5">
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-accent-soft text-brand">

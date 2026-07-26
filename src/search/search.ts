@@ -25,7 +25,7 @@ export function buildSearchIndex(input: SearchInput): SearchResult[] {
     id: p.id,
     title: p.title,
     summary: p.summary,
-    url: `/paths/${p.slug}`,
+    url: `/paths#${p.slug}`,
   }));
 
   const categoryResults: SearchResult[] = input.categories.map((c) => ({

@@ -1,14 +1,18 @@
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import SearchBox from "./SearchBox";
-import AppwriteModal from "./AppwriteModal";
 import {
   IconLogo,
   IconSun,
   IconMoon,
   IconCloud,
   IconArchive,
+  IconMenu,
+  IconClose,
 } from "./icons";
+
+// Appwrite SDK 体积大且大多数访客用不到，按需加载
+const AppwriteModal = lazy(() => import("./AppwriteModal"));
 
 const navItems = [
   { to: "/", label: "首页" },
@@ -20,6 +24,21 @@ const navItems = [
 function BackupModal({ onClose }: { onClose: () => void }) {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [onClose]);
 
   const handleExport = () => {
     try {
@@ -75,11 +94,15 @@ function BackupModal({ onClose }: { onClose: () => void }) {
       onClick={onClose}
     >
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="备份与同步"
         className="card w-[380px] max-w-full p-6 relative flex flex-col gap-5"
         style={{ boxShadow: "var(--shadow-lg)" }}
         onClick={(e) => e.stopPropagation()}
       >
         <button
+          ref={closeRef}
           onClick={onClose}
           className="absolute right-4 top-4 text-subtle hover:text-body transition text-sm"
           type="button"
@@ -123,6 +146,7 @@ export default function Header() {
   const [theme, setTheme] = useState<string>(() => localStorage.getItem("theme") || "light");
   const [showBackup, setShowBackup] = useState(false);
   const [showAppwrite, setShowAppwrite] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -134,6 +158,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-line bg-page/80 backdrop-blur-xl">
       <div className="container-page flex h-16 items-center gap-4 sm:gap-6">
+        <button
+          onClick={() => setMobileNavOpen((v) => !v)}
+          className="icon-btn md:hidden"
+          type="button"
+          aria-label={mobileNavOpen ? "关闭导航菜单" : "打开导航菜单"}
+          aria-expanded={mobileNavOpen}
+        >
+          {mobileNavOpen ? <IconClose size={18} /> : <IconMenu size={18} />}
+        </button>
         <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-white shadow-[var(--shadow-accent)] transition-transform group-hover:scale-105">
             <IconLogo size={20} />
@@ -195,8 +228,33 @@ export default function Header() {
           </button>
         </div>
       </div>
+      {mobileNavOpen && (
+        <nav className="md:hidden border-t border-line bg-page px-4 py-2 flex flex-col gap-1">
+          {navItems.map((n) => (
+            <NavLink
+              key={n.to}
+              to={n.to}
+              end={n.to === "/"}
+              onClick={() => setMobileNavOpen(false)}
+              className={({ isActive }) =>
+                `px-3.5 py-2.5 rounded-lg text-sm font-medium transition-colors duration-200 ${
+                  isActive
+                    ? "text-body bg-surface-2"
+                    : "text-muted hover:text-body hover:bg-surface-2"
+                }`
+              }
+            >
+              {n.label}
+            </NavLink>
+          ))}
+        </nav>
+      )}
       {showBackup && <BackupModal onClose={() => setShowBackup(false)} />}
-      {showAppwrite && <AppwriteModal onClose={() => setShowAppwrite(false)} />}
+      {showAppwrite && (
+        <Suspense fallback={null}>
+          <AppwriteModal onClose={() => setShowAppwrite(false)} />
+        </Suspense>
+      )}
     </header>
   );
 }
