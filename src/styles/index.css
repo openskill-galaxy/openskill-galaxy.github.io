@@ -24,7 +24,7 @@
   /* Text */
   --text: #0b0f19;
   --text-muted: #4b5468;
-  --text-subtle: #8b93a4;
+  --text-subtle: #737c8e;
 
   /* Accent (indigo) */
   --accent: #4f46e5;
@@ -114,7 +114,6 @@ body {
 :focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px var(--ring);
-  border-radius: 8px;
 }
 
 @layer base {
@@ -152,7 +151,7 @@ body {
 
   /* Buttons */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97];
+    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none;
     background: var(--accent);
     color: var(--accent-fg);
     box-shadow: var(--shadow-accent);
@@ -162,7 +161,7 @@ body {
     transform: translateY(-1px);
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97];
+    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 active:scale-[0.97] disabled:opacity-50 disabled:pointer-events-none;
     background: var(--surface);
     color: var(--text);
     border: 1px solid var(--border-strong);
@@ -234,12 +233,6 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* Subtle dotted texture for section backdrops */
-.dot-grid {
-  background-image: radial-gradient(var(--border-strong) 1px, transparent 1px);
-  background-size: 22px 22px;
 }
 
 /* Animations */

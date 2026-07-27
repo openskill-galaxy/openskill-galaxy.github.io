@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { loadAll, type PortalData } from "../data/loaders";
 import ModuleCard from "../components/ModuleCard";
+import ErrorNotice from "../components/ErrorNotice";
 import {
   IconArrowRight,
   IconSparkles,
@@ -29,7 +30,7 @@ export default function HomePage() {
     };
   }, []);
 
-  if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
+  if (error) return <ErrorNotice message={error} />;
 
   if (!data) {
     return (
@@ -183,7 +184,7 @@ export default function HomePage() {
                 : "text-sky-600 dark:text-sky-300 bg-sky-500/10";
             const label = u.type === "release" ? "发布" : u.type === "event" ? "活动" : "资讯";
             return (
-              <div key={u.id} className="flex gap-4 items-start p-5 hover:bg-surface-2 transition-colors">
+              <div key={u.id} className="flex gap-4 items-start p-5">
                 <span className={`shrink-0 rounded-md px-2 py-0.5 text-[11px] font-semibold mt-0.5 ${tone}`}>
                   {label}
                 </span>
@@ -227,10 +228,11 @@ function SectionHeader({
       </div>
       {action && (
         <Link
-          className="inline-flex items-center gap-1 text-sm font-medium text-brand hover:gap-1.5 transition-all shrink-0"
+          className="group inline-flex items-center gap-1 text-sm font-medium text-brand shrink-0"
           to={action.to}
         >
-          {action.label} <IconArrowRight size={15} />
+          {action.label}{" "}
+          <IconArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
         </Link>
       )}
     </div>

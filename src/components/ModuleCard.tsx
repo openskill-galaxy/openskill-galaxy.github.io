@@ -64,9 +64,10 @@ export default function ModuleCard({ module, className = "" }: { module: Module;
             href={module.url}
             target="_blank"
             rel="noreferrer"
-            className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-brand hover:gap-1.5 transition-all"
+            className="group/cta ml-auto inline-flex items-center gap-1 text-sm font-semibold text-brand"
           >
-            进入模块 <IconArrowRight size={15} />
+            进入模块{" "}
+            <IconArrowRight size={15} className="transition-transform group-hover/cta:translate-x-0.5" />
           </a>
         )}
       </div>

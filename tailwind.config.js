@@ -25,16 +25,6 @@ export default {
           soft: "var(--accent-soft)",
           fg: "var(--accent-fg)",
         },
-        // Legacy alias kept for backward compatibility
-        galaxy: {
-          50: "#eef2ff",
-          100: "#e0e7ff",
-          400: "#818cf8",
-          500: "#6366f1",
-          600: "#4f46e5",
-          700: "#4338ca",
-          900: "#1e1b4b",
-        },
       },
       fontFamily: {
         sans: [
@@ -54,20 +44,6 @@ export default {
       },
       maxWidth: {
         content: "1200px",
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        slideUp: {
-          "0%": { opacity: "0", transform: "translateY(14px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        "fade-in": "fadeIn 0.4s ease both",
-        "slide-up": "slideUp 0.5s cubic-bezier(0.16,1,0.3,1) both",
       },
     },
   },

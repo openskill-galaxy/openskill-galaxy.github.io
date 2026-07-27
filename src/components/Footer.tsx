@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container-page py-12 text-sm">
         <div className="flex flex-col md:flex-row gap-8 md:items-center md:justify-between">
           <div className="flex items-center gap-3">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-accent-soft text-brand">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-white shadow-[var(--shadow-accent)]">
               <IconLogo size={20} />
             </span>
             <div>

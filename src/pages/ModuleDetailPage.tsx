@@ -10,6 +10,7 @@ import {
   IconLayers,
   IconRoute,
 } from "../components/icons";
+import ErrorNotice from "../components/ErrorNotice";
 
 const levelLabel = { beginner: "入门", intermediate: "进阶", advanced: "高阶" } as const;
 const levelColor = {
@@ -44,7 +45,7 @@ export default function ModuleDetailPage() {
     }
   }, [module, data]);
 
-  if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
+  if (error) return <ErrorNotice message={error} />;
   if (!data) {
     return (
       <div className="space-y-8 animate-pulse py-4 max-w-4xl">

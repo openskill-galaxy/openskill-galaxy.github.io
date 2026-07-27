@@ -1,4 +1,4 @@
-const CACHE_NAME = "openskill-galaxy-portal-v4";
+const CACHE_NAME = "openskill-galaxy-portal-v5";
 
 self.addEventListener("install", () => {
   self.skipWaiting();

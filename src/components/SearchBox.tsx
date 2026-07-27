@@ -158,7 +158,7 @@ export default function SearchBox() {
         <ul
           id="portal-search-results"
           role="listbox"
-          className="absolute right-0 z-40 mt-2 w-[320px] sm:w-[440px] rounded-2xl border border-line bg-surface backdrop-blur-xl shadow-[var(--shadow-lg)] overflow-hidden p-1.5 space-y-0.5"
+          className="absolute right-0 z-40 mt-2 w-[min(320px,calc(100vw-2rem))] sm:w-[440px] rounded-2xl border border-line bg-surface backdrop-blur-xl shadow-[var(--shadow-lg)] overflow-hidden p-1.5 space-y-0.5"
         >
           {results.map((r, i) => (
             <li key={`${r.type}-${r.id}`} id={`portal-search-option-${i}`} role="option" aria-selected={i === activeIndex}>
@@ -180,7 +180,7 @@ export default function SearchBox() {
                       </span>
                     )}
                   </span>
-                  <span className="block text-xs text-subtle truncate mt-0.5">{r.summary}</span>
+                  <span className="block text-xs text-muted truncate mt-0.5">{r.summary}</span>
                 </span>
               </button>
             </li>
@@ -188,7 +188,7 @@ export default function SearchBox() {
         </ul>
       )}
       {open && results.length === 0 && (
-        <div className="absolute right-0 z-40 mt-2 w-[320px] rounded-2xl border border-line bg-surface p-4 text-xs text-subtle shadow-[var(--shadow-lg)]">
+        <div className="absolute right-0 z-40 mt-2 w-[min(320px,calc(100vw-2rem))] rounded-2xl border border-line bg-surface p-4 text-xs text-muted shadow-[var(--shadow-lg)]">
           未找到匹配结果
         </div>
       )}

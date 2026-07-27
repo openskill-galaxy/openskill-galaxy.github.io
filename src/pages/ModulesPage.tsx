@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { loadAll, type PortalData } from "../data/loaders";
 import CategoryTabs from "../components/CategoryTabs";
 import ModuleCard from "../components/ModuleCard";
+import ErrorNotice from "../components/ErrorNotice";
 import { IconSearch } from "../components/icons";
 import type { SkillLevel } from "../types";
 
@@ -85,7 +86,7 @@ export default function ModulesPage() {
       .sort((a, b) => levelOrder[a.level] - levelOrder[b.level] || a.title.localeCompare(b.title));
   }, [data, active, keyword]);
 
-  if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
+  if (error) return <ErrorNotice message={error} />;
   if (!data) {
     return (
       <div className="space-y-8 animate-pulse py-8">
@@ -129,6 +130,7 @@ export default function ModulesPage() {
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
             placeholder="过滤模块、标签…"
+            aria-label="过滤模块、标签"
             className="input pl-9 py-2 text-sm"
           />
           <span className="absolute left-3 text-subtle">
@@ -143,8 +145,8 @@ export default function ModulesPage() {
         </div>
       ) : (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((m, idx) => (
-            <ModuleCard key={m.id} module={m} className={`animate-slide-up stagger-${(idx % 6) + 1}`} />
+          {filtered.map((m) => (
+            <ModuleCard key={m.id} module={m} />
           ))}
         </div>
       )}

@@ -19,7 +19,8 @@ export default function CategoryTabs({ categories, active, counts, onSelect }: P
             key={t.id}
             type="button"
             onClick={() => onSelect(t.id)}
-            className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition-all duration-200 ${
+            aria-pressed={isActive}
+            className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
               isActive
                 ? "bg-accent text-white shadow-[var(--shadow-accent)]"
                 : "text-muted bg-surface border border-line hover:border-line-strong hover:text-body"

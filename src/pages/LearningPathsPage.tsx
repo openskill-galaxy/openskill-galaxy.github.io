@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { loadAll, type PortalData } from "../data/loaders";
+import ErrorNotice from "../components/ErrorNotice";
 
 const levelLabel = { beginner: "入门", intermediate: "进阶", advanced: "高阶" };
 const levelColor = {
@@ -35,7 +36,7 @@ export default function LearningPathsPage() {
     };
   }, []);
 
-  if (error) return <p className="text-rose-500">数据加载失败：{error}</p>;
+  if (error) return <ErrorNotice message={error} />;
   if (!data) {
     return (
       <div className="space-y-8 animate-pulse py-4">
@@ -84,7 +85,7 @@ export default function LearningPathsPage() {
               <div className="relative pl-7 border-l border-line ml-3 space-y-5">
                 {modules.map((m, i) => (
                   <div key={m!.id} className="relative">
-                    <span className="absolute -left-[38px] top-0 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-brand text-xs font-bold ring-4 ring-page">
+                    <span className="absolute -left-[42px] top-0 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent-soft text-brand text-xs font-bold ring-4 ring-surface">
                       {i + 1}
                     </span>
                     <Link
@@ -93,7 +94,7 @@ export default function LearningPathsPage() {
                     >
                       {m!.title}
                     </Link>
-                    <p className="text-xs text-subtle leading-relaxed max-w-2xl line-clamp-1 mt-0.5">
+                    <p className="text-xs text-muted leading-relaxed max-w-2xl line-clamp-1 mt-0.5">
                       {m!.summary} · 约 {m!.estimatedHours} 小时完成
                     </p>
                   </div>

@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { IconClose } from "./icons";
 import {
   getCurrentUser,
   loginAnonymous,
@@ -31,6 +32,21 @@ export default function AppwriteModal({ onClose }: Props) {
   // Config Inputs
   const [endpoint, setEndpoint] = useState("");
   const [projectId, setProjectId] = useState("");
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [onClose]);
 
   useEffect(() => {
     fetchUser();
@@ -137,16 +153,21 @@ export default function AppwriteModal({ onClose }: Props) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm animate-fade-in p-4" onClick={onClose}>
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="Appwrite 云端集成"
         className="card w-full max-w-md p-6 relative flex flex-col gap-4"
         style={{ boxShadow: "var(--shadow-lg)" }}
         onClick={(e) => e.stopPropagation()}
       >
         <button
+          ref={closeRef}
           onClick={onClose}
-          className="absolute right-4 top-4 text-subtle hover:text-body transition text-sm"
+          className="icon-btn absolute right-4 top-4"
           type="button"
+          aria-label="关闭"
         >
-          ✕
+          <IconClose size={16} />
         </button>
 
         <div>
@@ -158,12 +179,12 @@ export default function AppwriteModal({ onClose }: Props) {
         <div className="flex items-center justify-between border-y border-line py-2 text-xs">
           <span className="text-subtle">当前状态</span>
           {user ? (
-            <span className="text-emerald-500 font-semibold flex items-center gap-1.5">
+            <span className="text-emerald-600 dark:text-emerald-300 font-semibold flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
               {user.email ? user.email : `匿名用户 (${user.$id.slice(0, 8)}...)`}
             </span>
           ) : (
-            <span className="text-amber-500">未连接 / 离线模式</span>
+            <span className="text-amber-600 dark:text-amber-300">未连接 / 离线模式</span>
           )}
         </div>
 
@@ -183,8 +204,8 @@ export default function AppwriteModal({ onClose }: Props) {
         </div>
 
         {/* Feedback Messages */}
-        {errorMsg && <div className="text-xs text-rose-500 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">{errorMsg}</div>}
-        {statusMsg && <div className="text-xs text-emerald-500 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">{statusMsg}</div>}
+        {errorMsg && <div className="text-xs text-rose-600 dark:text-rose-300 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">{errorMsg}</div>}
+        {statusMsg && <div className="text-xs text-emerald-600 dark:text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">{statusMsg}</div>}
 
         {/* Tab 1: Sync */}
         {activeTab === "sync" && (
@@ -226,7 +247,7 @@ export default function AppwriteModal({ onClose }: Props) {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="您的称呼"
-                      className="input !text-xs py-1.5"
+                      className="input"
                     />
                   </div>
                 )}
@@ -238,7 +259,7 @@ export default function AppwriteModal({ onClose }: Props) {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="user@example.com"
-                    className="input !text-xs py-1.5"
+                    className="input"
                   />
                 </div>
                 <div>
@@ -249,7 +270,7 @@ export default function AppwriteModal({ onClose }: Props) {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="包含至少8位字符"
-                    className="input !text-xs py-1.5"
+                    className="input"
                   />
                 </div>
                 <div className="flex gap-2 pt-1">
@@ -282,7 +303,7 @@ export default function AppwriteModal({ onClose }: Props) {
                   type="button"
                   onClick={handleLogout}
                   disabled={loading}
-                  className="btn-ghost text-rose-500 text-xs px-4 py-2"
+                  className="btn-ghost text-rose-600 dark:text-rose-300 text-xs px-4 py-2"
                 >
                   退出会话
                 </button>
@@ -302,7 +323,7 @@ export default function AppwriteModal({ onClose }: Props) {
                 value={endpoint}
                 onChange={(e) => setEndpoint(e.target.value)}
                 placeholder="https://cloud.appwrite.io/v1"
-                className="input !text-xs py-1.5 font-mono"
+                className="input font-mono"
               />
             </div>
             <div>
@@ -313,7 +334,7 @@ export default function AppwriteModal({ onClose }: Props) {
                 value={projectId}
                 onChange={(e) => setProjectId(e.target.value)}
                 placeholder="openskill-galaxy"
-                className="input !text-xs py-1.5 font-mono"
+                className="input font-mono"
               />
             </div>
             <button type="submit" className="btn-primary w-full text-xs font-semibold py-2">

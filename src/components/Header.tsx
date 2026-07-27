@@ -104,11 +104,11 @@ function BackupModal({ onClose }: { onClose: () => void }) {
         <button
           ref={closeRef}
           onClick={onClose}
-          className="absolute right-4 top-4 text-subtle hover:text-body transition text-sm"
+          className="icon-btn absolute right-4 top-4"
           type="button"
           aria-label="关闭"
         >
-          ✕
+          <IconClose size={16} />
         </button>
         <div>
           <h3 className="text-base font-semibold text-body">备份与同步</h3>
@@ -118,12 +118,12 @@ function BackupModal({ onClose }: { onClose: () => void }) {
         </div>
 
         {error && (
-          <div className="text-xs text-rose-500 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">
+          <div className="text-xs text-rose-600 dark:text-rose-300 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">
             {error}
           </div>
         )}
         {success && (
-          <div className="text-xs text-emerald-500 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">
+          <div className="text-xs text-emerald-600 dark:text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg">
             操作成功！页面即将重载…
           </div>
         )}
@@ -229,7 +229,7 @@ export default function Header() {
         </div>
       </div>
       {mobileNavOpen && (
-        <nav className="md:hidden border-t border-line bg-page px-4 py-2 flex flex-col gap-1">
+        <nav className="md:hidden border-t border-line bg-page px-4 py-2 flex flex-col gap-1 animate-fade-in">
           {navItems.map((n) => (
             <NavLink
               key={n.to}
